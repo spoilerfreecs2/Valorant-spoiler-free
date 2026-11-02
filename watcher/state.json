@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-02T17:25:36.729Z",
+      "infoAt": "2026-11-02T18:21:36.527Z",
       "matches": [
         {
           "id": "753455",
@@ -676,7 +676,7 @@
         {
           "id": "754736",
           "path": "/754736/team-vitality-vs-loud-valorant-champions-2026-ubf",
-          "day": "2026-10-16",
+          "day": "2026-10-15",
           "order": 30,
           "a": "Team Vitality",
           "b": "LOUD",
@@ -712,7 +712,7 @@
         {
           "id": "754737",
           "path": "/754737/loud-vs-team-vitality-valorant-champions-2026-gf",
-          "day": "2026-10-18",
+          "day": "2026-10-17",
           "order": 33,
           "a": "LOUD",
           "b": "Team Vitality",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-02T17:25:36.729Z",
+      "matchesAt": "2026-11-02T18:21:36.527Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -3754,9 +3754,9 @@
         "location": "Valencia",
         "logo": "https://owcdn.net/img/692fc18a04f4a.png"
       },
-      "infoAt": "2026-11-02T05:56:23.856Z",
+      "infoAt": "2026-11-02T18:21:36.527Z",
       "matches": [],
-      "matchesAt": "2026-11-02T05:56:23.856Z",
+      "matchesAt": "2026-11-02T18:21:36.527Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3163/valorant-champions-2027": {
@@ -3767,9 +3767,9 @@
         "location": "Austin",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-02T05:56:23.856Z",
+      "infoAt": "2026-11-02T18:21:36.527Z",
       "matches": [],
-      "matchesAt": "2026-11-02T05:56:23.856Z",
+      "matchesAt": "2026-11-02T18:21:36.527Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3176/vct-2027-emea-kickoff": {
@@ -3780,9 +3780,9 @@
         "location": "Riot Games Arena, Berlin",
         "logo": "https://owcdn.net/img/65ab59620a233.png"
       },
-      "infoAt": "2026-11-02T05:56:23.856Z",
+      "infoAt": "2026-11-02T18:21:36.527Z",
       "matches": [],
-      "matchesAt": "2026-11-02T05:56:23.856Z",
+      "matchesAt": "2026-11-02T18:21:36.527Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3178/vct-2027-americas-kickoff": {
@@ -3793,7 +3793,7 @@
         "location": "Riot Games Arena, São Paulo",
         "logo": "https://owcdn.net/img/640f5ab71dfbb.png"
       },
-      "infoAt": "2026-11-02T05:56:23.856Z",
+      "infoAt": "2026-11-02T18:21:36.527Z",
       "result": "coming up, no matches drawn yet",
       "matches": [],
       "matchesAt": "2026-11-02T06:28:56.628Z"
