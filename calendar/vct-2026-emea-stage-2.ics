@@ -1,0 +1,568 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VCT 2026: EMEA Stage 2 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260715@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260717
+SUMMARY:VCT 2026: EMEA Stage 2: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of VCT 2026: EMEA Stage 2 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260716@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260717@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260719
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260718@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260719@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260722@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY:VCT 2026: EMEA Stage 2: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of VCT 2026: EMEA Stage 2 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260723@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260724@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260725@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260727
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260726@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260729@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20260731
+SUMMARY:VCT 2026: EMEA Stage 2: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of VCT 2026: EMEA Stage 2 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260730@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260731@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260801@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260802
+DTEND;VALUE=DATE:20260803
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260802@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260806@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260807@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260808@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260809
+DTEND;VALUE=DATE:20260810
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260809@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260812@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:VCT 2026: EMEA Stage 2: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of VCT 2026: EMEA Stage 2 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260813@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260814@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260815@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260816@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260820@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:VCT 2026: EMEA Stage 2: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260821@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260822@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260824
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260823@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:VCT 2026: EMEA Stage 2: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260828@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+SUMMARY:VCT 2026: EMEA Stage 2: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2026: EMEA Stage 2 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260829@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:VCT 2026: EMEA Stage 2: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2026: EMEA Stage 2 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2026-emea-stage-2-20260830@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:VCT 2026: EMEA Stage 2: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2026: EMEA Stage 2 should be u
+ p by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-sp
+ oiler-free/#/t/vct-2026-emea-stage-2
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2026-eme
+ a-stage-2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2026: EMEA Stage 2 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
