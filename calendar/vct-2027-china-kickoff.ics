@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VCT 2027: China Kickoff (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:vct-2027-china-kickoff-20270101@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:VCT 2027: China Kickoff: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of VCT 2027: China Kickoff shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/vct-2027-china-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-chi
+ na-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: China Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-china-kickoff-20270227@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:VCT 2027: China Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: China Kickoff should be 
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-s
+ poiler-free/#/t/vct-2027-china-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-chi
+ na-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: China Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

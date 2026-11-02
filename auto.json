@@ -105,6 +105,23 @@
       "logoDark": ""
     },
     {
+      "id": "vct-2027-china-kickoff",
+      "name": "VCT 2027: China Kickoff",
+      "page": "/event/3182/vct-2027-china-kickoff",
+      "year": "2027",
+      "sdate": "2027-01-01",
+      "edate": "2027-02-27",
+      "dates": "1 January – 27 February 2027",
+      "location": "Hangzhou",
+      "teamsText": "",
+      "image": "https://owcdn.net/img/65dd97cea9a25.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/vct-2027-china-kickoff.png",
+      "logoDark": ""
+    },
+    {
       "id": "valorant-champions-2026",
       "name": "Valorant Champions 2026",
       "page": "/event/2766/valorant-champions-2026",
@@ -13015,6 +13032,6 @@
       ]
     }
   },
-  "updatedAt": "2026-11-02T06:28:56.628Z",
+  "updatedAt": "2026-11-02T07:13:50.810Z",
   "featured": "valorant-champions-2026"
 }

@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-02T06:28:56.628Z",
+      "infoAt": "2026-11-02T07:13:50.810Z",
       "matches": [
         {
           "id": "753455",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-02T06:28:56.628Z",
+      "matchesAt": "2026-11-02T07:13:50.810Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -3807,9 +3807,23 @@
         "logo": "https://owcdn.net/img/640f5ae002674.png"
       },
       "infoAt": "2026-11-02T06:28:56.628Z",
-      "result": "coming up, no matches drawn yet"
+      "result": "coming up, no matches drawn yet",
+      "matches": [],
+      "matchesAt": "2026-11-02T07:13:50.810Z"
     },
-    "/event/3182/vct-2027-china-kickoff": {}
+    "/event/3182/vct-2027-china-kickoff": {
+      "info": {
+        "name": "VCT 2027: China Kickoff",
+        "sdate": "2027-01-01",
+        "edate": "2027-02-27",
+        "location": "Hangzhou",
+        "logo": "https://owcdn.net/img/65dd97cea9a25.png"
+      },
+      "infoAt": "2026-11-02T07:13:50.810Z",
+      "matches": [],
+      "matchesAt": "2026-11-02T07:13:50.810Z",
+      "result": "coming up, no matches drawn yet"
+    }
   },
   "matches": {
     "670464": {
@@ -6710,7 +6724,7 @@
         "seriesVod": null
       },
       "checkedAt": "2026-11-02T06:28:56.628Z",
-      "done": false
+      "done": true
     },
     "701032": {
       "parsed": {
@@ -19949,6 +19963,10 @@
     "team:vlr-wolves-esports": {
       "url": "https://owcdn.net/img/651d33f8e6a1f.png",
       "saved": "vlr-wolves-esports.png"
+    },
+    "vct-2027-china-kickoff": {
+      "url": "https://owcdn.net/img/65dd97cea9a25.png",
+      "saved": "vct-2027-china-kickoff.png"
     }
   },
   "highlightScan": {
