@@ -62,14 +62,14 @@ function siteData(html, d, auto) {
 /* ---------- pages ---------- */
 function siteUrl(config) {
   const repo = str(process.env.GITHUB_REPOSITORY);
-  const u = str(config.siteUrl) || ('https://' + (repo.split('/')[0] || 'spoilerfreecs2').toLowerCase() + '.github.io/' + (repo.split('/')[1] || 'CS2-Spoil-free') + '/');
+  const u = str(config.siteUrl) || ('https://' + (repo.split('/')[0] || 'spoilerfreecs2').toLowerCase() + '.github.io/' + (repo.split('/')[1] || 'Valorant-spoiler-free') + '/');
   return u.endsWith('/') ? u : u + '/';
 }
 
 // A copy of index.html for one page. `depth` is how many folders down it sits, for <base>.
 function page(html, o) {
   const site = o.siteName;
-  const title = o.title ? o.title + ' · ' + site : site + ' · Watch CS2 without spoilers';
+  const title = o.title ? o.title + ' · ' + site : site + ' · Watch Valorant without spoilers';
   const head = [
     `<base href="${o.base}">`,
     `<link rel="canonical" href="${esc(o.url)}">`,
@@ -98,7 +98,7 @@ function page(html, o) {
 function build(html, d, auto, config) {
   const data = siteData(html, d, auto);
   const base = siteUrl(config);
-  const siteName = data.site.name || 'Spoiler-Free CS2';
+  const siteName = data.site.name || 'Spoiler-Free Valorant';
   const verify = str(d && d.site && d.site.googleVerification);
   const teamById = new Map(data.teams.map(t => [t.id, t]));
   const teamName = id => (teamById.get(id) || {}).name || 'TBD';
@@ -155,16 +155,16 @@ function build(html, d, auto, config) {
       + xs.filter(x => x.t === t).map(x => `<li>${link('match/' + x.m.id + '/', vs(x.m))} · ${esc(matchLine(x))}</li>`).join('') + '</ul>').join('');
     files['team/' + id + '/index.html'] = page(html, { ...common, base: '../../', url: base + 'team/' + id + '/', hash: '#/team/' + id,
       title: tm.name, image: abs(tm.logo),
-      desc: 'Watch ' + tm.name + '’s CS2 matches without spoilers: ' + evs.map(t => t.name).slice(0, 4).join(', ') + '. No scores, and later rounds stay hidden.',
+      desc: 'Watch ' + tm.name + '’s Valorant matches without spoilers: ' + evs.map(t => t.name).slice(0, 4).join(', ') + '. No scores, and later rounds stay hidden.',
       body: `<section class="wrap t-head"><h1 class="t-title">${esc(tm.name)}</h1><p>Matches in rounds that can’t give away results.</p>${body}</section>` });
     urls.push(base + 'team/' + id + '/');
   }
   files['teams/index.html'] = page(html, { ...common, base: '../', url: base + 'teams/', hash: '#/teams', title: 'Teams',
-    desc: 'CS2 teams and their matches, to watch without spoilers.',
+    desc: 'Valorant teams and their matches, to watch without spoilers.',
     body: '<section class="wrap t-head"><h1 class="t-title">Teams</h1><ul>' + teams.map(id => `<li>${link('team/' + id + '/', teamName(id))}</li>`).join('') + '</ul></section>' });
 
   // The home page gets its address and link preview too.
-  files['index.html'] = page(html, { ...common, base: './', url: base, desc: 'Watch CS2 tournament videos without spoilers: no scores, no video lengths, no giveaways.' });
+  files['index.html'] = page(html, { ...common, base: './', url: base, desc: 'Watch Valorant tournament videos without spoilers: no scores, no video lengths, no giveaways.' });
   // Any other address: event/<id>/<stage>/<round>, match/<id>/<map> and the rest open the site's own.
   const root = new URL(base).pathname;
   files['404.html'] = page(html, { ...common, base: root, url: base, noindex: true, title: 'Page not found', desc: 'Page not found',

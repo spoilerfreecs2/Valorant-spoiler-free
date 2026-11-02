@@ -1,8 +1,8 @@
-# Spoiler-free CS2
+# Spoiler-free Valorant
 
-A website for watching Counter-Strike tournaments as if they were live: no scores, no video lengths, nothing that gives a result away.
+A website for watching Valorant esports (VCT) as if it were live: no scores, no video lengths, nothing that gives a result away.
 
-Live at **https://spoilerfreecs2.github.io/CS2-Spoil-free/**
+Live at **https://spoilerfreecs2.github.io/Valorant-spoiler-free/**
 
 ## How it works
 
@@ -14,7 +14,7 @@ Every 30 minutes GitHub runs the **video watcher** (`watcher/watch.mjs`). It:
 4. checks with YouTube that each video can be played on other sites,
 5. saves it all to `auto.json`, writes a calendar feed per event into `calendar/`, and republishes the site if anything changed.
 
-The videos are the organisers' own uploads, mostly from their archive channels (ESL Archives, BLAST Premier VOD Archive, PGL VOD's), with one video per series. Liquipedia's editors add the links, usually within a day of a match. Each map plays from its start to where the next map begins, and skipping can't leave the map.
+The videos are the organisers' own uploads, mostly from Riot's VCT channels. Liquipedia's editors add the links, usually within a day of a match. Each map plays from its start to where the next map begins, and skipping can't leave the map.
 
 The watcher never saves scores, winners, placements or video titles. The only result-like fact it keeps is which maps of a series weren't played, and the site only reveals that when someone opens that map.
 
@@ -39,8 +39,8 @@ The watcher never saves scores, winners, placements or video titles. The only re
 
 - **`discover`** adds every tournament in the listed Liquipedia categories that starts between `from` and `to`. It's set to `Category:S-Tier Tournaments` from June 2026 to the end of 2027, so new events show up by themselves once Liquipedia has their page.
   - To add A tier events, add `"Category:A-Tier Tournaments"` to `categories`.
-  - To leave an event out, put its Liquipedia page name in `exclude`, for example `"BLAST/Rivals/2027"`. A name ending in `/` leaves out a whole series: `"FISSURE/"` is there because FISSURE doesn't post match videos. Remove it to bring FISSURE events back.
-- **`tournaments`** lists events by hand. Use `"liquipedia"` with the page name from its address (https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24 is `"ESL/Pro League/Season 24"`), or `"search"` with the event's name. Add `"name"` to show a different name on the site.
+  - To leave an event out, put its Liquipedia page name in `exclude`, for example `"VCT/2027/Kickoff/China"`. A name ending in `/` leaves out a whole series.
+- **`tournaments`** lists events by hand. Use `"liquipedia"` with the page name from its address (https://liquipedia.net/valorant/VCT/2026/Champions is `"VCT/2026/Champions"`), or `"search"` with the event's name. Add `"name"` to show a different name on the site.
 
 The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden two days after it ends.
 
@@ -61,7 +61,7 @@ The home page lists the series a visitor started and hasn't marked as watched, n
 
 Hand-picked groups of series and events, shown on the home page under **Collections**. Each collection has an `id` (used in its address, `#/c/<id>`), a `title`, a `blurb` and a list of `items`. An item is one of:
 
-- a whole event: `{ "event": "ESL/Pro League/Season 24" }`
+- a whole event: `{ "event": "VCT/2026/Champions" }`
 - a stage: `{ "event": "...", "stage": "Playoffs" }`
 - a round: `{ "event": "...", "round": "Grand Final" }` (shows the match if the round has one, or the stage if it has several)
 - a match: `{ "match": "lp-7efaffa731" }` (the id from the match's address, `#/match/<id>/0`)
@@ -74,7 +74,7 @@ Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it w
 
 Visitors mark matches as watched themselves. The site never does it for them, because flipping it when a map ends would give away how long the series went. Besides the button on the match page, every match in an event's round list has a **Mark watched** toggle, and **Mark round as watched** marks a whole round at once (after a confirmation), for matches seen somewhere else. Both can be undone.
 
-Once a match is marked as watched, its page offers **Show me the result**. Nothing is revealed on the site itself: it opens a warning that Liquipedia's page also lists the event's other results, and only **Open Liquipedia** there opens it in a new tab. Cancel has the focus, so pressing Enter or a stray key can't open it. Matches on a stage subpage (Majors and similar) link to that subpage once the watcher has re-read it; until then they link to the event's main page.
+Once a match is marked as watched, its page offers **Show me the result**. Nothing is revealed on the site itself: it opens a warning that Liquipedia's page also lists the event's other results, and only **Open Liquipedia** there opens it in a new tab. Cancel has the focus, so pressing Enter or a stray key can't open it. Matches on a stage subpage (the bigger international events) link to that subpage once the watcher has re-read it; until then they link to the event's main page.
 
 ## Star ratings
 
@@ -114,7 +114,7 @@ It stays hidden until `site.firebase` is set. To keep ratings but turn sync off,
 
 For people short on time, the player has a **speed button** (1× up to 2×, also the `<` and `>` keys). It's remembered in the browser.
 
-A match can also have a **short version**: the organiser's own highlight video of the series. The watcher reads the latest uploads of the channels listed under `highlights` in `watcher/config.json` (ESL, BLAST and PGL's main channels). A video counts as a match's highlights when its title says "highlights", names both teams, and it came out within 4 days of the match. Titles are only read to make that match and are never saved. Videos shorter than two minutes (Shorts) are skipped.
+A match can also have a **short version**: the organiser's own highlight video of the series. The watcher reads the latest uploads of the channels listed under `highlights` in `watcher/config.json` (Riot's main VCT channel). A video counts as a match's highlights when its title says "highlights", names both teams, and it came out within 4 days of the match. Titles are only read to make that match and are never saved. Videos shorter than two minutes (Shorts) are skipped.
 
 To keep this spoiler-free:
 
@@ -156,7 +156,7 @@ Opening one of these starts the site on that page as usual, and the address bar 
 
 To get the site into Google:
 
-1. Open [Google Search Console](https://search.google.com/search-console), choose **Add property → URL prefix**, and enter `https://spoilerfreecs2.github.io/CS2-Spoil-free/`.
+1. Open [Google Search Console](https://search.google.com/search-console), choose **Add property → URL prefix**, and enter `https://spoilerfreecs2.github.io/Valorant-spoiler-free/`.
 2. Pick **HTML tag** as the way to verify. Copy the `content` value from the tag it shows and add it to `data.json` under `site`, as `"googleVerification": "abc123..."`. Wait for the next publish (a few minutes), then press **Verify**.
 3. Under **Sitemaps**, submit `sitemap.xml`.
 
@@ -166,7 +166,7 @@ A `robots.txt` isn't needed. Crawlers only read it at the top of the domain, so 
 
 Each event's logo is copied from Liquipedia into `images/auto/` automatically, with a separate version for dark mode if Liquipedia has one.
 
-To use your own picture instead, upload it to the `images/events/` folder, named after the event's id, for example `images/events/esl-pro-league-season-24.jpg` (JPG, PNG or WebP, ideally 1600×900). The id is the last part of the event's address on the site (`#/t/esl-pro-league-season-24`). On GitHub, open the repository, click **Add file → Upload files**, drag the picture in, and type `images/events/` before its name. The next watcher run (within 30 minutes) puts it on the site.
+To use your own picture instead, upload it to the `images/events/` folder, named after the event's id, for example `images/events/vct-2026-champions.jpg` (JPG, PNG or WebP, ideally 1600×900). The id is the last part of the event's address on the site (`#/t/vct-2026-champions`). On GitHub, open the repository, click **Add file → Upload files**, drag the picture in, and type `images/events/` before its name. The next watcher run (within 30 minutes) puts it on the site.
 
 ## If something looks wrong
 
@@ -177,4 +177,8 @@ To use your own picture instead, upload it to the `images/events/` folder, named
 
 ## Credits
 
-Match data comes from [Liquipedia](https://liquipedia.net/counterstrike/), under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), and the site credits it in the footer. The watcher follows Liquipedia's API rules: it identifies itself and sends at most one request every two seconds. Videos are played from YouTube.
+This site started as a copy of [Spoiler-free CS2](https://github.com/spoilerfreecs2/CS2-Spoil-free).
+
+Spoiler-Free Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+Match data comes from [Liquipedia](https://liquipedia.net/valorant/), under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), and the site credits it in the footer. The watcher follows Liquipedia's API rules: it identifies itself and sends at most one request every two seconds. Videos are played from YouTube.

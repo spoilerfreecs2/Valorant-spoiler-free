@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  Video watcher for the spoiler-free CS2 site.
+  Video watcher for the spoiler-free Valorant site.
 
   Every run it:
     1. asks Liquipedia which of the tournament pages in watcher/config.json changed since last time,
@@ -10,8 +10,8 @@
     5. writes everything to auto.json, which the site merges with data.json when it loads,
        and a calendar feed per event into calendar/ (watcher/calendar.mjs).
 
-  The organisers post one video per series on their archive channels ("ESL Archives",
-  "BLAST Premier VOD Archive", "PGL VOD's"), and Liquipedia records where each map starts.
+  Liquipedia's editors link each map to a video (usually Riot's VCT channels) with the time
+  it starts there.
   A map ends where the next map in the same video starts, so the player can stop there.
 
   It never writes scores, winners, placements or video titles into the site files.
@@ -41,7 +41,7 @@ const FILES = {
 };
 const YT_KEY = process.env.YOUTUBE_API_KEY || '';
 const YT_API = process.env.YOUTUBE_API_BASE || 'https://www.googleapis.com/youtube/v3';
-const LP_API = process.env.LIQUIPEDIA_API_BASE || 'https://liquipedia.net/counterstrike/api.php';
+const LP_API = process.env.LIQUIPEDIA_API_BASE || 'https://liquipedia.net/valorant/api.php';
 const LP_DELAY = process.env.LIQUIPEDIA_API_BASE ? 0 : 2500;
 const GH_API = process.env.GITHUB_API_URL || 'https://api.github.com';
 const GH_TOKEN = process.env.GITHUB_TOKEN || '';
@@ -50,7 +50,7 @@ const NOW = process.env.WATCHER_NOW ? new Date(process.env.WATCHER_NOW) : new Da
 const HOUR = 3600 * 1000;
 // 2: matches keep their start time (for highlights and calendars), and events their match days.
 const BUILD_VERSION = 2;
-const USER_AGENT = 'cs2-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'spoilerfreecs2/CS2-Spoil-free') + ')';
+const USER_AGENT = 'valorant-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'spoilerfreecs2/Valorant-spoiler-free') + ')';
 
 /* ---------- small helpers ---------- */
 const str = v => (v === null || v === undefined) ? '' : String(v);
@@ -137,7 +137,7 @@ async function yt(endpoint, params) {
 async function gh(method, url, body) {
   const r = await fetch(GH_API + url, {
     method,
-    headers: { Authorization: 'Bearer ' + GH_TOKEN, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'cs2-video-watcher', 'Content-Type': 'application/json' },
+    headers: { Authorization: 'Bearer ' + GH_TOKEN, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'valorant-video-watcher', 'Content-Type': 'application/json' },
     body: body ? JSON.stringify(body) : undefined
   });
   if (r.status === 204) return null;
@@ -268,7 +268,7 @@ async function main() {
   if (state.buildVersion !== BUILD_VERSION) { state.pages = {}; state.buildVersion = BUILD_VERSION; }
   if (auto.version !== 2) { for (const k of Object.keys(auto)) delete auto[k]; }
   auto.version = 2;
-  auto.source = 'Liquipedia (CC BY-SA 3.0), https://liquipedia.net/counterstrike/';
+  auto.source = 'Liquipedia (CC BY-SA 3.0), https://liquipedia.net/valorant/';
   for (const k of ['tournaments', 'teams', 'matches']) auto[k] = arr(auto[k]);
   auto.videos = (auto.videos && typeof auto.videos === 'object') ? auto.videos : {};
 
@@ -599,7 +599,7 @@ async function main() {
   }
 
   /* 6b. calendar feeds, one per event, for the site's "Add to calendar" */
-  const siteUrl = str(config.siteUrl) || ('https://' + (GH_REPO.split('/')[0] || 'spoilerfreecs2').toLowerCase() + '.github.io/' + (GH_REPO.split('/')[1] || 'CS2-Spoil-free') + '/');
+  const siteUrl = str(config.siteUrl) || ('https://' + (GH_REPO.split('/')[0] || 'spoilerfreecs2').toLowerCase() + '.github.io/' + (GH_REPO.split('/')[1] || 'Valorant-spoiler-free') + '/');
   const calendars = buildCalendars(auto, siteUrl, NOW);
   await mkdir(FILES.calendar, { recursive: true });
   for (const [rel, text] of Object.entries(calendars)) {

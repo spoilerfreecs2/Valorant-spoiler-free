@@ -54,7 +54,7 @@ function vevents(t, days, siteUrl) {
     const on = Date.parse(d + 'T00:00:00Z') + DAY;
     const which = d === last ? 'the final day' : WEEKDAYS[new Date(d + 'T00:00:00Z').getUTCDay()] + '’s matches';
     out.push('BEGIN:VEVENT',
-      'UID:' + t.id + '-' + icsDate(d) + '@cs2-spoiler-free',
+      'UID:' + t.id + '-' + icsDate(d) + '@valorant-spoiler-free',
       'DTSTAMP:' + STAMP,
       'DTSTART;VALUE=DATE:' + icsDate(isoDay(on)),
       'DTEND;VALUE=DATE:' + icsDate(isoDay(on + DAY)),
@@ -69,7 +69,7 @@ function vevents(t, days, siteUrl) {
 }
 
 function wrap(name, lines) {
-  return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Spoiler-Free CS2//Calendar//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+  return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Spoiler-Free Valorant//Calendar//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
     'X-WR-CALNAME:' + esc(name), 'X-WR-CALDESC:' + esc('When each day is ready to watch. No teams, no results.'),
     'REFRESH-INTERVAL;VALUE=DURATION:PT12H', 'X-PUBLISHED-TTL:PT12H', ...lines, 'END:VCALENDAR'].map(fold).join('\r\n') + '\r\n';
 }
@@ -86,6 +86,6 @@ export function buildCalendars(auto, siteUrl, now) {
     files['calendar/' + t.id + '.ics'] = wrap(t.name + ' (spoiler-free)', lines);
     if ((str(t.edate).slice(0, 10) || str(t.sdate).slice(0, 10)) >= today) all.push(...lines);
   }
-  files['calendar/all.ics'] = wrap('Spoiler-Free CS2', all);
+  files['calendar/all.ics'] = wrap('Spoiler-Free Valorant', all);
   return files;
 }

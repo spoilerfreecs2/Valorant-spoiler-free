@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Spoiler-Free CS2</title>
+<title>Spoiler-Free Valorant</title>
 <meta name="theme-color" content="#0a0a0b">
 <script>try { if (JSON.parse(localStorage.getItem('sf:theme')) === 'light') { document.documentElement.dataset.theme = 'light'; document.querySelector('meta[name="theme-color"]').content = '#f5f3ef'; } } catch (e) { /* storage unavailable */ }</script>
-<meta name="description" content="Watch CS2 tournament videos without spoilers: no scores, no video lengths, no giveaways.">
+<meta name="description" content="Watch Valorant tournament videos without spoilers: no scores, no video lengths, no giveaways.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&amp;family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500&amp;display=swap">
@@ -17,7 +17,7 @@
 :root{
   color-scheme:dark;
   --ink:#0a0a0b; --card:#151517; --card2:#1f1f22; --raised:#1a1a1d; --line:#232327; --line2:#34343a;
-  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff8a3d; --orange-hover:#ff9d5c; --on-orange:#1a0d03; --live:#ff4d4d;
+  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff4655; --orange-hover:#ff6b76; --on-orange:#1a0306; --live:#ff4d4d;
   --ok:#6cc48f; --bad:#ff7a6b;
   --edit:#7db3f0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1d4677;
   --header-bg:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8)); --header-line:rgba(35,35,39,.6);
@@ -33,7 +33,7 @@
 :root[data-theme="light"]{
   color-scheme:light;
   --ink:#f5f3ef; --card:#fff; --card2:#ebe8e3; --raised:#fff; --line:#e2ded7; --line2:#cdc8c0;
-  --fg:#16151a; --muted:#68635c; --soft:#3b3833; --orange:#b84e09; --orange-hover:#9c4208; --on-orange:#fff; --live:#d92b2b;
+  --fg:#16151a; --muted:#68635c; --soft:#3b3833; --orange:#c2182d; --orange-hover:#a01224; --on-orange:#fff; --live:#d92b2b;
   --ok:#1d7442; --bad:#b3261e;
   --edit:#1f5fa8; --edit-soft:rgba(31,95,168,.08);
   --header-bg:linear-gradient(180deg,rgba(245,243,239,.95),rgba(245,243,239,.86)); --header-line:rgba(205,200,192,.7);
@@ -46,7 +46,7 @@
   color:var(--fg);
   color-scheme:dark;
   --ink:#0a0a0b; --card:#151517; --card2:#1f1f22; --raised:#1a1a1d; --line:#232327; --line2:#34343a;
-  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff8a3d; --orange-hover:#ff9d5c; --on-orange:#1a0d03; --live:#ff4d4d;
+  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff4655; --orange-hover:#ff6b76; --on-orange:#1a0306; --live:#ff4d4d;
   --ok:#6cc48f; --bad:#ff7a6b;
   --edit:#7db3f0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1d4677;
   --header-bg:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8)); --header-line:rgba(35,35,39,.6);
@@ -211,7 +211,7 @@ a.wtile:hover{background:var(--hover);color:var(--fg)}
 .hero>.art{position:absolute;inset:0}
 .hero>.art::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--ink) 3%,rgba(10,10,11,.2) 52%,rgba(10,10,11,.65) 100%),linear-gradient(90deg,rgba(10,10,11,.7),transparent 65%)}
 .hero .art-logo{left:auto;right:max(24px,env(safe-area-inset-right,0px));top:48%;transform:translateY(-50%);width:min(32vw,400px);max-height:58%;z-index:1}
-.hero .ghost{position:absolute;right:-1vw;top:78px;font:900 clamp(90px,16vw,230px)/.8 var(--display);color:rgba(255,138,61,.1);text-transform:uppercase;letter-spacing:-.02em;pointer-events:none;white-space:nowrap}
+.hero .ghost{position:absolute;right:-1vw;top:78px;font:900 clamp(90px,16vw,230px)/.8 var(--display);color:rgba(255,70,85,.1);text-transform:uppercase;letter-spacing:-.02em;pointer-events:none;white-space:nowrap}
 .hero-text{position:relative;z-index:2;display:grid;gap:14px;padding-block:130px 36px;max-width:660px}
 .hero-title{font:900 clamp(46px,8vw,94px)/.88 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
 .lede{color:var(--soft);font-size:17px;max-width:46ch}
@@ -441,7 +441,7 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .spacer{flex:1}
 .elapsed{font-weight:600;font-size:14px;padding:0 8px;font-variant-numeric:tabular-nums}
 .len-hidden{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#bbb;border:1px dashed #666;border-radius:3px;padding:1px 7px;margin-right:6px}
-.vol{width:90px;accent-color:#ff8a3d}
+.vol{width:90px;accent-color:#ff4655}
 .video-frame iframe.scaled{right:auto;bottom:auto;transform-origin:0 0}
 .q-wrap{position:relative;display:inline-flex}
 .ctl-q{font-size:14px;min-width:56px}
@@ -667,7 +667,7 @@ html.fs-lock .tab-bar{display:none}
 
 <header class="site-header">
   <div class="wrap header-in">
-    <a class="brand" id="brand" href="#/">Spoiler<i>/</i>free CS2</a>
+    <a class="brand" id="brand" href="#/">Spoiler<i>/</i>free Valorant</a>
     <nav class="main-nav" aria-label="Main">
       <a href="#/" data-nav="home">Home</a>
       <a href="#/tournaments" data-nav="tournaments">Events</a>
@@ -700,7 +700,7 @@ html.fs-lock .tab-bar{display:none}
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <noscript><p class="wrap">This site needs JavaScript turned on to show tournaments and play videos.</p></noscript>
 
-<script type="application/json" id="site-data">{"version":1,"site":{"name":"Spoiler-Free CS2","heroText":"Every match from the first stage to the grand final. No scores, no video lengths, nothing that gives the result away.","howTitle":"How spoiler-free works","how":[{"title":"No scores","text":"Results never show up in titles, thumbnails or anywhere on the page."},{"title":"No video lengths","text":"Run times and progress bars stay hidden, so a long map can't tip you off."},{"title":"Every map listed","text":"Each series shows all of its possible maps, so you can't count how many were played."},{"title":"Later rounds locked","text":"Matchups that would give away earlier results stay hidden until you open them."}],"footer":"Videos are played from YouTube.","featuredId":"ex-t1","example":true},"teams":[{"id":"ex-a","name":"Team One","logo":""},{"id":"ex-b","name":"Team Two","logo":""},{"id":"ex-c","name":"Team Three","logo":""},{"id":"ex-d","name":"Team Four","logo":""},{"id":"ex-e","name":"Team Five","logo":""},{"id":"ex-f","name":"Team Six","logo":""},{"id":"ex-g","name":"Team Seven","logo":""},{"id":"ex-h","name":"Team Eight","logo":""}],"tournaments":[{"id":"ex-t1","name":"Example Tournament","year":"2026","dates":"","location":"","teamsText":"8 teams","logo":"","art":"","stages":[{"id":"ex-s1","name":"Group Stage","info":"Swiss · Best of 3","rounds":[{"id":"ex-r1","name":"Round 1","locked":false,"matches":[{"id":"ex-m1","a":"ex-a","b":"ex-b","bo":3,"date":"Day 1"},{"id":"ex-m2","a":"ex-c","b":"ex-d","bo":3,"date":"Day 1"},{"id":"ex-m3","a":"ex-e","b":"ex-f","bo":3,"date":"Day 1"},{"id":"ex-m4","a":"ex-g","b":"ex-h","bo":3,"date":"Day 1"}]},{"id":"ex-r2","name":"Round 2","locked":true,"matches":[{"id":"ex-m5","a":"ex-a","b":"ex-c","bo":3,"date":"Day 2"},{"id":"ex-m6","a":"ex-e","b":"ex-g","bo":3,"date":"Day 2"},{"id":"ex-m7","a":"ex-b","b":"ex-d","bo":3,"date":"Day 2"},{"id":"ex-m8","a":"ex-f","b":"ex-h","bo":3,"date":"Day 2"}]}]},{"id":"ex-s2","name":"Playoffs","info":"Single elimination · Best of 3","rounds":[{"id":"ex-r3","name":"Semi-finals","locked":true,"matches":[{"id":"ex-m9","a":"ex-a","b":"ex-e","bo":3,"date":"Day 3"},{"id":"ex-m10","a":"ex-c","b":"ex-g","bo":3,"date":"Day 3"}]},{"id":"ex-r4","name":"Grand final","locked":true,"matches":[{"id":"ex-m11","a":"ex-a","b":"ex-c","bo":5,"date":"Day 4"}]}]}]}]}</script>
+<script type="application/json" id="site-data">{"version":1,"site":{"name":"Spoiler-Free Valorant","heroText":"Every match from the first stage to the grand final. No scores, no video lengths, nothing that gives the result away.","howTitle":"How spoiler-free works","how":[{"title":"No scores","text":"Results never show up in titles, thumbnails or anywhere on the page."},{"title":"No video lengths","text":"Run times and progress bars stay hidden, so a long map can't tip you off."},{"title":"Every map listed","text":"Each series shows all of its possible maps, so you can't count how many were played."},{"title":"Later rounds locked","text":"Matchups that would give away earlier results stay hidden until you open them."}],"footer":"Videos are played from YouTube.","featuredId":"ex-t1","example":true},"teams":[{"id":"ex-a","name":"Team One","logo":""},{"id":"ex-b","name":"Team Two","logo":""},{"id":"ex-c","name":"Team Three","logo":""},{"id":"ex-d","name":"Team Four","logo":""},{"id":"ex-e","name":"Team Five","logo":""},{"id":"ex-f","name":"Team Six","logo":""},{"id":"ex-g","name":"Team Seven","logo":""},{"id":"ex-h","name":"Team Eight","logo":""}],"tournaments":[{"id":"ex-t1","name":"Example Tournament","year":"2026","dates":"","location":"","teamsText":"8 teams","logo":"","art":"","stages":[{"id":"ex-s1","name":"Group Stage","info":"Swiss · Best of 3","rounds":[{"id":"ex-r1","name":"Round 1","locked":false,"matches":[{"id":"ex-m1","a":"ex-a","b":"ex-b","bo":3,"date":"Day 1"},{"id":"ex-m2","a":"ex-c","b":"ex-d","bo":3,"date":"Day 1"},{"id":"ex-m3","a":"ex-e","b":"ex-f","bo":3,"date":"Day 1"},{"id":"ex-m4","a":"ex-g","b":"ex-h","bo":3,"date":"Day 1"}]},{"id":"ex-r2","name":"Round 2","locked":true,"matches":[{"id":"ex-m5","a":"ex-a","b":"ex-c","bo":3,"date":"Day 2"},{"id":"ex-m6","a":"ex-e","b":"ex-g","bo":3,"date":"Day 2"},{"id":"ex-m7","a":"ex-b","b":"ex-d","bo":3,"date":"Day 2"},{"id":"ex-m8","a":"ex-f","b":"ex-h","bo":3,"date":"Day 2"}]}]},{"id":"ex-s2","name":"Playoffs","info":"Single elimination · Best of 3","rounds":[{"id":"ex-r3","name":"Semi-finals","locked":true,"matches":[{"id":"ex-m9","a":"ex-a","b":"ex-e","bo":3,"date":"Day 3"},{"id":"ex-m10","a":"ex-c","b":"ex-g","bo":3,"date":"Day 3"}]},{"id":"ex-r4","name":"Grand final","locked":true,"matches":[{"id":"ex-m11","a":"ex-a","b":"ex-c","bo":5,"date":"Day 4"}]}]}]}]}</script>
 
 <script>
 (function () {
@@ -860,7 +860,7 @@ function normalize(d) {
   d = (d && typeof d === 'object') ? d : {};
   const s = d.site || {};
   const site = {
-    name: str(s.name) || 'Spoiler-Free CS2', heroText: str(s.heroText), howTitle: str(s.howTitle) || 'How spoiler-free works',
+    name: str(s.name) || 'Spoiler-Free Valorant', heroText: str(s.heroText), howTitle: str(s.howTitle) || 'How spoiler-free works',
     how: arr(s.how).length ? arr(s.how).map(x => ({ title: str(x && x.title), text: str(x && x.text) })) : clone(DEFAULT_HOW),
     footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
     // Kept so that saving from edit mode doesn't drop it (watcher/pages.mjs adds it to the pages for Google).
@@ -1530,7 +1530,7 @@ function artView(t, cls) {
   return box;
 }
 /* Map pictures (in-game views from Liquipedia), shown only for the map being watched, like its name. */
-const MAP_PICS = { ancient: 'jpg', anubis: 'jpg', cache: 'png', 'dust-ii': 'jpg', inferno: 'jpg', mirage: 'jpg', nuke: 'jpg', overpass: 'jpg', train: 'png', vertigo: 'jpg' };
+const MAP_PICS = {}; // Valorant map pictures go in images/maps/<map>.jpg, listed here as { ascent: 'jpg', ... }
 function mapBadge(name) {
   const k = str(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').replace(/^dust-2$/, 'dust-ii');
   if (name && MAP_PICS[k]) return h('span', { class: 'mb', role: 'img', 'aria-label': name, style: 'background-image:url("images/maps/' + k + '.' + MAP_PICS[k] + '")' });
@@ -1931,8 +1931,8 @@ function rerender() { route(true); }
 let pageTitle = '';
 
 function renderHeader() {
-  const name = data.site.name || 'Spoiler-Free CS2';
-  // "Spoiler-Free CS2" is drawn as "Spoiler/free CS2", with the slash in orange.
+  const name = data.site.name || 'Spoiler-Free Valorant';
+  // "Spoiler-Free Valorant" is drawn as "Spoiler/free Valorant", with the slash in orange.
   const cut = name.indexOf('-');
   $('#brand').replaceChildren(...(cut > 0 ? [name.slice(0, cut), h('i', {}, '/'), name.slice(cut + 1).replace(/^Free/, 'free')] : [name]));
   document.title = pageTitle ? pageTitle + ' · ' + name : name;
@@ -1963,7 +1963,7 @@ function renderFooter() {
     ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
     !editing() ? h('button', { type: 'button', class: 'text-btn', 'aria-keyshortcuts': 'Shift+?', onClick: openKeys }, 'Keyboard shortcuts (?)') : null,
     // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
-    AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
+    AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/valorant/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
       ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
     syncReady() ? h('button', { type: 'button', class: 'text-btn', onClick: () => openSyncDialog() }, syncCode() ? 'Synced devices' : 'Sync my devices') : null,
     ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null));
@@ -2059,7 +2059,7 @@ function heroView(t) {
       : h('span', { class: 'eyebrow' }, (st === 'upcoming' ? 'Coming up' : 'Featured') + (when ? ' · ' + when : '')),
       h('h1', { class: 'hero-title' }, t.name || 'Untitled tournament'));
   } else {
-    text.append(h('span', { class: 'eyebrow' }, 'CS2 tournaments, spoiler-free'), h('h1', { class: 'hero-title' }, data.site.name || 'Spoiler-Free CS2'));
+    text.append(h('span', { class: 'eyebrow' }, 'Valorant tournaments, spoiler-free'), h('h1', { class: 'hero-title' }, data.site.name || 'Spoiler-Free Valorant'));
   }
   if (editing() || data.site.heroText) text.append(ed('p', 'lede', data.site.heroText, v => { data.site.heroText = v; }, { label: 'Intro text', placeholder: 'Write a short intro for your site' }));
   const btns = h('div', { class: 'btn-row' });
@@ -3179,7 +3179,7 @@ window.addEventListener('pagehide', () => {
    the party, and there's a chat. Browsers connect to each other directly (WebRTC); public Nostr relays
    only help them find each other, so there's no server and no account. Only map times are shared, never
    a video's length or a result, and people who join later don't see earlier chat, so it can't spoil. */
-const PARTY_APP = 'cs2-spoil-free-party-v1';
+const PARTY_APP = 'valorant-spoiler-free-party-v1';
 const PARTY_CHARS = 'abcdefghjkmnpqrstuvwxyz23456789';
 let party = null;
 function newPartyCode() {
@@ -3534,7 +3534,7 @@ function askConfirm(msg, okLabel) {
 function openReveal(t, m, page) {
   const dlg = $('#dlg-confirm');
   dlg.onclose = null;
-  const url = 'https://liquipedia.net/counterstrike/' + encodeURI(page.replace(/ /g, '_'));
+  const url = 'https://liquipedia.net/valorant/' + encodeURI(page.replace(/ /g, '_'));
   const cancel = h('button', { type: 'button', class: 'btn btn-outline', onClick: () => dlg.close() }, 'Cancel');
   const go = h('a', { class: 'btn btn-accent', href: url, target: '_blank', rel: 'noopener noreferrer', onClick: () => dlg.close() }, 'Open Liquipedia');
   showDialog(dlg, 'Show the result?', h('div', { class: 'dlg-body' },
@@ -3544,7 +3544,7 @@ function openReveal(t, m, page) {
   cancel.focus();
 }
 function mapEditor(mp, i) {
-  const nameIn = h('input', { id: 'md-m' + i + '-name', class: 'input', type: 'text', value: mp.name, placeholder: 'e.g. Mirage', autocomplete: 'off' });
+  const nameIn = h('input', { id: 'md-m' + i + '-name', class: 'input', type: 'text', value: mp.name, placeholder: 'e.g. Ascent', autocomplete: 'off' });
   const vidIn = h('input', { id: 'md-m' + i + '-video', class: 'input', type: 'text', inputmode: 'url', value: mp.video, placeholder: 'https://www.youtube.com/watch?v=…', autocomplete: 'off', spellcheck: 'false' });
   const startIn = h('input', { id: 'md-m' + i + '-start', class: 'input', type: 'text', value: mp.start, placeholder: 'e.g. 1:30', autocomplete: 'off' });
   const np = h('input', { type: 'checkbox', id: 'md-m' + i + '-np', checked: mp.notPlayed });

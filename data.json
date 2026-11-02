@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T02:00:00.000Z",
+  "updatedAt": "2026-11-02T00:00:00.000Z",
   "hiddenAuto": [],
   "site": {
-    "name": "Spoiler-Free CS2",
+    "name": "Spoiler-Free Valorant",
     "heroText": "Every match from the first stage to the grand final. No scores, no video lengths, nothing that gives the result away.",
     "howTitle": "How spoiler-free works",
     "how": [
@@ -24,13 +24,9 @@
         "text": "Matchups that would give away earlier results stay hidden until you open them."
       }
     ],
-    "footer": "Videos are played from YouTube.",
+    "footer": "Videos are played from YouTube. Spoiler-Free Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
     "featuredId": "",
-    "example": false,
-    "firebase": {
-      "apiKey": "AIzaSyAm1M2gGfYOvipzRtqhN37OxcnjuYKapnQ",
-      "databaseURL": "https://cs2spoilerfree-default-rtdb.firebaseio.com"
-    }
+    "example": false
   },
   "teams": [],
   "tournaments": []

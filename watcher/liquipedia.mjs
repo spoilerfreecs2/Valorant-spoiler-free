@@ -1,5 +1,5 @@
 /*
-  Reads a Liquipedia Counter-Strike tournament page (its wikitext) into plain data:
+  Reads a Liquipedia Valorant tournament page (its wikitext) into plain data:
   the infobox, and every match with its stage, round, teams, date and per-map videos.
 
   It deliberately ignores scores, winners and placements. The only result-like facts it
