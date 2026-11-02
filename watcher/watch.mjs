@@ -1,31 +1,31 @@
-#!/usr/bin/env node
 /*
   Video watcher for the spoiler-free Valorant site.
 
-  Every run it:
-    1. asks Liquipedia which of the tournament pages in watcher/config.json changed since last time,
-    2. reads the changed pages: stages, rounds, matches, teams, and each map's video link and start time,
-    3. looks for the organisers' highlight videos of recent matches (watcher/highlights.mjs),
+  Runs in GitHub Actions on a schedule (see .github/workflows/watch.yml). Each run:
+    1. finds the events to show: the ones listed in watcher/config.json, plus the ones on
+       vlr.gg's event lists whose names match config.discover.include and that start in its date range,
+    2. reads each event's page and match list on vlr.gg, and the page of every finished match
+       until its map videos are linked,
+    3. looks for official highlight videos of recent matches (watcher/highlights.mjs),
     4. checks the videos with YouTube (if YOUTUBE_API_KEY is set) and leaves out any that can't be embedded,
     5. writes everything to auto.json, which the site merges with data.json when it loads,
        and a calendar feed per event into calendar/ (watcher/calendar.mjs).
 
-  Liquipedia's editors link each map to a video (usually Riot's VCT channels) with the time
-  it starts there.
+  vlr.gg's match pages link each map to its place in Riot's broadcast on YouTube.
   A map ends where the next map in the same video starts, so the player can stop there.
 
   It never writes scores, winners, placements or video titles into the site files.
 
   Needs Node 20 or newer. No packages to install.
   Environment: YOUTUBE_API_KEY (optional, recommended), GITHUB_TOKEN + GITHUB_REPOSITORY (for the review issue).
-  Liquipedia's API rules: an identifying User-Agent and at most one request every 2 seconds.
-  Its content is CC BY-SA, so the site credits it.
+  vlr.gg has no API: the watcher reads its public pages slowly (one request every few seconds),
+  with a User-Agent that says what it is, only re-reads what can still change, and credits vlr.gg on the site.
 */
 import { readFile, writeFile, appendFile, mkdir, readdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { parsePage, parseInfobox, teamNamesFromExpansion, teamLogoFiles, PARSER_VERSION } from './liquipedia.mjs';
+import { parseEventList, parseEvent, parseEventMatches, parseMatch, PARSER_VERSION } from './vlr.mjs';
 import { findHighlights } from './highlights.mjs';
 import { buildCalendars } from './calendar.mjs';
 
@@ -41,15 +41,14 @@ const FILES = {
 };
 const YT_KEY = process.env.YOUTUBE_API_KEY || '';
 const YT_API = process.env.YOUTUBE_API_BASE || 'https://www.googleapis.com/youtube/v3';
-const LP_API = process.env.LIQUIPEDIA_API_BASE || 'https://liquipedia.net/valorant/api.php';
-const LP_DELAY = process.env.LIQUIPEDIA_API_BASE ? 0 : 2500;
+const VLR = process.env.VLR_BASE || 'https://www.vlr.gg';
+const VLR_DELAY = process.env.VLR_BASE ? 0 : 3000;
 const GH_API = process.env.GITHUB_API_URL || 'https://api.github.com';
 const GH_TOKEN = process.env.GITHUB_TOKEN || '';
 const GH_REPO = process.env.GITHUB_REPOSITORY || '';
 const NOW = process.env.WATCHER_NOW ? new Date(process.env.WATCHER_NOW) : new Date();
-const HOUR = 3600 * 1000;
-// 2: matches keep their start time (for highlights and calendars), and events their match days.
-const BUILD_VERSION = 2;
+const HOUR = 3600 * 1000, DAY = 24 * HOUR;
+const BUILD_VERSION = 1;
 const USER_AGENT = 'valorant-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'spoilerfreecs2/Valorant-spoiler-free') + ')';
 
 /* ---------- small helpers ---------- */
@@ -91,35 +90,19 @@ function datesText(a, b) {
 }
 const shortDate = iso => iso ? new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }) : '';
 
-/* ---------- Liquipedia ---------- */
-let lastLp = 0;
-async function lp(params) {
-  const wait = lastLp + LP_DELAY - Date.now();
+/* ---------- vlr.gg ---------- */
+let lastVlr = 0;
+async function politeFetch(url) {
+  const wait = lastVlr + VLR_DELAY - Date.now();
   if (wait > 0) await sleep(wait);
-  lastLp = Date.now();
-  const url = new URL(LP_API);
-  for (const [k, v] of Object.entries({ format: 'json', formatversion: '2', ...params })) url.searchParams.set(k, v);
-  const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT, 'Accept-Encoding': 'gzip' } });
-  if (!r.ok) throw new Error('Liquipedia request failed: HTTP ' + r.status);
-  const body = await r.json();
-  if (body.error) throw new Error('Liquipedia: ' + (body.error.info || body.error.code));
-  return body;
+  lastVlr = Date.now();
+  return fetch(url, { headers: { 'User-Agent': USER_AGENT, 'Accept-Encoding': 'gzip' } });
 }
-// Latest revision ids for up to 50 titles at a time. Missing pages come back as null.
-async function revisions(titles) {
-  const out = {};
-  for (let i = 0; i < titles.length; i += 50) {
-    const res = await lp({ action: 'query', prop: 'revisions', rvprop: 'ids', titles: titles.slice(i, i + 50).join('|') });
-    const norm = new Map(arr(res.query.normalized).map(n => [n.to, n.from]));
-    for (const p of arr(res.query.pages)) out[norm.get(p.title) || p.title] = p.missing ? null : (p.revisions && p.revisions[0].revid) || null;
-  }
-  return out;
-}
-async function pageText(title) {
-  const res = await lp({ action: 'query', prop: 'revisions', rvprop: 'content|ids', rvslots: 'main', titles: title });
-  const p = arr(res.query.pages)[0];
-  if (!p || p.missing || !p.revisions) return null;
-  return { revid: p.revisions[0].revid, text: p.revisions[0].slots.main.content || '' };
+async function vlr(p) {
+  const r = await politeFetch(VLR + p);
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error('vlr.gg request for ' + p + ' failed: HTTP ' + r.status);
+  return r.text();
 }
 
 /* ---------- YouTube ---------- */
@@ -169,28 +152,34 @@ async function updateReviewIssue(problems) {
 
 /* ---------- building one tournament ---------- */
 
-// Turns parsed Liquipedia pages into the site's tournament, matches and map videos.
-function buildTournament(tc, pages, teamOf) {
-  const main = pages[0];
-  const info = main.info;
-  const name = str(tc.name) || info.name || info.displayTitle || tc.page;
-  const id = str(tc.id) || slug(name);
+// Round names that would give a record away ("Round 2 (1-0)", "High (1-0)") lose the record.
+const cleanRound = r => str(r).replace(/\s*\(\d+\s*[-–]\s*\d+\)/g, '').replace(/\s+/g, ' ').trim();
+const teamId = name => 'vlr-' + slug(name);
+const isTbd = name => !name || /^tbd$/i.test(name.trim());
+
+// Turns an event's vlr.gg pages into the site's tournament, matches and map videos.
+function buildTournament(ev, es, state) {
+  const info = es.info || {};
+  const name = str(ev.name) || info.name || ev.path;
+  const id = str(ev.id) || slug(name);
   const sdate = info.sdate || '', edate = info.edate || '';
   const tournament = {
-    id, name, page: tc.page, year: (sdate.match(/^\d{4}/) || [''])[0], sdate, edate,
+    id, name, page: ev.path, year: (sdate.match(/^\d{4}/) || [''])[0], sdate, edate,
     dates: datesText(sdate, edate),
-    location: [info.city, info.country].filter(Boolean).join(', ') || (info.type === 'Online' ? 'Online' : ''),
-    teamsText: info.teamNumber ? info.teamNumber + ' teams' : '',
-    image: info.image || '', imageDark: info.imageDark || ''
+    location: info.location || '',
+    teamsText: '',
+    image: info.logo || '', imageDark: ''
   };
+  const rows = arr(es.matches).map(r => {
+    const pm = (state.matches[r.id] || {}).parsed;
+    return { ...r, pm, date: (pm && pm.date) || (r.day ? r.day + 'T12:00:00Z' : ''), stage: r.stage || (pm && pm.stage) || 'Main Event', round: cleanRound(r.round || (pm && pm.round) || 'Matches') };
+  });
+  tournament.days = [...new Set(rows.map(r => r.day).filter(Boolean))].sort();
+  const known = rows.filter(r => !isTbd(r.a) && !isTbd(r.b) && r.a !== r.b);
+  const teamNames = new Set(known.flatMap(r => [r.a, r.b]));
+  if (teamNames.size) tournament.teamsText = teamNames.size + ' teams';
 
-  const all = [];
-  pages.forEach((pg, pi) => pg.matches.forEach(m => all.push({ ...m, pageIndex: pi, page: pg.title })));
-  const known = all.filter(m => m.a && m.b && m.a !== m.b);
-  // The days with matches, including ones whose teams aren't known yet, for the calendar feeds.
-  tournament.days = [...new Set(all.map(m => Date.parse(m.date)).filter(Boolean).map(t => new Date(t).toISOString().slice(0, 10)))].sort();
-  // Stages and rounds go in the order they were played (earliest match first), so watching
-  // from the top follows the event as it happened.
+  // Stages and rounds go in the order they were played (earliest match first).
   const first = list => list.reduce((min, m) => (m.date && (!min || m.date < min)) ? m.date : min, '');
   const stageNames = [...new Set(known.map(m => m.stage))];
   const stageFirst = Object.fromEntries(stageNames.map(s => [s, first(known.filter(m => m.stage === s))]));
@@ -210,24 +199,21 @@ function buildTournament(tc, pages, teamOf) {
       roundOrder++;
       const list = inStage.filter(m => m.round === round).sort((p, q) => (p.date || '9') < (q.date || '9') ? -1 : (p.date || '9') > (q.date || '9') ? 1 : p.order - q.order);
       for (const m of list) {
-        const mid = 'lp-' + shortHash(tc.page + '|' + m.page + '|' + m.container + '|' + m.key);
-        const a = teamOf(m.a), b = teamOf(m.b);
-        const bo = m.bo || (/grand\s*final/i.test(round) ? 5 : 3);
-        const row = { id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: a.id, b: b.id, bo, date: shortDate(m.date), time: m.date || '' };
-        // A match on a stage subpage keeps that page, so "Show me the result" can open it.
-        if (m.page && m.page !== tc.page) row.page = m.page;
+        const mid = 'vlr-' + m.id;
+        const pm = m.pm;
+        const bo = (pm && pm.bo) || (/grand\s*final/i.test(round) ? 5 : 3);
+        const row = { id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: teamId(m.a), b: teamId(m.b), bo, date: shortDate(m.date), time: (pm && pm.date) || '', page: m.path };
         matches.push(row);
-
-        // Map slots: the video and start time from Liquipedia, and an end time where the next
-        // map in the same video begins. Older pages only link one video for the whole series.
+        // Map slots: the video and start time from vlr.gg, and an end time where the next
+        // map in the same video begins. Maps after the last one played are marked as not played.
         const maps = [];
         for (let i = 0; i < bo; i++) {
-          const mp = m.maps[i] || { name: '', played: null, vod: null };
-          maps.push({ video: mp.vod ? 'https://youtu.be/' + mp.vod.id : '', start: mp.vod && mp.vod.start ? String(mp.vod.start) : '', end: '', name: mp.name || '', notPlayed: mp.played === false });
+          const mp = (pm && pm.maps[i]) || null;
+          maps.push({ video: mp && mp.vod ? 'https://youtu.be/' + mp.vod.id : '', start: mp && mp.vod && mp.vod.start ? String(mp.vod.start) : '', end: '', name: (mp && mp.name) || '', notPlayed: !!(m.completed && pm && pm.maps.length && !mp) });
         }
-        if (!maps.some(x => x.video) && m.seriesVod && maps.length) {
-          maps[0].video = 'https://youtu.be/' + m.seriesVod.id;
-          maps[0].start = m.seriesVod.start ? String(m.seriesVod.start) : '';
+        if (!maps.some(x => x.video) && pm && pm.seriesVod && maps.length) {
+          maps[0].video = 'https://youtu.be/' + pm.seriesVod.id;
+          maps[0].start = pm.seriesVod.start ? String(pm.seriesVod.start) : '';
           maps[0].series = true;
         }
         const byVideo = {};
@@ -243,15 +229,17 @@ function buildTournament(tc, pages, teamOf) {
       }
     }
   });
+  // Team names and logos, by the site's team id.
+  for (const m of known) {
+    for (const [nm, i] of [[m.a, 0], [m.b, 1]]) {
+      const tid = teamId(nm);
+      const t = state.teams[tid] || (state.teams[tid] = { id: tid, name: nm });
+      t.name = nm;
+      const pt = m.pm && m.pm.teams[i];
+      if (pt && pt.logo && !/\/img\/vlr\/tmp\//.test(pt.logo)) t.logoUrl = pt.logo;
+    }
+  }
   return { tournament, matches, videos };
-}
-
-// Liquipedia's short names are sometimes initials ("GL", "PV"). Those get the fuller name
-// ("GamerLegion", "PARIVISION"), without a trailing "Esports" or "Gaming".
-function displayName({ name, page }) {
-  if (name.length > 3 || !page || page === name) return name;
-  const full = page.replace(/\s+(esports|e-sports|gaming|team|club|gg)$/i, '').trim();
-  return full.length > 3 ? full : name;
 }
 
 /* ---------- main ---------- */
@@ -260,189 +248,158 @@ async function main() {
   if (!config) throw new Error('watcher/config.json is missing.');
   const auto = await readJson(FILES.auto, {});
   const state = await readJson(FILES.state, {});
-  if (state.version !== 2) { for (const k of Object.keys(state)) delete state[k]; state.version = 2; }
-  for (const k of ['pages', 'resolved', 'teams', 'videos']) if (!state[k] || typeof state[k] !== 'object') state[k] = {};
-  // A newer page reader: read every page again.
-  if (state.parserVersion !== PARSER_VERSION) { state.pages = {}; state.teams = {}; state.parserVersion = PARSER_VERSION; }
-  // A change in what's built from the pages (not in how they're read): read every page again, keeping team names.
-  if (state.buildVersion !== BUILD_VERSION) { state.pages = {}; state.buildVersion = BUILD_VERSION; }
+  if (state.source !== 'vlr') { for (const k of Object.keys(state)) delete state[k]; state.source = 'vlr'; }
+  for (const k of ['events', 'matches', 'teams', 'videos', 'resolved']) if (!state[k] || typeof state[k] !== 'object') state[k] = {};
+  // A newer page reader, or a change in what's built: read every page again.
+  if (state.parserVersion !== PARSER_VERSION || state.buildVersion !== BUILD_VERSION) {
+    state.events = {}; state.matches = {}; state.parserVersion = PARSER_VERSION; state.buildVersion = BUILD_VERSION;
+  }
   if (auto.version !== 2) { for (const k of Object.keys(auto)) delete auto[k]; }
   auto.version = 2;
-  auto.source = 'Liquipedia (CC BY-SA 3.0), https://liquipedia.net/valorant/';
+  auto.source = 'vlr.gg, https://www.vlr.gg/';
   for (const k of ['tournaments', 'teams', 'matches']) auto[k] = arr(auto[k]);
   auto.videos = (auto.videos && typeof auto.videos === 'object') ? auto.videos : {};
 
   const problems = [];
   const summary = { checked: 0, fetched: 0, tournaments: [] };
-  const maxPages = +config.maxPagesPerRun || 30;
+  const maxPages = +config.maxPagesPerRun || 60;
+  const budget = () => summary.fetched < maxPages;
 
-  /* 1. which Liquipedia page is each tournament? */
+  /* 1. which events? Listed ones ("vlr": "/event/2766/valorant-champions-2026") and discovered ones. */
   const wanted = [];
-  for (const tc of arr(config.tournaments)) {
-    if (tc.liquipedia) { wanted.push({ ...tc, page: str(tc.liquipedia).trim() }); continue; }
-    if (!tc.search) continue;
-    let page = state.resolved[tc.search];
-    if (!page) {
-      try {
-        const res = await lp({ action: 'query', list: 'search', srsearch: tc.search, srlimit: '10', srnamespace: '0' });
-        const hit = arr(res.query.search).map(x => x.title).find(t => t.includes('/') && !/\/(Qualifier|Qualifiers|Statistics|Results|Media|Broadcast)/i.test(t));
-        if (hit) { page = state.resolved[tc.search] = hit; log('Liquipedia search "' + tc.search + '" found the page ' + hit + '.'); }
-      } catch (e) { warn(e.message); }
-    }
-    if (page) wanted.push({ ...tc, page });
-    else problems.push('Couldn’t find a Liquipedia page for the search "' + tc.search + '". Add `"liquipedia": "<page name>"` instead.');
+  const eventPath = p => (str(p).match(/\/event\/\d+\/[a-z0-9-]+/) || [''])[0];
+  for (const ec of arr(config.events)) {
+    const p = eventPath(ec.vlr);
+    if (p) wanted.push({ ...ec, path: p });
+    else problems.push('The event "' + str(ec.vlr || ec.name) + '" in config.json needs its vlr.gg address, like "/event/2766/valorant-champions-2026".');
   }
-
-  /* 1b. tournaments found automatically: the pages in Liquipedia's tier categories
-        (such as "Category:S-Tier Tournaments") that start within the configured dates */
   const disc = config.discover;
-  if (disc && arr(disc.categories).length) {
+  if (disc && arr(disc.lists).length) {
     const ds = state.discover = (state.discover && typeof state.discover === 'object') ? state.discover : {};
     ds.info = (ds.info && typeof ds.info === 'object') ? ds.info : {};
     const from = str(disc.from), to = str(disc.to) || '9999';
     const key = JSON.stringify(disc);
+    const include = arr(disc.include).map(x => new RegExp(x, 'i'));
+    const exclude = arr(disc.exclude).map(x => new RegExp(x, 'i'));
     const due = !ds.checkedAt || ds.key !== key || NOW.getTime() - Date.parse(ds.checkedAt) > (+disc.everyHours || 12) * HOUR;
     if (due) {
       try {
-        const titles = new Set();
-        for (const cat of arr(disc.categories)) {
-          let cont = '';
-          for (let i = 0; i < 10; i++) {
-            const q = { action: 'query', list: 'categorymembers', cmtitle: cat, cmnamespace: '0', cmlimit: '500', cmprop: 'title' };
-            if (cont) q.cmcontinue = cont;
-            const res = await lp(q);
-            arr(res.query.categorymembers).forEach(m => titles.add(m.title));
-            cont = res.continue && res.continue.cmcontinue;
-            if (!cont) break;
-          }
-          if (![...titles].length) problems.push('The Liquipedia category "' + cat + '" in config.json has no tournaments. Check its name.');
+        const found = new Set();
+        for (const list of arr(disc.lists)) {
+          const html = await vlr(list);
+          summary.fetched++;
+          if (html) parseEventList(html).forEach(p => found.add(p));
         }
-        // Read the infobox of pages not seen before, skipping titles that name a year outside the range.
         const fy = +from.slice(0, 4) || 0, ty = +to.slice(0, 4) || 9999;
-        const unknown = [...titles].filter(t => !(ds.info[t] && ds.info[t].sdate) && !/qualifier/i.test(t))
-          .filter(t => { const ys = (t.match(/\b(?:19|20)\d\d\b/g) || []).map(Number); return !ys.length || ys.some(y => y >= fy && y <= ty); });
-        for (let i = 0; i < unknown.length && i < 400; i += 20) {
-          const res = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: unknown.slice(i, i + 20).join('|') });
-          for (const p of arr(res.query.pages)) {
-            const ib = parseInfobox(p.revisions ? p.revisions[0].slots.main.content || '' : '');
-            ds.info[p.title] = { name: ib.name || '', sdate: ib.sdate || '', edate: ib.edate || '' };
-          }
+        const candidates = [...found].filter(p => {
+          const s = p.split('/')[3] || '';
+          if (!include.some(r => r.test(s)) || exclude.some(r => r.test(s))) return false;
+          const ys = (s.match(/\b(?:19|20)\d\d\b/g) || []).map(Number);
+          return !ys.length || ys.some(y => y >= fy && y <= ty);
+        });
+        for (const p of candidates) {
+          if (ds.info[p] && ds.info[p].sdate) continue;
+          if (!budget()) break;
+          const html = await vlr(p);
+          summary.fetched++;
+          if (html) { const e = parseEvent(html); ds.info[p] = { name: e.name, sdate: e.sdate, edate: e.edate }; }
         }
-        ds.titles = [...titles].sort();
+        ds.found = candidates.sort();
         ds.checkedAt = NOW.toISOString();
         ds.key = key;
-      } catch (e) { warn('Couldn’t look for new tournaments on Liquipedia: ' + e.message); }
+      } catch (e) { warn('Couldn’t look for new events on vlr.gg: ' + e.message); }
     }
-    // an entry ending in "/" leaves out every page under it, e.g. "FISSURE/"
-    const skip = arr(disc.exclude).map(str).filter(Boolean);
-    const skipped = t => skip.some(x => x.endsWith('/') ? t.startsWith(x) : t === x);
-    const picked = arr(ds.titles).filter(t => !skipped(t) && ds.info[t] && ds.info[t].sdate && ds.info[t].sdate >= from && ds.info[t].sdate <= to);
-    for (const t of picked) if (!wanted.some(w => w.page === t)) wanted.push({ page: t, discovered: true });
-    if (due) log('Found ' + picked.length + ' tournaments in ' + arr(disc.categories).join(', ') + ' between ' + (from || 'the start') + ' and ' + to + '.');
+    const picked = arr(ds.found).filter(p => ds.info[p] && ds.info[p].sdate && ds.info[p].sdate >= from && ds.info[p].sdate <= to);
+    for (const p of picked) if (!wanted.some(w => w.path === p)) wanted.push({ path: p, discovered: true });
+    if (due) log('Found ' + picked.length + ' events on vlr.gg between ' + (from || 'the start') + ' and ' + to + '.');
   }
 
-  /* 2. which pages changed? (the main page and any stage subpages) */
-  const titles = [];
-  for (const tc of wanted) titles.push(tc.page, ...arr((state.pages[tc.page] || {}).subpages));
-  let revs = {};
-  try { revs = await revisions([...new Set(titles)]); } catch (e) { warn(e.message); }
-
-  const teamKeys = new Set();
+  /* 2. read what can still change: each event's page and match list while it's on or recent,
+        and the page of each finished match until its map videos are linked */
   const built = [];
-  for (const tc of wanted) {
-    const ps = state.pages[tc.page] || (state.pages[tc.page] = {});
-    if (revs[tc.page] === null) { problems.push('The Liquipedia page "' + tc.page + '" doesn’t exist. Check the name in config.json.'); continue; }
-    const subs = arr(ps.subpages);
-    const changed = !ps.revid || revs[tc.page] !== ps.revid || subs.some(s => revs[s] !== (ps.subRevids || {})[s]);
+  for (const ev of wanted) {
+    const es = state.events[ev.path] || (state.events[ev.path] = {});
     summary.checked++;
-    if (!changed) continue;
-    if (summary.fetched >= maxPages) { log('Page limit reached for this run; ' + tc.page + ' waits for the next one.'); continue; }
     try {
-      const mainPage = await pageText(tc.page);
-      summary.fetched++;
-      if (!mainPage) { problems.push('The Liquipedia page "' + tc.page + '" doesn’t exist.'); continue; }
-      const pages = [{ title: tc.page, ...parsePage(mainPage.text, tc.page) }];
-      // Majors and other big events keep their matches on stage subpages ("…/Legends Stage").
-      let subpages = arr(tc.subpages);
-      if (!subpages.length && pages[0].matches.length < 2) {
-        const res = await lp({ action: 'query', list: 'prefixsearch', pssearch: tc.page + '/', pslimit: '30' });
-        subpages = arr(res.query.prefixsearch).map(x => x.title)
-          .filter(t => t.split('/').length === tc.page.split('/').length + 1 && !/\/(Qualifier|Qualifiers|Statistics|Results|Media|Broadcast|Showmatch|Open Qualifier|Closed Qualifier|Minor|Minor Qualifier|Regional|Ranking|Talent)/i.test(t) && !/Qualifier/i.test(t));
-      }
-      const subRevids = {};
-      for (const sp of subpages) {
-        const t = await pageText(sp);
+      const info = es.info || {};
+      const start = Date.parse(info.sdate || ''), end = Date.parse((info.edate || '') + 'T23:59:59Z');
+      const live = !es.info || !start || (NOW.getTime() > start - 3 * DAY && NOW.getTime() < end + 21 * DAY);
+      const stale = since => !since || NOW.getTime() - Date.parse(since) > (live ? 25 * 60 * 1000 : (start > NOW.getTime() ? 12 * HOUR : 7 * DAY));
+      if (stale(es.infoAt) && budget()) {
+        const html = await vlr(ev.path);
         summary.fetched++;
-        if (!t) continue;
-        const parsed = parsePage(t.text, sp);
-        if (!parsed.matches.length) continue;
-        subRevids[sp] = t.revid;
-        pages.push({ title: sp, ...parsed });
+        if (html === null) { problems.push('The vlr.gg event ' + ev.path + ' doesn’t exist any more.'); continue; }
+        es.info = parseEvent(html); es.infoAt = NOW.toISOString();
       }
-      ps.revid = mainPage.revid;
-      ps.subpages = Object.keys(subRevids);
-      ps.subRevids = subRevids;
-      ps.fetchedAt = NOW.toISOString();
-      for (const pg of pages) for (const m of pg.matches) { if (m.a) teamKeys.add(m.a); if (m.b) teamKeys.add(m.b); }
-      built.push({ tc, pages });
-    } catch (e) { warn('Couldn’t read ' + tc.page + ': ' + e.message); }
+      if (stale(es.matchesAt) && budget()) {
+        const id = ev.path.split('/')[2];
+        const html = await vlr('/event/matches/' + id + '/?series_id=all');
+        summary.fetched++;
+        if (html) { es.matches = parseEventMatches(html); es.matchesAt = NOW.toISOString(); }
+      }
+      // Match pages: finished matches whose videos aren't all linked yet, newest first,
+      // checked again every few hours for two weeks after the match.
+      const todo = arr(es.matches).filter(r => r.completed && !isTbd(r.a) && !isTbd(r.b)).filter(r => {
+        const ms = state.matches[r.id];
+        if (!ms) return true;
+        if (ms.done) return false;
+        const age = NOW.getTime() - Date.parse(r.day || ms.checkedAt);
+        if (age > 14 * DAY) { ms.done = true; return false; }
+        return NOW.getTime() - Date.parse(ms.checkedAt) > (r.youtube ? 30 * 60 * 1000 : 4 * HOUR);
+      }).sort((p, q) => (q.day || '').localeCompare(p.day || ''));
+      for (const r of todo) {
+        if (!budget()) break;
+        const html = await vlr(r.path);
+        summary.fetched++;
+        if (!html) { state.matches[r.id] = { parsed: null, checkedAt: NOW.toISOString(), done: false }; continue; }
+        const pm = parseMatch(html);
+        const linked = pm.maps.length > 0 && pm.maps.every(x => x.vod);
+        state.matches[r.id] = { parsed: pm, checkedAt: NOW.toISOString(), done: linked };
+      }
+      built.push({ ev, es });
+    } catch (e) { warn('Couldn’t read ' + ev.path + ': ' + e.message); if (es.info) built.push({ ev, es }); }
   }
+  const remaining = wanted.reduce((n, ev) => n + arr((state.events[ev.path] || {}).matches).filter(r => r.completed && !state.matches[r.id]).length, 0);
+  if (remaining) log(remaining + ' finished matches are still to be read; later runs pick them up.');
 
-  /* 3. team names, from Liquipedia's team templates (one request for all new teams) */
-  const unknown = [...teamKeys].filter(k => !state.teams[k]);
-  for (let i = 0; i < unknown.length; i += 50) {
-    const batch = unknown.slice(i, i + 50);
-    try {
-      const res = await lp({ action: 'expandtemplates', prop: 'wikitext', text: batch.map(k => '{{TeamShort|' + k + '}}').join('\n') });
-      const names = teamNamesFromExpansion(res.expandtemplates.wikitext);
-      batch.forEach((k, j) => {
-        const n = names[j];
-        state.teams[k] = n && n.name ? { id: 'lp-' + slug(n.page || n.name), name: displayName(n) } : { id: 'lp-' + slug(k), name: k.replace(/\b\w/g, c => c.toUpperCase()) };
-      });
-    } catch (e) { warn('Couldn’t look up team names: ' + e.message); }
-  }
-  const teamOf = k => state.teams[k] || { id: 'lp-' + slug(k), name: k };
-
-  /* 4. replace the changed tournaments in auto.json */
-  for (const { tc, pages } of built) {
-    const { tournament, matches, videos } = buildTournament(tc, pages, teamOf);
-    const old = auto.tournaments.find(t => t.page === tc.page);
+  /* 3. replace the events in auto.json */
+  for (const { ev, es } of built) {
+    if (!es.info) continue;
+    const { tournament, matches, videos } = buildTournament(ev, es, state);
+    const old = auto.tournaments.find(t => t.page === ev.path);
     if (old) {
       auto.matches.filter(m => m.tournamentId === old.id).forEach(m => { delete auto.videos[m.id]; });
       auto.matches = auto.matches.filter(m => m.tournamentId !== old.id);
       auto.tournaments = auto.tournaments.filter(t => t !== old);
     }
     const linked = Object.values(videos).reduce((n, v) => n + v.maps.filter(x => x.video).length, 0);
-    // Events whose matches aren't drawn yet stay off the site until they are, and so do
-    // finished events that never got any videos (some organisers don't post them).
-    // What happened is noted in state.json too, since the run logs aren't always at hand.
-    const ps = state.pages[tc.page];
-    ps.result = matches.length + ' matches, ' + linked + ' map videos';
-    // Events that haven't started are listed under "Coming up" even before their matches are drawn.
+    es.result = matches.length + ' matches, ' + linked + ' map videos';
     const upcoming = /^\d{4}-\d{2}-\d{2}/.test(tournament.sdate) ? Date.parse(tournament.sdate.slice(0, 10) + 'T00:00:00Z') > NOW.getTime() : false;
-    if (!matches.length && !upcoming) { ps.result = 'no matches, not on the site'; continue; }
-    if (!matches.length) ps.result = 'coming up, no matches drawn yet';
+    if (!matches.length && !upcoming) { es.result = 'no matches, not on the site'; continue; }
+    if (!matches.length) es.result = 'coming up, no matches drawn yet';
     const ended = Date.parse(str(tournament.edate).slice(0, 10) + 'T23:59:59Z');
-    if (!linked && ended && NOW.getTime() - ended > 2 * 24 * HOUR) { ps.result += ', none with videos, so not on the site'; summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
+    if (!linked && ended && NOW.getTime() - ended > 2 * DAY) { es.result += ', none with videos, so not on the site'; summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
     auto.tournaments.push(tournament);
     auto.matches.push(...matches);
     Object.assign(auto.videos, videos);
     summary.tournaments.push(tournament.name + ': ' + matches.length + ' matches, ' + linked + ' map videos');
   }
-  // Tournaments no longer in the config are dropped.
-  const keep = new Set(wanted.map(tc => tc.page));
+  // Events no longer wanted are dropped.
+  const keep = new Set(wanted.map(ev => ev.path));
   for (const t of auto.tournaments.filter(t => !keep.has(t.page))) {
     auto.matches.filter(m => m.tournamentId === t.id).forEach(m => { delete auto.videos[m.id]; });
     auto.matches = auto.matches.filter(m => m.tournamentId !== t.id);
   }
   auto.tournaments = auto.tournaments.filter(t => keep.has(t.page)).sort((a, b) => (b.sdate || '') < (a.sdate || '') ? -1 : (b.sdate || '') > (a.sdate || '') ? 1 : 0);
-  // The home page features the newest tournament that has videos to watch.
+  for (const p of Object.keys(state.events)) if (!keep.has(p)) {
+    for (const r of arr(state.events[p].matches)) delete state.matches[r.id];
+    delete state.events[p];
+  }
   const withVideos = new Set(auto.matches.filter(m => arr((auto.videos[m.id] || {}).maps).some(x => x.video)).map(m => m.tournamentId));
   auto.featured = (auto.tournaments.find(t => withVideos.has(t.id)) || auto.tournaments[0] || {}).id || '';
   const usedTeams = new Set(auto.matches.flatMap(m => [m.a, m.b]));
-  const teamList = new Map();
-  for (const t of Object.values(state.teams)) if (usedTeams.has(t.id)) teamList.set(t.id, { id: t.id, name: t.name });
-  auto.teams = [...teamList.values()].sort((a, b) => a.name.localeCompare(b.name));
+  auto.teams = Object.values(state.teams).filter(t => usedTeams.has(t.id)).map(t => ({ id: t.id, name: t.name })).sort((a, b) => a.name.localeCompare(b.name));
+  for (const id of Object.keys(state.teams)) if (!usedTeams.has(id)) delete state.teams[id];
 
   /* 4b. official highlight videos: the short version of a series */
   if (YT_KEY) {
@@ -489,113 +446,52 @@ async function main() {
     if (hm && (!chk || !chk.ok || chk.seconds < 120)) delete v.highlight;
   }
   for (const id of Object.keys(state.videos)) if (!allIds.has(id)) delete state.videos[id];
-  for (const p of Object.keys(state.pages)) if (!keep.has(p)) delete state.pages[p];
-
-  /* 6. event pictures: your own picture in images/events/<id>.jpg (or .png/.webp) is used as the card picture;
-        otherwise the event's logo is copied from Liquipedia into images/auto/ once */
+  /* 6. pictures: your own picture in images/events/<id>.jpg (or .png/.webp) is used as an event's card picture;
+        otherwise the event's logo, and each team's logo, are copied from vlr.gg once. Logos carry no results. */
   let own = [];
   try { own = await readdir(FILES.ownImages); } catch (e) { /* no folder yet */ }
-  let have = [];
-  try { have = await readdir(FILES.autoImages); } catch (e) { /* no folder yet */ }
   state.images = (state.images && typeof state.images === 'object') ? state.images : {};
-  const wantFiles = [];
+  const want = [];
+  let haveAuto = [], haveTeams = [];
+  try { haveAuto = await readdir(FILES.autoImages); } catch (e) { /* no folder yet */ }
+  try { haveTeams = await readdir(FILES.teamImages); } catch (e) { /* no folder yet */ }
   for (const t of auto.tournaments) {
     const mine = own.find(f => f.replace(/\.(jpe?g|png|webp|avif)$/i, '') === t.id);
     t.art = mine ? 'images/events/' + mine : '';
-    for (const [field, file, suffix] of [['logo', t.image, ''], ['logoDark', t.imageDark, '-dark']]) {
-      t[field] = '';
-      if (!file) continue;
-      const done = state.images[t.id + suffix];
-      if (done && done.file === file && have.includes(done.saved)) t[field] = 'images/auto/' + done.saved;
-      else wantFiles.push({ t, field, file, key: t.id + suffix });
-    }
+    t.logo = ''; t.logoDark = '';
+    const url = t.image;
+    if (!url) continue;
+    const done = state.images[t.id];
+    if (done && done.url === url && haveAuto.includes(done.saved)) t.logo = 'images/auto/' + done.saved;
+    else want.push({ key: t.id, url, dir: FILES.autoImages, rel: 'images/auto/', set: f => { t.logo = f; } });
   }
-  if (wantFiles.length) {
-    await mkdir(FILES.autoImages, { recursive: true });
-    const batch = wantFiles.slice(0, +config.maxImagesPerRun || 20);
+  for (const tm of auto.teams) {
+    const st = state.teams[tm.id] || {};
+    if (!st.logoUrl) continue;
+    const done = state.images['team:' + tm.id];
+    if (done && done.url === st.logoUrl && haveTeams.includes(done.saved)) tm.logo = 'images/teams/' + done.saved;
+    else want.push({ key: 'team:' + tm.id, url: st.logoUrl, dir: FILES.teamImages, rel: 'images/teams/', base: tm.id, set: f => { tm.logo = f; } });
+  }
+  for (const w of want.slice(0, +config.maxImagesPerRun || 40)) {
     try {
-      const res = await lp({ action: 'query', prop: 'imageinfo', iiprop: 'url|mime', iiurlwidth: '640', titles: [...new Set(batch.map(w => 'File:' + w.file))].join('|') });
-      const norm = new Map(arr(res.query.normalized).map(n => [n.to, n.from]));
-      const urls = new Map(arr(res.query.pages).map(p => [norm.get(p.title) || p.title, p.imageinfo && p.imageinfo[0]]));
-      for (const w of batch) {
-        const ii = urls.get('File:' + w.file);
-        if (!ii) continue;
-        const url = ii.thumburl || ii.url;
-        const ext = (/\.(png|jpe?g|webp|gif|svg)(?:$|\?)/i.exec(url) || [, 'png'])[1].toLowerCase();
-        const saved = w.key + '.' + (ext === 'jpeg' ? 'jpg' : ext);
-        const wait = lastLp + LP_DELAY - Date.now();
-        if (wait > 0) await sleep(wait);
-        lastLp = Date.now();
-        const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-        if (!r.ok) { warn('Couldn’t download the picture ' + w.file + ': HTTP ' + r.status); continue; }
-        await writeFile(path.join(FILES.autoImages, saved), Buffer.from(await r.arrayBuffer()));
-        const old = state.images[w.key];
-        if (old && old.saved !== saved) await unlink(path.join(FILES.autoImages, old.saved)).catch(() => {});
-        state.images[w.key] = { file: w.file, saved };
-        w.t[w.field] = 'images/auto/' + saved;
-      }
-    } catch (e) { warn('Couldn’t fetch event pictures: ' + e.message); }
+      const r = await politeFetch(w.url);
+      if (!r.ok) { warn('Couldn’t download the picture ' + w.url + ': HTTP ' + r.status); continue; }
+      const ext = (/\.(png|jpe?g|webp|gif|svg)(?:$|\?)/i.exec(w.url) || [, 'png'])[1].toLowerCase().replace('jpeg', 'jpg');
+      const saved = (w.base || w.key) + '.' + ext;
+      await mkdir(w.dir, { recursive: true });
+      await writeFile(path.join(w.dir, saved), Buffer.from(await r.arrayBuffer()));
+      const old = state.images[w.key];
+      if (old && old.saved !== saved) await unlink(path.join(w.dir, old.saved)).catch(() => {});
+      state.images[w.key] = { url: w.url, saved };
+      w.set(w.rel + saved);
+    } catch (e) { warn('Couldn’t download the picture ' + w.url + ': ' + e.message); }
   }
-  // Pictures of tournaments that are no longer on the site are removed.
-  const ids = new Set(auto.tournaments.flatMap(t => [t.id, t.id + '-dark']));
+  // Pictures of events and teams no longer on the site are removed.
+  const keepImg = new Set([...auto.tournaments.map(t => t.id), ...auto.teams.map(t => 'team:' + t.id)]);
   for (const [key, img] of Object.entries(state.images)) {
-    if (ids.has(key)) continue;
-    await unlink(path.join(FILES.autoImages, img.saved)).catch(() => {});
+    if (keepImg.has(key)) continue;
+    await unlink(path.join(key.startsWith('team:') ? FILES.teamImages : FILES.autoImages, img.saved)).catch(() => {});
     delete state.images[key];
-  }
-
-  /* 6a. team logos: each team's logo (and its version for dark backgrounds, where there is one) is copied from
-         Liquipedia's team template ({{TeamIcon|key}}) into images/teams/<team-id>.png once. Logos carry no results. */
-  state.teamLogos = (state.teamLogos && typeof state.teamLogos === 'object') ? state.teamLogos : {};
-  let haveTeams = [];
-  try { haveTeams = await readdir(FILES.teamImages); } catch (e) { /* no folder yet */ }
-  const keyOf = new Map();
-  for (const [k, t] of Object.entries(state.teams)) if (usedTeams.has(t.id) && !keyOf.has(t.id)) keyOf.set(t.id, k);
-  const unseen = [...keyOf].filter(([id]) => !state.teamLogos[id]);
-  for (let i = 0; i < unseen.length && i < 120; i += 40) {
-    const batch = unseen.slice(i, i + 40);
-    try {
-      const res = await lp({ action: 'expandtemplates', prop: 'wikitext', text: batch.map(([, k]) => '{{TeamIcon|' + k + '}}').join('\n@@@\n') });
-      const parts = res.expandtemplates.wikitext.split('@@@');
-      batch.forEach(([id], j) => { state.teamLogos[id] = { ...teamLogoFiles(parts[j] || ''), saved: {} }; });
-    } catch (e) { warn('Couldn’t look up team logos: ' + e.message); break; }
-  }
-  const wantLogos = [];
-  for (const [id] of keyOf) {
-    const tl = state.teamLogos[id];
-    if (!tl) continue;
-    for (const [field, file, saved] of [['logo', tl.light, id + '.png'], ['logoDark', tl.dark && tl.dark !== tl.light ? tl.dark : '', id + '-dark.png']]) {
-      if (!file) continue;
-      if (haveTeams.includes(saved) && (tl.saved[field] === file || !tl.saved[field])) { tl.saved[field] = file; continue; }
-      wantLogos.push({ id, field, file, saved, tl });
-    }
-  }
-  if (wantLogos.length) {
-    await mkdir(FILES.teamImages, { recursive: true });
-    const batch = wantLogos.slice(0, +config.maxTeamLogosPerRun || 40);
-    try {
-      const res = await lp({ action: 'query', prop: 'imageinfo', iiprop: 'url|mime', iiurlwidth: '256', titles: [...new Set(batch.map(w => 'File:' + w.file))].join('|') });
-      const norm = new Map(arr(res.query.normalized).map(n => [n.to, n.from]));
-      const urls = new Map(arr(res.query.pages).map(p => [norm.get(p.title) || p.title, p.imageinfo && p.imageinfo[0]]));
-      for (const w of batch) {
-        const ii = urls.get('File:' + w.file);
-        if (!ii) continue;
-        const wait = lastLp + LP_DELAY - Date.now();
-        if (wait > 0) await sleep(wait);
-        lastLp = Date.now();
-        const r = await fetch(ii.thumburl || ii.url, { headers: { 'User-Agent': USER_AGENT } });
-        if (!r.ok) { warn('Couldn’t download the logo ' + w.file + ': HTTP ' + r.status); continue; }
-        await writeFile(path.join(FILES.teamImages, w.saved), Buffer.from(await r.arrayBuffer()));
-        w.tl.saved[w.field] = w.file;
-        if (!haveTeams.includes(w.saved)) haveTeams.push(w.saved);
-      }
-    } catch (e) { warn('Couldn’t fetch team logos: ' + e.message); }
-  }
-  for (const t of auto.teams) {
-    const tl = state.teamLogos[t.id];
-    if (!tl) continue;
-    if (tl.saved.logo && haveTeams.includes(t.id + '.png')) t.logo = 'images/teams/' + t.id + '.png';
-    if (tl.saved.logoDark && haveTeams.includes(t.id + '-dark.png')) t.logoDark = 'images/teams/' + t.id + '-dark.png';
   }
 
   /* 6b. calendar feeds, one per event, for the site's "Add to calendar" */
@@ -617,7 +513,7 @@ async function main() {
   await writeJsonIfChanged(FILES.state, state);
   await updateReviewIssue(problems);
 
-  const line = 'Checked ' + summary.checked + ' tournaments on Liquipedia and read ' + summary.fetched + ' changed pages.' + (blocked ? ' Left out ' + blocked + ' map videos that can’t be played here.' : '');
+  const line = 'Checked ' + summary.checked + ' events on vlr.gg and read ' + summary.fetched + ' pages.' + (blocked ? ' Left out ' + blocked + ' map videos that can’t be played here.' : '');
   log(line);
   summary.tournaments.forEach(t => log('- ' + t));
   problems.forEach(p => warn(p));

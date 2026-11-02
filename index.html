@@ -912,12 +912,12 @@ function mergeAuto(d, auto) {
   const hidden = new Set(d.hiddenAuto);
   arr(auto.teams).forEach(t => {
     if (!t || !t.id || hidden.has(str(t.id))) return;
-    // The watcher copies each team's logo from Liquipedia. A logo set in data.json wins.
+    // The watcher copies each team's logo from vlr.gg. A logo set in data.json wins.
     const mine = d.teams.find(x => x.id === str(t.id));
     if (mine) { if (!mine.logo) { mine.logo = str(t.logo); mine.logoDark = str(t.logoDark); } return; }
     d.teams.push({ id: str(t.id), name: str(t.name), logo: str(t.logo), logoDark: str(t.logoDark), aliases: arr(t.aliases).map(str).filter(Boolean) });
   });
-  // Tournaments the watcher built from Liquipedia, newest first, after any you added yourself.
+  // Tournaments the watcher built from vlr.gg, newest first, after any you added yourself.
   arr(auto.tournaments).forEach(at => {
     if (!at || !at.id || hidden.has(str(at.id)) || d.tournaments.some(x => x.id === str(at.id))) return;
     d.tournaments.push({ id: str(at.id), name: str(at.name), page: str(at.page), year: str(at.year), dates: str(at.dates), location: str(at.location),
@@ -1489,7 +1489,7 @@ function monogram(name) {
 }
 /* A colour for a team or event, worked out from its id, so the same one always gets the same colour. */
 function hue(id) { let x = 7; for (const c of str(id)) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x % 360; }
-/* Team logos. The site is dark, so a logo's dark-background version is used where Liquipedia has one.
+/* Team logos. The site is dark, so a logo's dark-background version is used where there is one.
    A logo that's still mostly dark (FURIA's black panther, say) gets a faint light outline. */
 const DARK_LOGO = new Map();
 function looksDark(img) {
@@ -1529,7 +1529,7 @@ function artView(t, cls) {
   box.append(logo ? h('img', { class: 'art-logo', src: logo, alt: '', loading: 'lazy' }) : h('span', { class: 'art-name', 'aria-hidden': 'true' }, t.name || ''));
   return box;
 }
-/* Map pictures (in-game views from Liquipedia), shown only for the map being watched, like its name. */
+/* Map pictures, shown only for the map being watched, like its name. */
 const MAP_PICS = {}; // Valorant map pictures go in images/maps/<map>.jpg, listed here as { ascent: 'jpg', ... }
 function mapBadge(name) {
   const k = str(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').replace(/^dust-2$/, 'dust-ii');
@@ -1962,9 +1962,8 @@ function renderFooter() {
     ed('span', 'footer-brand', data.site.name, v => { data.site.name = v; renderHeader(); }, { label: 'Site name', placeholder: 'Site name' }),
     ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
     !editing() ? h('button', { type: 'button', class: 'text-btn', 'aria-keyshortcuts': 'Shift+?', onClick: openKeys }, 'Keyboard shortcuts (?)') : null,
-    // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
-    AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/valorant/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
-      ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
+    // The match list and video links come from vlr.gg, so it's credited whenever the watcher's data is on the page.
+    AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data and video links from ', h('a', { href: 'https://www.vlr.gg/', target: '_blank', rel: 'noopener' }, 'vlr.gg'), '.') : null,
     syncReady() ? h('button', { type: 'button', class: 'text-btn', onClick: () => openSyncDialog() }, syncCode() ? 'Synced devices' : 'Sync my devices') : null,
     ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null));
 }
@@ -2395,7 +2394,7 @@ function matchCard(m, rd) {
   return w;
 }
 /* ---------- collections: hand-picked series and events (collections.json) ----------
-   An item names an event (its Liquipedia page, site id or name) and optionally a stage, a round or a match id.
+   An item names an event (its vlr.gg address, site id or name) and optionally a stage, a round or a match id.
    Items whose event isn't on the site yet stay hidden, so archive picks can be listed before the archive has them.
    A match in a hidden round is shown without its teams, because who made it there is a result. */
 function findEvent(key) {
@@ -2568,11 +2567,11 @@ function renderPlayer(app, r) {
     paintRatings();
   });
   // The result is only ever one deliberate step away: offered once the match is marked as watched,
-  // and opened on Liquipedia (never on this site) after a warning.
+  // and opened on vlr.gg (never on this site) after a warning.
   const lpPage = m.page || t.page;
   const rev = lpPage && !editing() ? h('div', { class: 'reveal-row' },
     h('button', { type: 'button', class: 'pin-btn', onClick: () => openReveal(t, m, lpPage) }, icon('eyeoff', 16), 'Show me the result'),
-    h('span', { class: 'hint' }, 'Opens Liquipedia, after a warning.')) : null;
+    h('span', { class: 'hint' }, 'Opens vlr.gg, after a warning.')) : null;
   if (rev) rev.hidden = !watched;
   // Rating is offered once the match is marked as watched, so votes come from people who saw it.
   const rbox = ratingsReady() && !editing() ? rateBox(m) : null;
@@ -3529,17 +3528,17 @@ function askConfirm(msg, okLabel) {
     cancel.focus();
   });
 }
-// Liquipedia's page for the event (or the stage subpage the match is on). It lists every result
-// there, so the warning says so before anything opens.
+// The match's page on vlr.gg (or the event's, for a match added by hand). It shows other results
+// from the event too, so the warning says so before anything opens.
 function openReveal(t, m, page) {
   const dlg = $('#dlg-confirm');
   dlg.onclose = null;
-  const url = 'https://liquipedia.net/valorant/' + encodeURI(page.replace(/ /g, '_'));
+  const url = /^https?:/.test(page) ? page : 'https://www.vlr.gg' + (page.startsWith('/') ? '' : '/') + page;
   const cancel = h('button', { type: 'button', class: 'btn btn-outline', onClick: () => dlg.close() }, 'Cancel');
-  const go = h('a', { class: 'btn btn-accent', href: url, target: '_blank', rel: 'noopener noreferrer', onClick: () => dlg.close() }, 'Open Liquipedia');
+  const go = h('a', { class: 'btn btn-accent', href: url, target: '_blank', rel: 'noopener noreferrer', onClick: () => dlg.close() }, 'Open vlr.gg');
   showDialog(dlg, 'Show the result?', h('div', { class: 'dlg-body' },
-    h('p', {}, 'This opens Liquipedia in a new tab, where you can find the score of ' + teamName(m.a) + ' vs ' + teamName(m.b) + '.'),
-    h('p', {}, 'That page shows the other results of ' + (t.name || 'this event') + ' too, including matches you haven’t watched and who went through.')),
+    h('p', {}, 'This opens vlr.gg in a new tab, where you can find the score of ' + teamName(m.a) + ' vs ' + teamName(m.b) + '.'),
+    h('p', {}, 'That page can show other results from ' + (t.name || 'this event') + ' too, including matches you haven’t watched.')),
     [h('span'), h('div', { class: 'row' }, cancel, go)]);
   cancel.focus();
 }

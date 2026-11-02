@@ -8,13 +8,13 @@ Live at **https://spoilerfreecs2.github.io/Valorant-spoiler-free/**
 
 Every 30 minutes GitHub runs the **video watcher** (`watcher/watch.mjs`). It:
 
-1. finds the tournaments to show: every page in Liquipedia's S tier category that starts in the configured date range, plus any listed by hand,
-2. reads each tournament's Liquipedia page: stages, rounds, matches, teams, and the video link and start time of every map,
+1. finds the events to show: every VCT league stage, Masters and Champions on vlr.gg's VCT list that starts in the configured date range, plus any listed by hand,
+2. reads each event's page and match list on vlr.gg, and each finished match's page: teams, stage, round, and the YouTube link and start time of every map,
 3. every few hours, looks for the organisers' official highlight videos of recent matches (see **Short versions** below),
 4. checks with YouTube that each video can be played on other sites,
 5. saves it all to `auto.json`, writes a calendar feed per event into `calendar/`, and republishes the site if anything changed.
 
-The videos are the organisers' own uploads, mostly from Riot's VCT channels. Liquipedia's editors add the links, usually within a day of a match. Each map plays from its start to where the next map begins, and skipping can't leave the map.
+The videos are the organisers' own uploads, mostly from Riot's VCT channels. vlr.gg adds the links to each match page, usually within a day of a match. Each map plays from its start to where the next map begins, and skipping can't leave the map.
 
 The watcher never saves scores, winners, placements or video titles. The only result-like fact it keeps is which maps of a series weren't played, and the site only reveals that when someone opens that map.
 
@@ -24,10 +24,10 @@ The watcher never saves scores, winners, placements or video titles. The only re
 |---|---|---|
 | `index.html` | The website | Nobody, unless you want to change the design |
 | `data.json` | The site's own text (name, intro, footer) | You, through edit mode (`?edit` at the end of the address) |
-| `auto.json` | Tournaments, teams, matches and videos from Liquipedia | The watcher |
+| `auto.json` | Tournaments, teams, matches and videos from vlr.gg | The watcher |
 | `collections.json` | Hand-picked collections (see below) | You |
 | `watcher/config.json` | Which tournaments to show | You |
-| `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
+| `watcher/watch.mjs`, `watcher/vlr.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
 | `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
 | `ratings/database.rules.json` | Who can read and write ratings and synced devices in Firebase | Nobody, paste it into Firebase once |
@@ -37,10 +37,10 @@ The watcher never saves scores, winners, placements or video titles. The only re
 
 ## Choosing tournaments (`watcher/config.json`)
 
-- **`discover`** adds every tournament in the listed Liquipedia categories that starts between `from` and `to`. It's set to `Category:S-Tier Tournaments` from June 2026 to the end of 2027, so new events show up by themselves once Liquipedia has their page.
-  - To add A tier events, add `"Category:A-Tier Tournaments"` to `categories`.
-  - To leave an event out, put its Liquipedia page name in `exclude`, for example `"VCT/2027/Kickoff/China"`. A name ending in `/` leaves out a whole series.
-- **`tournaments`** lists events by hand. Use `"liquipedia"` with the page name from its address (https://liquipedia.net/valorant/VCT/2026/Champions is `"VCT/2026/Champions"`), or `"search"` with the event's name. Add `"name"` to show a different name on the site.
+- **`discover`** reads vlr.gg's VCT event list (`/events/?tier=60`) every 12 hours and adds every event whose address matches a pattern in `include` and starts between `from` and `to`. The patterns pick the four international leagues (Kickoff and Stages), Masters and Champions, from June 2026 to the end of 2027, so new events show up by themselves once vlr.gg lists them.
+  - To leave events out, add a pattern to `exclude`, for example `"china"`. Qualifiers are already left out.
+- **`events`** lists events by hand: `{ "vlr": "/event/2766/valorant-champions-2026" }`, the end of the event's vlr.gg address. Add `"name"` to show a different name on the site.
+- **`maxPagesPerRun`** caps how many vlr.gg pages one run reads (one every 3 seconds). A new event's matches fill in over a few runs.
 
 The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden two days after it ends.
 
@@ -66,7 +66,7 @@ Hand-picked groups of series and events, shown on the home page under **Collecti
 - a round: `{ "event": "...", "round": "Grand Final" }` (shows the match if the round has one, or the stage if it has several)
 - a match: `{ "match": "lp-7efaffa731" }` (the id from the match's address, `#/match/<id>/0`)
 
-`event` can be the Liquipedia page name, the site's event id, or the event's name. Any item can have a `note`. Items whose event isn't on the site yet are left out, so archive picks can be listed now and appear when the archive adds their event. A collection with nothing to show is hidden.
+`event` can be the event's vlr.gg address, the site's event id, or the event's name. Any item can have a `note`. Items whose event isn't on the site yet are left out, so archive picks can be listed now and appear when the archive adds their event. A collection with nothing to show is hidden.
 
 Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it went. Avoid words like "comeback", "upset", "overtime thriller" or "five maps", since each gives a result away. A match in a hidden round (anything after an event's first round) is shown without its teams until the visitor opens it.
 
@@ -74,7 +74,7 @@ Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it w
 
 Visitors mark matches as watched themselves. The site never does it for them, because flipping it when a map ends would give away how long the series went. Besides the button on the match page, every match in an event's round list has a **Mark watched** toggle, and **Mark round as watched** marks a whole round at once (after a confirmation), for matches seen somewhere else. Both can be undone.
 
-Once a match is marked as watched, its page offers **Show me the result**. Nothing is revealed on the site itself: it opens a warning that Liquipedia's page also lists the event's other results, and only **Open Liquipedia** there opens it in a new tab. Cancel has the focus, so pressing Enter or a stray key can't open it. Matches on a stage subpage (the bigger international events) link to that subpage once the watcher has re-read it; until then they link to the event's main page.
+Once a match is marked as watched, its page offers **Show me the result**. Nothing is revealed on the site itself: it opens a warning that the match's vlr.gg page can show other results from the event too, and only **Open vlr.gg** there opens it in a new tab. Cancel has the focus, so pressing Enter or a stray key can't open it.
 
 ## Star ratings
 
@@ -122,11 +122,11 @@ To keep this spoiler-free:
 - It plays like any map: length hidden, and the cover hides YouTube's end screens and suggestions.
 - It covers the whole series, so you learn how many maps were played as you watch it, the same as live.
 
-Liquipedia doesn't record when each round starts in a video, so a "key rounds only" cut of the full match isn't possible from the data we have.
+vlr.gg doesn't record when each round starts in a video, so a "key rounds only" cut of the full match isn't possible from the data we have.
 
 ## Calendar reminders
 
-Events that are on now or coming up have an **Add to calendar** button (and pinned events a **Calendar reminders** button on the home page). It offers the event's calendar feed, `calendar/<event-id>.ics`, as a subscription (Apple Calendar, Outlook), in Google Calendar, or as a download. Each match day gets an all-day entry on the following day, "Saturday's matches ready to watch", with a 9am alert where the calendar app supports it. Entries never name teams. The days come from Liquipedia's schedule, and subscribed calendars pick up changes within about a day. `calendar/all.ics` holds every event on now or coming up.
+Events that are on now or coming up have an **Add to calendar** button (and pinned events a **Calendar reminders** button on the home page). It offers the event's calendar feed, `calendar/<event-id>.ics`, as a subscription (Apple Calendar, Outlook), in Google Calendar, or as a download. Each match day gets an all-day entry on the following day, "Saturday's matches ready to watch", with a 9am alert where the calendar app supports it. Entries never name teams. The days come from vlr.gg's schedule, and subscribed calendars pick up changes within about a day. `calendar/all.ics` holds every event on now or coming up.
 
 Pinned teams don't get calendar entries, because the date of a team's next match would show whether they went through.
 
@@ -164,7 +164,7 @@ A `robots.txt` isn't needed. Crawlers only read it at the top of the domain, so 
 
 ## Event pictures
 
-Each event's logo is copied from Liquipedia into `images/auto/` automatically, with a separate version for dark mode if Liquipedia has one.
+Each event's logo is copied from vlr.gg into `images/auto/` automatically, and each team's logo into `images/teams/`.
 
 To use your own picture instead, upload it to the `images/events/` folder, named after the event's id, for example `images/events/vct-2026-champions.jpg` (JPG, PNG or WebP, ideally 1600×900). The id is the last part of the event's address on the site (`#/t/vct-2026-champions`). On GitHub, open the repository, click **Add file → Upload files**, drag the picture in, and type `images/events/` before its name. The next watcher run (within 30 minutes) puts it on the site.
 
@@ -172,7 +172,7 @@ To use your own picture instead, upload it to the `images/events/` folder, named
 
 - **The Actions tab** shows each run. A red cross means a run failed. Click it to see which step.
 - **The Issues tab** gets an issue labelled `needs-review` when the watcher can't find a page or category. It closes itself once the problem is fixed.
-- **A map says "Video coming soon"** when Liquipedia doesn't have its video link yet. It usually fills in within a day.
+- **A map says "Video coming soon"** when vlr.gg doesn't have its video link yet. It usually fills in within a day.
 - **Video quality**: YouTube picks the quality from the player's size, and sites can't set it directly. So the player's quality button (1080p by default, 720p on phones) draws the video at that size and scales it down to fit. YouTube can still drop lower on a slow connection. The button's menu shows the quality playing right now. If it's stuck at 360p while YouTube offers more, a browser's ad or tracker blocker is the usual cause (Opera's built-in one does this, even with YouTube's normal player). The test page at `tools/quality-test.html` compares the player with YouTube's own and shows where the quality is lost.
 
 ## Credits
@@ -181,4 +181,4 @@ This site started as a copy of [Spoiler-free CS2](https://github.com/spoilerfree
 
 Spoiler-Free Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 
-Match data comes from [Liquipedia](https://liquipedia.net/valorant/), under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), and the site credits it in the footer. The watcher follows Liquipedia's API rules: it identifies itself and sends at most one request every two seconds. Videos are played from YouTube.
+Match data and video links come from [vlr.gg](https://www.vlr.gg/), credited in the site's footer. vlr.gg has no API, so the watcher reads its public pages politely: it identifies itself, waits 3 seconds between requests, stays within its robots.txt, and only re-reads pages that can still change (a finished match's page stops being read once its videos are linked). Videos are played from YouTube.
