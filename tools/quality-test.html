@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Video quality test</title>
+<style>
+:root{--paper:#F2EFE8;--ink:#15171A;--muted:#4A4D52;--rule:#CFC9BC;--accent:#C8372D}
+@media (prefers-color-scheme: dark){:root{--paper:#17181B;--ink:#F2EFE8;--muted:#B4B0A7;--rule:#34373C;--accent:#E0574C}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:992px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:28px;line-height:1.1;margin:0 0 8px}
+p{margin:0 0 12px;color:var(--muted)}
+button{font:inherit;font-weight:700;padding:12px 20px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+#frame{position:relative;width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;margin:16px 0}
+#frame iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+#frame iframe.scaled{transform-origin:0 0}
+#over{position:absolute;inset:0;z-index:2}
+#over.solid{background:#0B0C0E}
+#now{font-weight:700;color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule)}
+th{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.small{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+@media (max-width:640px){th,td{padding:6px 4px;font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Video quality test</h1>
+<p>This plays a video five different ways for about 35 seconds each and notes the quality YouTube sends. It takes about 3 minutes. Keep this tab in front while it runs, then send a screenshot of the table.</p>
+<p>Test 1 shows YouTube's normal controls on an animated film, so no match is spoiled.</p>
+<button id="go" type="button">Start test</button>
+<div id="frame"><div id="host"></div></div>
+<p id="now">Not started.</p>
+<table>
+<thead><tr><th>Test</th><th>After 10s</th><th>After 20s</th><th>After 35s</th><th>Best offered</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<p class="small" id="env"></p>
+</main>
+<script>
+const NEUTRAL = ['aqz-KE-bpKQ', 30];      // Big Buck Bunny (Blender Foundation), offered in up to 4K
+const MATCH = ['PBsT2Ju9eX4', 106];       // a match video from the site
+const TESTS = [
+  { name: '1. Normal YouTube player', v: NEUTRAL, controls: 1, over: '', scale: false },
+  { name: '2. Controls hidden', v: NEUTRAL, controls: 0, over: '', scale: false },
+  { name: '3. Match video, controls hidden', v: MATCH, controls: 0, over: '', scale: false },
+  { name: '4. Plus a see-through layer on top', v: MATCH, controls: 0, over: 'clear', scale: false },
+  { name: '5. Exactly like the site', v: MATCH, controls: 0, over: 'site', scale: true }
+];
+const Q = { tiny: '144p', small: '240p', medium: '360p', large: '480p', hd720: '720p', hd1080: '1080p', hd1440: '1440p', hd2160: '2160p', highres: '4K+' };
+const order = Object.keys(Q);
+const frame = document.getElementById('frame'), now = document.getElementById('now'), rows = document.getElementById('rows');
+const c = navigator.connection;
+document.getElementById('env').textContent = navigator.userAgent + (c && c.downlink ? ' · connection estimate ' + c.downlink + ' Mbps' : '') + ' · screen ' + screen.width + '×' + screen.height + ' @' + devicePixelRatio + 'x';
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+function quality(p) { try { return Q[p.getPlaybackQuality()] || p.getPlaybackQuality() || '?'; } catch (e) { return '?'; } }
+function best(p) {
+  try { const l = (p.getAvailableQualityLevels() || []).filter(x => Q[x]).sort((a, b) => order.indexOf(b) - order.indexOf(a)); return l.length ? Q[l[0]] : '?'; } catch (e) { return '?'; }
+}
+function loadApi() {
+  return new Promise(res => {
+    window.onYouTubeIframeAPIReady = () => res(window.YT);
+    const s = document.createElement('script'); s.src = 'https://www.youtube.com/iframe_api'; document.head.append(s);
+  });
+}
+async function run(YT, t, i) {
+  frame.replaceChildren(Object.assign(document.createElement('div'), { id: 'host' }));
+  let over = null;
+  if (t.over) { over = Object.assign(document.createElement('div'), { id: 'over', className: t.over === 'site' ? 'solid' : '' }); frame.append(over); }
+  const tr = document.createElement('tr');
+  tr.innerHTML = '<td></td><td>…</td><td>…</td><td>…</td><td>…</td>';
+  tr.cells[0].textContent = t.name;
+  rows.append(tr);
+  let playing = false, err = '';
+  const p = await new Promise(res => {
+    const pl = new YT.Player('host', {
+      host: 'https://www.youtube.com', videoId: t.v[0], width: '100%', height: '100%',
+      playerVars: { controls: t.controls, autoplay: 1, mute: 1, playsinline: 1, rel: 0, start: t.v[1], origin: location.origin },
+      events: {
+        onReady: e => { e.target.mute(); e.target.playVideo(); res(pl); },
+        onStateChange: e => { if (e.data === 1) { playing = true; if (over) over.className = ''; } },
+        onError: e => { err = 'error ' + e.data; res(pl); }
+      }
+    });
+    if (t.scale) {
+      const ifr = frame.querySelector('iframe'), w = frame.clientWidth;
+      if (ifr && w < 1920) { ifr.classList.add('scaled'); ifr.style.width = '1920px'; ifr.style.height = '1080px'; ifr.style.transform = 'scale(' + (w / 1920) + ')'; }
+    }
+  });
+  for (let s = 0; s < 20 && !playing && !err; s++) await sleep(500);
+  if (!playing) { for (let k = 1; k <= 4; k++) tr.cells[k].textContent = err || 'didn’t play'; p.destroy(); return; }
+  const marks = { 10: 1, 20: 2, 35: 3 };
+  for (let s = 1; s <= 35; s++) {
+    await sleep(1000);
+    now.textContent = 'Test ' + (i + 1) + ' of ' + TESTS.length + ': ' + quality(p) + ' right now (' + (35 - s) + 's left)';
+    if (marks[s]) tr.cells[marks[s]].textContent = quality(p);
+  }
+  tr.cells[4].textContent = best(p);
+  p.destroy();
+}
+document.getElementById('go').addEventListener('click', async e => {
+  e.target.disabled = true;
+  rows.replaceChildren();
+  now.textContent = 'Loading YouTube…';
+  const YT = window.YT && window.YT.Player ? window.YT : await loadApi();
+  for (let i = 0; i < TESTS.length; i++) await run(YT, TESTS[i], i);
+  frame.replaceChildren();
+  now.textContent = 'Done. Please send a screenshot of this table.';
+  e.target.disabled = false;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-26T02:00:00.000Z",
+  "hiddenAuto": [],
+  "site": {
+    "name": "Spoiler-Free CS2",
+    "heroText": "Every match from the first stage to the grand final. No scores, no video lengths, nothing that gives the result away.",
+    "howTitle": "How spoiler-free works",
+    "how": [
+      {
+        "title": "No scores",
+        "text": "Results never show up in titles, thumbnails or anywhere on the page."
+      },
+      {
+        "title": "No video lengths",
+        "text": "Run times and progress bars stay hidden, so a long map can't tip you off."
+      },
+      {
+        "title": "Every map listed",
+        "text": "Each series shows all of its possible maps, so you can't count how many were played."
+      },
+      {
+        "title": "Later rounds locked",
+        "text": "Matchups that would give away earlier results stay hidden until you open them."
+      }
+    ],
+    "footer": "Videos are played from YouTube.",
+    "featuredId": "",
+    "example": false,
+    "firebase": {
+      "apiKey": "AIzaSyAm1M2gGfYOvipzRtqhN37OxcnjuYKapnQ",
+      "databaseURL": "https://cs2spoilerfree-default-rtdb.firebaseio.com"
+    }
+  },
+  "teams": [],
+  "tournaments": []
+}

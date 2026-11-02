@@ -1,0 +1,47 @@
+{
+  "rules": {
+    "votes": {
+      ".read": true,
+      "$match": {
+        ".validate": "$match.matches(/^[A-Za-z0-9_-]{1,64}$/)",
+        "$uid": {
+          ".write": "auth != null && auth.uid === $uid",
+          ".validate": "newData.isNumber() && (newData.val() === 1 || newData.val() === 2 || newData.val() === 3)"
+        }
+      }
+    },
+    "stars": {
+      ".read": true,
+      "$match": {
+        ".validate": "$match.matches(/^[A-Za-z0-9_-]{1,64}$/)",
+        "$uid": {
+          ".write": "auth != null && auth.uid === $uid",
+          ".validate": "newData.isNumber() && (newData.val() === 1 || newData.val() === 2 || newData.val() === 3 || newData.val() === 4 || newData.val() === 5 || newData.val() === 6 || newData.val() === 7 || newData.val() === 8 || newData.val() === 9 || newData.val() === 10)"
+        }
+      }
+    },
+    "sync": {
+      "$code": {
+        ".read": "auth != null && $code.matches(/^[a-z0-9]{16,40}$/)",
+        ".write": "auth != null && $code.matches(/^[a-z0-9]{16,40}$/)",
+        "e": {
+          "$entry": {
+            ".validate": "$entry.length <= 400 && newData.hasChild('t')",
+            "t": {
+              ".validate": "newData.isNumber()"
+            },
+            "v": {
+              ".validate": "newData.isString() && newData.val().length <= 20000"
+            },
+            "$other": {
+              ".validate": false
+            }
+          }
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}

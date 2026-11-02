@@ -1,0 +1,62 @@
+{
+  "notes": [
+    "Each tournament is read from its Liquipedia page (liquipedia.net/counterstrike). Use the page name from the address, for example https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24 is \"ESL/Pro League/Season 24\".",
+    "If you don't know the page name, use \"search\" with the event's name instead. The page it finds is shown in the Actions log and saved in watcher/state.json under \"resolved\".",
+    "\"discover\" adds every tournament in the listed Liquipedia categories that starts between \"from\" and \"to\", checked every 12 hours. Put a page in \"exclude\" to leave it out, or a name ending in / to leave out a whole series. FISSURE is left out because it doesn’t post match videos. To add A tier events later, add \"Category:A-Tier Tournaments\".",
+    "Optional per tournament: \"name\" to show a different name on the site, and \"subpages\" to list stage pages by hand (normally found automatically).",
+    "Videos come from the links Liquipedia's editors add to each map, usually within a day of the match. Most point at the organisers' archive channels (ESL Archives, BLAST Premier VOD Archive, PGL VOD's).",
+    "Tournaments removed from this list disappear from the site on the next run.",
+    "\"highlights\" looks for the organisers' official highlight videos on these YouTube channels, every few hours, and offers them on the site as a short version of a series. A video counts when its title says highlights and names both teams, and it came out within \"maxDaysAfter\" days of the match. Titles are never saved. Only BLAST posts per-match highlights (\"3 Minute Highlights\", naming teams by their YouTube handles), so \"aliases\" lists other names a team goes by there, by the team's id on the site.",
+    "\"siteUrl\" is the site's address, used for the links inside the calendar feeds in calendar/."
+  ],
+  "tournaments": [
+    {
+      "liquipedia": "PGL/2026/Masters"
+    },
+    {
+      "liquipedia": "ESL/Pro League/Season 24"
+    },
+    {
+      "liquipedia": "BLAST/Open/2026/Fall",
+      "name": "BLAST Open Porto 2026"
+    },
+    {
+      "search": "IEM Cologne Major 2026"
+    },
+    {
+      "search": "Intel Extreme Masters Beijing 2026"
+    },
+    {
+      "search": "BLAST Rivals 2026 Hong Kong"
+    },
+    {
+      "liquipedia": "PGL/2026/Singapore"
+    }
+  ],
+  "maxPagesPerRun": 30,
+  "recheckVideosAfterDays": 14,
+  "discover": {
+    "categories": [
+      "Category:S-Tier Tournaments"
+    ],
+    "from": "2026-06-01",
+    "to": "2027-12-31",
+    "exclude": ["FISSURE/"]
+  },
+  "siteUrl": "https://spoilerfreecs2.github.io/CS2-Spoil-free/",
+  "highlights": {
+    "channels": [
+      "@ESLCS",
+      "@BLASTPremier",
+      "@pgl",
+      "@Counter_Strike_Highlights"
+    ],
+    "everyHours": 3,
+    "pages": 4,
+    "firstPages": 10,
+    "anyTitle": ["@Counter_Strike_Highlights"],
+    "aliases": { "lp-mouz": ["mousesports"] },
+    "maxDaysAfter": 4,
+    "lookBackDays": 21
+  }
+}

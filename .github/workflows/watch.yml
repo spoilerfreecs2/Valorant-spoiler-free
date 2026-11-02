@@ -1,0 +1,98 @@
+name: Find new videos and publish the site
+
+on:
+  # Every 30 minutes (at :07 and :37, which GitHub delays less than :00).
+  schedule:
+    - cron: '7,37 * * * *'
+  # A "Run workflow" button on the Actions tab.
+  workflow_dispatch:
+  # Whenever you upload a new data.json or change the site.
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # save auto.json and the watcher's notes
+  issues: write     # keep the "needs review" issue up to date
+  pages: write      # publish the site
+  id-token: write   # required by GitHub Pages
+
+concurrency:
+  group: video-watcher
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Get the site files
+        uses: actions/checkout@v6
+        with:
+          # The latest main, not the commit that triggered the run: an earlier run may have
+          # saved new videos since, and starting from those avoids a clash when saving.
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Look for new videos
+        # If YouTube has a hiccup, still publish the site; the run shows a warning.
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node watcher/watch.mjs
+
+      - name: Save what the watcher found
+        id: save
+        run: |
+          # New or changed event pictures and calendar feeds count as a site change too.
+          pictures="$(git status --porcelain -- images calendar 2>/dev/null)"
+          if git diff --quiet -- auto.json && [ -z "$pictures" ]; then
+            echo "site_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "site_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          if git diff --quiet -- auto.json watcher/state.json && [ -z "$pictures" ]; then
+            echo "Nothing new to save."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auto.json watcher/state.json
+          if [ -d images ]; then git add -A images; fi
+          if [ -d calendar ]; then git add -A calendar; fi
+          git commit -m "Video watcher: new videos"
+          git pull --rebase -X theirs
+          git push
+
+      - name: Collect the site files
+        if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
+        run: |
+          mkdir -p _site
+          cp index.html data.json auto.json collections.json _site/
+          if [ -d images ]; then cp -r images _site/; fi
+          if [ -d tools ]; then cp -r tools _site/; fi
+          if [ -d calendar ]; then cp -r calendar _site/; fi
+          if [ -d vendor ]; then cp -r vendor _site/; fi
+          # A real address for every event, team and match, and a sitemap (watcher/pages.mjs).
+          node watcher/pages.mjs _site
+
+      - name: Set up GitHub Pages
+        if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site
+        if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publish the site
+        id: deployment
+        if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
+        uses: actions/deploy-pages@v4
