@@ -1,1 +1,501 @@
-{}
+{
+  "version": 2,
+  "pages": {
+    "Esports Nations Cup/2026": {
+      "revid": 1317562,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "Esports World Cup/2026": {
+      "revid": 1324532,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/Americas League/Stage 2": {
+      "revid": 1331954,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/Champions": {
+      "revid": 1330289,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/China League/Stage 2": {
+      "revid": 1331961,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "36 matches, 92 map videos"
+    },
+    "VCT/2026/EMEA League/Stage 2": {
+      "revid": 1331953,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/Game Changers Championship": {
+      "revid": 1335999,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/Pacific League/Stage 2": {
+      "revid": 1331952,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2026/Stage 2/Masters": {
+      "revid": 1325642,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2027/Americas/Kickoff": {
+      "revid": 1333640,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2027/China/Kickoff": {
+      "revid": 1336008,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2027/EMEA/Kickoff": {
+      "revid": 1333639,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "no matches, not on the site"
+    },
+    "VCT/2027/Pacific/Kickoff": {
+      "revid": 1334056,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-11-02T01:06:21.223Z",
+      "result": "coming up, no matches drawn yet"
+    }
+  },
+  "resolved": {},
+  "teams": {
+    "nova esports": {
+      "id": "lp-nova-esports",
+      "name": "NOVA"
+    },
+    "blg": {
+      "id": "lp-bilibili-gaming",
+      "name": "Bilibili"
+    },
+    "tyloo": {
+      "id": "lp-tyloo",
+      "name": "TYLOO"
+    },
+    "xlg": {
+      "id": "lp-xlg-esports",
+      "name": "XLG"
+    },
+    "edg": {
+      "id": "lp-edward-gaming",
+      "name": "EDward"
+    },
+    "ag cn": {
+      "id": "lp-all-gamers",
+      "name": "All Gamers"
+    },
+    "fpx": {
+      "id": "lp-funplus-phoenix",
+      "name": "FunPlus Phoenix"
+    },
+    "wol": {
+      "id": "lp-wolves-esports",
+      "name": "Wolves"
+    },
+    "jdg": {
+      "id": "lp-jd-gaming",
+      "name": "JDG"
+    },
+    "drg": {
+      "id": "lp-dragon-ranger-gaming",
+      "name": "Dragon Ranger"
+    },
+    "trace esports": {
+      "id": "lp-trace-esports",
+      "name": "Trace"
+    },
+    "titan esports club": {
+      "id": "lp-titan-esports-club",
+      "name": "Titan Esports"
+    },
+    "a team": {
+      "id": "lp-a-team",
+      "name": "AT"
+    },
+    "kbg": {
+      "id": "lp-keepbest-gaming",
+      "name": "KeepBest"
+    },
+    "trace": {
+      "id": "lp-trace-esports",
+      "name": "Trace"
+    }
+  },
+  "videos": {},
+  "parserVersion": 6,
+  "buildVersion": 2,
+  "discover": {
+    "info": {
+      "VCT/2026/Americas League/Kickoff": {
+        "name": "VCT 2026: Americas Kickoff",
+        "sdate": "2026-01-15",
+        "edate": "2026-02-15"
+      },
+      "VCT/2026/China League/Kickoff": {
+        "name": "VCT 2026: China Kickoff",
+        "sdate": "2026-01-22",
+        "edate": "2026-02-09"
+      },
+      "VCT/2026/EMEA League/Kickoff": {
+        "name": "VCT 2026: EMEA Kickoff",
+        "sdate": "2026-01-20",
+        "edate": "2026-02-15"
+      },
+      "VCT/2026/Pacific League/Kickoff": {
+        "name": "VCT 2026: Pacific Kickoff",
+        "sdate": "2026-01-22",
+        "edate": "2026-02-15"
+      },
+      "VCT/2026/Champions": {
+        "name": "VALORANT Champions 2026",
+        "sdate": "2026-09-24",
+        "edate": "2026-10-18"
+      },
+      "VCT/2026/Americas League/Stage 1": {
+        "name": "VCT 2026: Americas Stage 1",
+        "sdate": "2026-04-10",
+        "edate": "2026-05-24"
+      },
+      "VCT/2026/Americas League/Stage 2": {
+        "name": "VCT 2026: Americas Stage 2",
+        "sdate": "2026-07-16",
+        "edate": "2026-09-06"
+      },
+      "VCT/2026/China League/Stage 2": {
+        "name": "VCT 2026: China Stage 2",
+        "sdate": "2026-07-09",
+        "edate": "2026-08-23"
+      },
+      "VCT/2026/China League/Stage 1": {
+        "name": "VCT 2026: China Stage 1",
+        "sdate": "2026-03-31",
+        "edate": "2026-05-10"
+      },
+      "VCT/2026/Pacific League/Stage 1": {
+        "name": "VCT 2026: Pacific Stage 1",
+        "sdate": "2026-04-03",
+        "edate": "2026-05-17"
+      },
+      "VCT/2026/EMEA League/Stage 1": {
+        "name": "VCT 2026: EMEA Stage 1",
+        "sdate": "2026-04-01",
+        "edate": "2026-05-17"
+      },
+      "VCT/2026/EMEA League/Stage 2": {
+        "name": "VCT 2026: EMEA Stage 2",
+        "sdate": "2026-07-15",
+        "edate": "2026-08-30"
+      },
+      "Esports Nations Cup/2026": {
+        "name": "Esports Nations Cup 2026",
+        "sdate": "2027-11-??",
+        "edate": "2027-11-??"
+      },
+      "Esports World Cup/2026": {
+        "name": "Esports World Cup 2026",
+        "sdate": "2026-07-02",
+        "edate": "2026-07-12"
+      },
+      "Esports World Cup/2026/Americas": {
+        "name": "Esports World Cup 2026: Americas Qualifier",
+        "sdate": "2026-05-12",
+        "edate": "2026-05-31"
+      },
+      "Esports World Cup/2026/EMEA": {
+        "name": "Esports World Cup 2026: EMEA Qualifier",
+        "sdate": "2026-05-11",
+        "edate": "2026-05-31"
+      },
+      "Esports World Cup/2026/Pacific": {
+        "name": "Esports World Cup 2026: Pacific Qualifier",
+        "sdate": "2026-05-11",
+        "edate": "2026-05-31"
+      },
+      "Esports World Cup/2026/China": {
+        "name": "Esports World Cup 2026: China Qualifier",
+        "sdate": "2026-05-12",
+        "edate": "2026-05-20"
+      },
+      "Esports World Cup": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "VCT/2026/Game Changers Championship": {
+        "name": "VALORANT Game Changers Championship 2026",
+        "sdate": "2026-10-22",
+        "edate": "2026-11-01"
+      },
+      "VCT/2026/Stage 1/Masters": {
+        "name": "VALORANT Masters Santiago 2026",
+        "sdate": "2026-02-28",
+        "edate": "2026-03-15"
+      },
+      "VCT/2026/Stage 2/Masters": {
+        "name": "VALORANT Masters London 2026",
+        "sdate": "2026-06-06",
+        "edate": "2026-06-21"
+      },
+      "VCT/2026/Pacific League/Stage 2": {
+        "name": "VCT 2026: Pacific Stage 2",
+        "sdate": "2026-07-16",
+        "edate": "2026-09-06"
+      },
+      "VCT/2027/EMEA/Kickoff": {
+        "name": "VCT 2027: EMEA Kickoff",
+        "sdate": "2027-01-??",
+        "edate": "2027-02-??"
+      },
+      "VCT/2027/Americas/Kickoff": {
+        "name": "VCT 2027: Americas Kickoff",
+        "sdate": "2027-01-??",
+        "edate": "2027-02-??"
+      },
+      "VCT/2027/China/Kickoff": {
+        "name": "VCT 2027: China Kickoff",
+        "sdate": "2027-01-??",
+        "edate": "2027-02-??"
+      },
+      "VCT/2027/Pacific/Kickoff": {
+        "name": "VCT 2027: Pacific Kickoff",
+        "sdate": "2027-01-11",
+        "edate": "2027-01-31"
+      }
+    },
+    "titles": [
+      "Esports Nations Cup/2026",
+      "Esports World Cup",
+      "Esports World Cup/2025",
+      "Esports World Cup/2025/Americas",
+      "Esports World Cup/2025/EMEA",
+      "Esports World Cup/2025/Pacific",
+      "Esports World Cup/2026",
+      "Esports World Cup/2026/Americas",
+      "Esports World Cup/2026/China",
+      "Esports World Cup/2026/EMEA",
+      "Esports World Cup/2026/Pacific",
+      "VALORANT Champions Tour/2021/Champions",
+      "VALORANT Champions Tour/2021/Stage 2/Masters",
+      "VALORANT Champions Tour/2021/Stage 3/Masters",
+      "VCT/2022/Champions",
+      "VCT/2022/Game Changers Championship",
+      "VCT/2022/South America/Stage 1/Challengers Playoffs",
+      "VCT/2022/South America/Stage 2/Challengers Playoffs",
+      "VCT/2022/Stage 1/Masters",
+      "VCT/2022/Stage 2/Masters",
+      "VCT/2023/Americas League",
+      "VCT/2023/Americas League/Last Chance Qualifier",
+      "VCT/2023/Champions",
+      "VCT/2023/EMEA League",
+      "VCT/2023/EMEA League/Last Chance Qualifier",
+      "VCT/2023/Game Changers Championship",
+      "VCT/2023/LOCK IN São Paulo",
+      "VCT/2023/Masters",
+      "VCT/2023/Pacific League",
+      "VCT/2023/Pacific League/Last Chance Qualifier",
+      "VCT/2024/Americas League/Kickoff",
+      "VCT/2024/Americas League/Stage 1",
+      "VCT/2024/Americas League/Stage 2",
+      "VCT/2024/Champions",
+      "VCT/2024/China League/Kickoff",
+      "VCT/2024/China League/Stage 1",
+      "VCT/2024/China League/Stage 2",
+      "VCT/2024/EMEA League/Kickoff",
+      "VCT/2024/EMEA League/Stage 1",
+      "VCT/2024/EMEA League/Stage 2",
+      "VCT/2024/Game Changers Championship",
+      "VCT/2024/Pacific League/Kickoff",
+      "VCT/2024/Pacific League/Stage 1",
+      "VCT/2024/Pacific League/Stage 2",
+      "VCT/2024/Stage 1/Masters",
+      "VCT/2024/Stage 2/Masters",
+      "VCT/2025/Americas League/Kickoff",
+      "VCT/2025/Americas League/Stage 1",
+      "VCT/2025/Americas League/Stage 2",
+      "VCT/2025/Champions",
+      "VCT/2025/China League/Kickoff",
+      "VCT/2025/China League/Stage 1",
+      "VCT/2025/China League/Stage 2",
+      "VCT/2025/EMEA League/Kickoff",
+      "VCT/2025/EMEA League/Stage 1",
+      "VCT/2025/EMEA League/Stage 2",
+      "VCT/2025/Game Changers Championship",
+      "VCT/2025/Pacific League/Kickoff",
+      "VCT/2025/Pacific League/Stage 1",
+      "VCT/2025/Pacific League/Stage 2",
+      "VCT/2025/Stage 1/Masters",
+      "VCT/2025/Stage 2/Masters",
+      "VCT/2026/Americas League/Kickoff",
+      "VCT/2026/Americas League/Stage 1",
+      "VCT/2026/Americas League/Stage 2",
+      "VCT/2026/Champions",
+      "VCT/2026/China League/Kickoff",
+      "VCT/2026/China League/Stage 1",
+      "VCT/2026/China League/Stage 2",
+      "VCT/2026/EMEA League/Kickoff",
+      "VCT/2026/EMEA League/Stage 1",
+      "VCT/2026/EMEA League/Stage 2",
+      "VCT/2026/Game Changers Championship",
+      "VCT/2026/Pacific League/Kickoff",
+      "VCT/2026/Pacific League/Stage 1",
+      "VCT/2026/Pacific League/Stage 2",
+      "VCT/2026/Stage 1/Masters",
+      "VCT/2026/Stage 2/Masters",
+      "VCT/2027/Americas/Kickoff",
+      "VCT/2027/China/Kickoff",
+      "VCT/2027/EMEA/Kickoff",
+      "VCT/2027/Pacific/Kickoff"
+    ],
+    "checkedAt": "2026-11-02T01:06:21.223Z",
+    "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[]}"
+  },
+  "highlights": {},
+  "images": {
+    "vct-2027-pacific-kickoff": {
+      "file": "VCT Pacific League Kickoff full allmode.png",
+      "saved": "vct-2027-pacific-kickoff.png"
+    },
+    "vct-2026-china-stage-2": {
+      "file": "VCT CN Stage 2 vertical allmode.png",
+      "saved": "vct-2026-china-stage-2.png"
+    }
+  },
+  "teamLogos": {
+    "lp-nova-esports": {
+      "light": "Nova Esports 2025 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Nova Esports 2025 allmode.png"
+      }
+    },
+    "lp-bilibili-gaming": {
+      "light": "Bilibili Gaming 2021 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Bilibili Gaming 2021 allmode.png"
+      }
+    },
+    "lp-tyloo": {
+      "light": "TyLoo 2016 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "TyLoo 2016 allmode.png"
+      }
+    },
+    "lp-xlg-esports": {
+      "light": "XLG China 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "XLG China 2024 allmode.png"
+      }
+    },
+    "lp-edward-gaming": {
+      "light": "EDward Gaming 2017 lightmode.png",
+      "dark": "EDward Gaming 2017 darkmode.png",
+      "saved": {
+        "logo": "EDward Gaming 2017 lightmode.png",
+        "logoDark": "EDward Gaming 2017 darkmode.png"
+      }
+    },
+    "lp-all-gamers": {
+      "light": "All Gamers allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "All Gamers allmode.png"
+      }
+    },
+    "lp-funplus-phoenix": {
+      "light": "FunPlus Phoenix 2021 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "FunPlus Phoenix 2021 allmode.png"
+      }
+    },
+    "lp-wolves-esports": {
+      "light": "Wolves Esports allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Wolves Esports allmode.png"
+      }
+    },
+    "lp-jd-gaming": {
+      "light": "JD Gaming 2021 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "JD Gaming 2021 allmode.png"
+      }
+    },
+    "lp-dragon-ranger-gaming": {
+      "light": "Dragon Ranger Gaming allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Dragon Ranger Gaming allmode.png"
+      }
+    },
+    "lp-trace-esports": {
+      "light": "Trace Esports 2025 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Trace Esports 2025 allmode.png"
+      }
+    },
+    "lp-titan-esports-club": {
+      "light": "Titan Esports Club 2025 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Titan Esports Club 2025 allmode.png"
+      }
+    },
+    "lp-a-team": {
+      "light": "A Team lightmode.png",
+      "dark": "A Team darkmode.png",
+      "saved": {
+        "logo": "A Team lightmode.png",
+        "logoDark": "A Team darkmode.png"
+      }
+    },
+    "lp-keepbest-gaming": {
+      "light": "KeepBest Gaming 2026 lightmode.png",
+      "dark": "KeepBest Gaming 2026 darkmode.png",
+      "saved": {
+        "logo": "KeepBest Gaming 2026 lightmode.png",
+        "logoDark": "KeepBest Gaming 2026 darkmode.png"
+      }
+    }
+  }
+}

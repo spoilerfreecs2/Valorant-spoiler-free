@@ -1,9 +1,1576 @@
 {
   "version": 2,
   "source": "Liquipedia (CC BY-SA 3.0), https://liquipedia.net/valorant/",
-  "tournaments": [],
-  "teams": [],
-  "matches": [],
-  "videos": {},
-  "updatedAt": "2026-11-02T00:00:00.000Z"
+  "tournaments": [
+    {
+      "id": "vct-2027-pacific-kickoff",
+      "name": "VCT 2027: Pacific Kickoff",
+      "page": "VCT/2027/Pacific/Kickoff",
+      "year": "2027",
+      "sdate": "2027-01-11",
+      "edate": "2027-01-31",
+      "dates": "11–31 January 2027",
+      "location": "Bangkok, Thailand",
+      "teamsText": "12 teams",
+      "image": "VCT Pacific League Kickoff full allmode.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/vct-2027-pacific-kickoff.png",
+      "logoDark": ""
+    },
+    {
+      "id": "vct-2026-china-stage-2",
+      "name": "VCT 2026: China Stage 2",
+      "page": "VCT/2026/China League/Stage 2",
+      "year": "2026",
+      "sdate": "2026-07-09",
+      "edate": "2026-08-23",
+      "dates": "9 July – 23 August 2026",
+      "location": "Changsha, China",
+      "teamsText": "14 teams",
+      "image": "VCT CN Stage 2 vertical allmode.png",
+      "imageDark": "",
+      "days": [
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16",
+        "2026-08-17",
+        "2026-08-19",
+        "2026-08-20",
+        "2026-08-21",
+        "2026-08-22",
+        "2026-08-23"
+      ],
+      "art": "",
+      "logo": "images/auto/vct-2026-china-stage-2.png",
+      "logoDark": ""
+    }
+  ],
+  "teams": [
+    {
+      "id": "lp-all-gamers",
+      "name": "All Gamers",
+      "logo": "images/teams/lp-all-gamers.png"
+    },
+    {
+      "id": "lp-a-team",
+      "name": "AT",
+      "logo": "images/teams/lp-a-team.png",
+      "logoDark": "images/teams/lp-a-team-dark.png"
+    },
+    {
+      "id": "lp-bilibili-gaming",
+      "name": "Bilibili",
+      "logo": "images/teams/lp-bilibili-gaming.png"
+    },
+    {
+      "id": "lp-dragon-ranger-gaming",
+      "name": "Dragon Ranger",
+      "logo": "images/teams/lp-dragon-ranger-gaming.png"
+    },
+    {
+      "id": "lp-edward-gaming",
+      "name": "EDward",
+      "logo": "images/teams/lp-edward-gaming.png",
+      "logoDark": "images/teams/lp-edward-gaming-dark.png"
+    },
+    {
+      "id": "lp-funplus-phoenix",
+      "name": "FunPlus Phoenix",
+      "logo": "images/teams/lp-funplus-phoenix.png"
+    },
+    {
+      "id": "lp-jd-gaming",
+      "name": "JDG",
+      "logo": "images/teams/lp-jd-gaming.png"
+    },
+    {
+      "id": "lp-keepbest-gaming",
+      "name": "KeepBest",
+      "logo": "images/teams/lp-keepbest-gaming.png",
+      "logoDark": "images/teams/lp-keepbest-gaming-dark.png"
+    },
+    {
+      "id": "lp-nova-esports",
+      "name": "NOVA",
+      "logo": "images/teams/lp-nova-esports.png"
+    },
+    {
+      "id": "lp-titan-esports-club",
+      "name": "Titan Esports",
+      "logo": "images/teams/lp-titan-esports-club.png"
+    },
+    {
+      "id": "lp-trace-esports",
+      "name": "Trace",
+      "logo": "images/teams/lp-trace-esports.png"
+    },
+    {
+      "id": "lp-tyloo",
+      "name": "TYLOO",
+      "logo": "images/teams/lp-tyloo.png"
+    },
+    {
+      "id": "lp-wolves-esports",
+      "name": "Wolves",
+      "logo": "images/teams/lp-wolves-esports.png"
+    },
+    {
+      "id": "lp-xlg-esports",
+      "name": "XLG",
+      "logo": "images/teams/lp-xlg-esports.png"
+    }
+  ],
+  "matches": [
+    {
+      "id": "lp-71ed6285fe",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-trace-esports",
+      "b": "lp-titan-esports-club",
+      "bo": 3,
+      "date": "24 Jul",
+      "time": "2026-07-24T23:00:00.000Z"
+    },
+    {
+      "id": "lp-757d79150b",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-edward-gaming",
+      "b": "lp-all-gamers",
+      "bo": 3,
+      "date": "25 Jul",
+      "time": "2026-07-25T01:40:00.000Z"
+    },
+    {
+      "id": "lp-d493315327",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-jd-gaming",
+      "b": "lp-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "25 Jul",
+      "time": "2026-07-25T23:00:00.000Z"
+    },
+    {
+      "id": "lp-508ac52d2c",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-funplus-phoenix",
+      "b": "lp-wolves-esports",
+      "bo": 3,
+      "date": "26 Jul",
+      "time": "2026-07-26T23:00:00.000Z"
+    },
+    {
+      "id": "lp-6d6eae43a5",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 2,
+      "a": "lp-tyloo",
+      "b": "lp-xlg-esports",
+      "bo": 3,
+      "date": "26 Jul",
+      "time": "2026-07-26T02:40:00.000Z"
+    },
+    {
+      "id": "lp-dd7b60d722",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Seed Deciders",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 2,
+      "a": "lp-nova-esports",
+      "b": "lp-bilibili-gaming",
+      "bo": 3,
+      "date": "27 Jul",
+      "time": "2026-07-27T01:30:00.000Z"
+    },
+    {
+      "id": "lp-2378396a90",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Round 1",
+      "roundOrder": 3,
+      "a": "lp-trace-esports",
+      "b": "lp-a-team",
+      "bo": 3,
+      "date": "5 Aug",
+      "time": "2026-08-05T22:00:00.000Z"
+    },
+    {
+      "id": "lp-b80397f116",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Round 1",
+      "roundOrder": 3,
+      "a": "lp-titan-esports-club",
+      "b": "lp-keepbest-gaming",
+      "bo": 3,
+      "date": "6 Aug",
+      "time": "2026-08-06T00:30:00.000Z"
+    },
+    {
+      "id": "lp-f7fdd2d886",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 4,
+      "a": "lp-funplus-phoenix",
+      "b": "lp-jd-gaming",
+      "bo": 3,
+      "date": "6 Aug",
+      "time": "2026-08-06T22:30:00.000Z"
+    },
+    {
+      "id": "lp-28e541c2d9",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 4,
+      "a": "lp-wolves-esports",
+      "b": "lp-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "7 Aug",
+      "time": "2026-08-07T01:00:00.000Z"
+    },
+    {
+      "id": "lp-7c888d387d",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 4,
+      "a": "lp-all-gamers",
+      "b": "lp-trace-esports",
+      "bo": 3,
+      "date": "7 Aug",
+      "time": "2026-08-07T22:00:00.000Z"
+    },
+    {
+      "id": "lp-8f5584b694",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 4,
+      "a": "lp-edward-gaming",
+      "b": "lp-titan-esports-club",
+      "bo": 3,
+      "date": "8 Aug",
+      "time": "2026-08-08T01:00:00.000Z"
+    },
+    {
+      "id": "lp-a30bdab232",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Round 1",
+      "roundOrder": 5,
+      "a": "lp-a-team",
+      "b": "lp-wolves-esports",
+      "bo": 3,
+      "date": "8 Aug",
+      "time": "2026-08-08T22:00:00.000Z"
+    },
+    {
+      "id": "lp-a274c4ef9c",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Round 1",
+      "roundOrder": 5,
+      "a": "lp-keepbest-gaming",
+      "b": "lp-funplus-phoenix",
+      "bo": 3,
+      "date": "9 Aug",
+      "time": "2026-08-09T01:40:00.000Z"
+    },
+    {
+      "id": "lp-cb551c7a70",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-edward-gaming",
+      "b": "lp-wolves-esports",
+      "bo": 3,
+      "date": "9 Aug",
+      "time": "2026-08-09T22:00:00.000Z"
+    },
+    {
+      "id": "lp-d934bb3e35",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-trace-esports",
+      "b": "lp-funplus-phoenix",
+      "bo": 3,
+      "date": "10 Aug",
+      "time": "2026-08-10T01:20:00.000Z"
+    },
+    {
+      "id": "lp-236f02debb",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 7,
+      "a": "lp-all-gamers",
+      "b": "lp-jd-gaming",
+      "bo": 3,
+      "date": "10 Aug",
+      "time": "2026-08-10T22:00:00.000Z"
+    },
+    {
+      "id": "lp-6cd955c69c",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 7,
+      "a": "lp-titan-esports-club",
+      "b": "lp-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "11 Aug",
+      "time": "2026-08-11T00:50:00.000Z"
+    },
+    {
+      "id": "lp-9ff2f4da79",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Semifinal",
+      "roundOrder": 8,
+      "a": "lp-jd-gaming",
+      "b": "lp-edward-gaming",
+      "bo": 3,
+      "date": "11 Aug",
+      "time": "2026-08-11T22:00:00.000Z"
+    },
+    {
+      "id": "lp-613cf9da89",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Semifinal",
+      "roundOrder": 8,
+      "a": "lp-dragon-ranger-gaming",
+      "b": "lp-trace-esports",
+      "bo": 3,
+      "date": "12 Aug",
+      "time": "2026-08-12T00:10:00.000Z"
+    },
+    {
+      "id": "lp-504f00cf51",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Bracket Final",
+      "roundOrder": 9,
+      "a": "lp-all-gamers",
+      "b": "lp-titan-esports-club",
+      "bo": 3,
+      "date": "12 Aug",
+      "time": "2026-08-12T22:00:00.000Z"
+    },
+    {
+      "id": "lp-d4c119e418",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Bracket Final",
+      "roundOrder": 10,
+      "a": "lp-jd-gaming",
+      "b": "lp-trace-esports",
+      "bo": 3,
+      "date": "13 Aug",
+      "time": "2026-08-13T01:50:00.000Z"
+    },
+    {
+      "id": "lp-f07bc638c0",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 11,
+      "a": "lp-nova-esports",
+      "b": "lp-jd-gaming",
+      "bo": 3,
+      "date": "14 Aug",
+      "time": "2026-08-14T22:00:00.000Z"
+    },
+    {
+      "id": "lp-404efe0894",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 11,
+      "a": "lp-tyloo",
+      "b": "lp-titan-esports-club",
+      "bo": 3,
+      "date": "15 Aug",
+      "time": "2026-08-15T00:30:00.000Z"
+    },
+    {
+      "id": "lp-f8e09c9613",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 11,
+      "a": "lp-bilibili-gaming",
+      "b": "lp-trace-esports",
+      "bo": 3,
+      "date": "15 Aug",
+      "time": "2026-08-15T22:00:00.000Z"
+    },
+    {
+      "id": "lp-0b1548a05c",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Quarterfinals",
+      "roundOrder": 11,
+      "a": "lp-xlg-esports",
+      "b": "lp-all-gamers",
+      "bo": 3,
+      "date": "16 Aug",
+      "time": "2026-08-16T01:40:00.000Z"
+    },
+    {
+      "id": "lp-bb2f92858e",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Round 1",
+      "roundOrder": 12,
+      "a": "lp-nova-esports",
+      "b": "lp-titan-esports-club",
+      "bo": 3,
+      "date": "16 Aug",
+      "time": "2026-08-16T22:00:00.000Z"
+    },
+    {
+      "id": "lp-b15e48fc89",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Round 1",
+      "roundOrder": 12,
+      "a": "lp-trace-esports",
+      "b": "lp-all-gamers",
+      "bo": 3,
+      "date": "17 Aug",
+      "time": "2026-08-17T00:30:00.000Z"
+    },
+    {
+      "id": "lp-5643ef0cdd",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 13,
+      "a": "lp-jd-gaming",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "19 Aug",
+      "time": "2026-08-19T22:00:00.000Z"
+    },
+    {
+      "id": "lp-d06eaa72c5",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Semifinals",
+      "roundOrder": 13,
+      "a": "lp-bilibili-gaming",
+      "b": "lp-xlg-esports",
+      "bo": 3,
+      "date": "20 Aug",
+      "time": "2026-08-20T01:40:00.000Z"
+    },
+    {
+      "id": "lp-b35417aef3",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 14,
+      "a": "lp-tyloo",
+      "b": "lp-all-gamers",
+      "bo": 3,
+      "date": "20 Aug",
+      "time": "2026-08-20T22:00:00.000Z"
+    },
+    {
+      "id": "lp-cb6e3f33a3",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Quarterfinals",
+      "roundOrder": 14,
+      "a": "lp-xlg-esports",
+      "b": "lp-nova-esports",
+      "bo": 3,
+      "date": "21 Aug",
+      "time": "2026-08-21T00:50:00.000Z"
+    },
+    {
+      "id": "lp-6383c6fc7f",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Bracket Final",
+      "roundOrder": 15,
+      "a": "lp-jd-gaming",
+      "b": "lp-bilibili-gaming",
+      "bo": 3,
+      "date": "21 Aug",
+      "time": "2026-08-21T22:00:00.000Z"
+    },
+    {
+      "id": "lp-bb6fec2877",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Semifinal",
+      "roundOrder": 16,
+      "a": "lp-nova-esports",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "22 Aug",
+      "time": "2026-08-22T00:20:00.000Z"
+    },
+    {
+      "id": "lp-7c85275dc5",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Bracket Final",
+      "roundOrder": 17,
+      "a": "lp-bilibili-gaming",
+      "b": "lp-tyloo",
+      "bo": 5,
+      "date": "22 Aug",
+      "time": "2026-08-22T22:00:00.000Z"
+    },
+    {
+      "id": "lp-b5195a3553",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Grand Final",
+      "roundOrder": 18,
+      "a": "lp-jd-gaming",
+      "b": "lp-tyloo",
+      "bo": 5,
+      "date": "23 Aug",
+      "time": "2026-08-23T22:20:00.000Z"
+    }
+  ],
+  "videos": {
+    "lp-71ed6285fe": {
+      "maps": [
+        {
+          "video": "https://youtu.be/FDZDqXfDYb0",
+          "start": "4139",
+          "end": "8024",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/FDZDqXfDYb0",
+          "start": "8024",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-757d79150b": {
+      "maps": [
+        {
+          "video": "https://youtu.be/FDZDqXfDYb0",
+          "start": "13606",
+          "end": "16821",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/FDZDqXfDYb0",
+          "start": "16821",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Split",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-d493315327": {
+      "maps": [
+        {
+          "video": "https://youtu.be/seJqFhH5Mng",
+          "start": "4001",
+          "end": "8631",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/seJqFhH5Mng",
+          "start": "8631",
+          "end": "12127",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/seJqFhH5Mng",
+          "start": "12127",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-508ac52d2c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/gIrs4QbtPwk",
+          "start": "4301",
+          "end": "8061",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/gIrs4QbtPwk",
+          "start": "8061",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-6d6eae43a5": {
+      "maps": [
+        {
+          "video": "https://youtu.be/seJqFhH5Mng",
+          "start": "17509",
+          "end": "20672",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/seJqFhH5Mng",
+          "start": "20672",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Split",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-dd7b60d722": {
+      "maps": [
+        {
+          "video": "https://youtu.be/gIrs4QbtPwk",
+          "start": "13374",
+          "end": "16527",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/gIrs4QbtPwk",
+          "start": "16527",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-2378396a90": {
+      "maps": [
+        {
+          "video": "https://youtu.be/JI8Wk9Hvu3E",
+          "start": "4577",
+          "end": "8298",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/JI8Wk9Hvu3E",
+          "start": "8298",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-b80397f116": {
+      "maps": [
+        {
+          "video": "https://youtu.be/JI8Wk9Hvu3E",
+          "start": "12678",
+          "end": "16386",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/JI8Wk9Hvu3E",
+          "start": "16386",
+          "end": "21310",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/JI8Wk9Hvu3E",
+          "start": "21310",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-f7fdd2d886": {
+      "maps": [
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "4172",
+          "end": "6397",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "6397",
+          "end": "10257",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "10257",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-28e541c2d9": {
+      "maps": [
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "14976",
+          "end": "18785",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "18785",
+          "end": "22105",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/R8DO_E0Sahw",
+          "start": "22105",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-7c888d387d": {
+      "maps": [
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "4143",
+          "end": "7238",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "7238",
+          "end": "10869",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "10869",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-8f5584b694": {
+      "maps": [
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "15044",
+          "end": "18160",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "18160",
+          "end": "21563",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/--3pzC5hF-E",
+          "start": "21563",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-a30bdab232": {
+      "maps": [
+        {
+          "video": "https://youtu.be/sk_6a4YDx2Y",
+          "start": "4169",
+          "end": "7937",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/sk_6a4YDx2Y",
+          "start": "7937",
+          "end": "11395",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/sk_6a4YDx2Y",
+          "start": "11395",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-a274c4ef9c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/sk_6a4YDx2Y",
+          "start": "17639",
+          "end": "21234",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/sk_6a4YDx2Y",
+          "start": "21234",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-cb551c7a70": {
+      "maps": [
+        {
+          "video": "https://youtu.be/XrjA3vFNKPA",
+          "start": "4107",
+          "end": "8136",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/XrjA3vFNKPA",
+          "start": "8136",
+          "end": "11826",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/XrjA3vFNKPA",
+          "start": "11826",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d934bb3e35": {
+      "maps": [
+        {
+          "video": "https://youtu.be/XrjA3vFNKPA",
+          "start": "16114",
+          "end": "19304",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/XrjA3vFNKPA",
+          "start": "19304",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Breeze",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-236f02debb": {
+      "maps": [
+        {
+          "video": "https://youtu.be/367GcnxKSTw",
+          "start": "4155",
+          "end": "8333",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/367GcnxKSTw",
+          "start": "8333",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Split",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-6cd955c69c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/367GcnxKSTw",
+          "start": "13945",
+          "end": "17591",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/367GcnxKSTw",
+          "start": "17591",
+          "end": "20256",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/367GcnxKSTw",
+          "start": "20256",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-9ff2f4da79": {
+      "maps": [
+        {
+          "video": "https://youtu.be/4l1ANR6eDmM",
+          "start": "4126",
+          "end": "7150",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4l1ANR6eDmM",
+          "start": "7150",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-613cf9da89": {
+      "maps": [
+        {
+          "video": "https://youtu.be/4l1ANR6eDmM",
+          "start": "12028",
+          "end": "16506",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4l1ANR6eDmM",
+          "start": "16506",
+          "end": "19266",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4l1ANR6eDmM",
+          "start": "19266",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-504f00cf51": {
+      "maps": [
+        {
+          "video": "https://youtu.be/4HnDwWhlZ8I",
+          "start": "4141",
+          "end": "8024",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4HnDwWhlZ8I",
+          "start": "8024",
+          "end": "12419",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4HnDwWhlZ8I",
+          "start": "12419",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d4c119e418": {
+      "maps": [
+        {
+          "video": "https://youtu.be/4HnDwWhlZ8I",
+          "start": "17688",
+          "end": "21144",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/4HnDwWhlZ8I",
+          "start": "21144",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Breeze",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-f07bc638c0": {
+      "maps": [
+        {
+          "video": "https://youtu.be/Q0-PewKbauU",
+          "start": "4325",
+          "end": "7970",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Q0-PewKbauU",
+          "start": "7970",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-404efe0894": {
+      "maps": [
+        {
+          "video": "https://youtu.be/Q0-PewKbauU",
+          "start": "12682",
+          "end": "15896",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Q0-PewKbauU",
+          "start": "15896",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-f8e09c9613": {
+      "maps": [
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "4086",
+          "end": "7536",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "7536",
+          "end": "12051",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "12051",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-0b1548a05c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "17261",
+          "end": "20026",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "20026",
+          "end": "22841",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "22841",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-bb2f92858e": {
+      "maps": [
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "4077",
+          "end": "8286",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "8286",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-b15e48fc89": {
+      "maps": [
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "12983",
+          "end": "17619",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "17619",
+          "end": "22052",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "22052",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-5643ef0cdd": {
+      "maps": [
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "11718",
+          "end": "14992",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "14992",
+          "end": "18965",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "18965",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d06eaa72c5": {
+      "maps": [
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "24752",
+          "end": "28943",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "28943",
+          "end": "32235",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "32235",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-b35417aef3": {
+      "maps": [
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "4183",
+          "end": "8497",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "8497",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-cb6e3f33a3": {
+      "maps": [
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "13907",
+          "end": "17058",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "17058",
+          "end": "19983",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "19983",
+          "end": "",
+          "name": "Breeze",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-6383c6fc7f": {
+      "maps": [
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "4157",
+          "end": "7347",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "7347",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-bb6fec2877": {
+      "maps": [
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "12604",
+          "end": "16068",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "16068",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-7c85275dc5": {
+      "maps": [
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "11451",
+          "end": "15756",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "15756",
+          "end": "19111",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "19111",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": true
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-b5195a3553": {
+      "maps": [
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "6154",
+          "end": "9407",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "9407",
+          "end": "12852",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "12852",
+          "end": "16542",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "16542",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": true
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-11-02T01:06:21.223Z",
+  "featured": "vct-2026-china-stage-2"
 }
