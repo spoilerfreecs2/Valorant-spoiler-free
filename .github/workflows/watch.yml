@@ -2,10 +2,8 @@ name: Find new videos and publish the site
 
 on:
   # Every 30 minutes (at :07 and :37, which GitHub delays less than :00).
-  # Paused until the Valorant data source is settled: most 2026 VCT pages on Liquipedia
-  # no longer hold match details in their text, so these runs would find almost nothing.
-  # schedule:
-  #   - cron: '7,37 * * * *'
+  schedule:
+    - cron: '7,37 * * * *'
   # A "Run workflow" button on the Actions tab.
   workflow_dispatch:
   # Whenever you upload a new data.json or change the site.

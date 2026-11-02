@@ -1,25 +1,31 @@
 {
   "notes": [
-    "Each tournament is read from its Liquipedia page (liquipedia.net/valorant). Use the page name from the address, for example https://liquipedia.net/valorant/VCT/2026/Champions is \"VCT/2026/Champions\".",
-    "If you don't know the page name, use \"search\" with the event's name instead. The page it finds is shown in the Actions log and saved in watcher/state.json under \"resolved\".",
-    "\"discover\" adds every tournament in the listed Liquipedia categories that starts between \"from\" and \"to\", checked every 12 hours. Put a page in \"exclude\" to leave it out, or a name ending in / to leave out a whole series. To add Challengers and other A tier events later, add \"Category:A-Tier Tournaments\".",
-    "Optional per tournament: \"name\" to show a different name on the site, and \"subpages\" to list stage pages by hand (normally found automatically).",
-    "Videos come from the links Liquipedia's editors add to each map, usually within a day of the match.",
-    "Tournaments removed from this list disappear from the site on the next run.",
+    "Events come from vlr.gg. To add one by hand, put its address under \"events\", for example {\"vlr\": \"/event/2766/valorant-champions-2026\"}. Add \"name\" to show a different name on the site.",
+    "\"discover\" reads the vlr.gg event lists in \"lists\" every 12 hours and adds every event whose address matches one of the patterns in \"include\" (and none in \"exclude\") and that starts between \"from\" and \"to\". /events/?tier=60 is vlr.gg's list of VCT events. The patterns pick the four international leagues (Kickoff and Stages), Masters and Champions. To add Challengers later, add a pattern for them.",
+    "Each run reads the pages of events that are on or just finished, and the page of every finished match until its map videos are linked, at most \"maxPagesPerRun\" pages, one every 3 seconds.",
+    "Videos are the YouTube links on each vlr.gg match page, one per map with its start time, usually added within a day of the match.",
+    "Events removed from this list disappear from the site on the next run.",
     "\"highlights\" looks for official highlight videos on these YouTube channels, every few hours, and offers them on the site as a short version of a series. A video counts when its title says highlights and names both teams, and it came out within \"maxDaysAfter\" days of the match. Titles are never saved. \"aliases\" lists other names a team goes by there, by the team's id on the site.",
     "\"siteUrl\" is the site's address, used for the links inside the calendar feeds in calendar/."
   ],
-  "tournaments": [],
-  "maxPagesPerRun": 30,
-  "recheckVideosAfterDays": 14,
+  "events": [],
+  "maxPagesPerRun": 60,
   "discover": {
-    "categories": [
-      "Category:S-Tier Tournaments"
+    "lists": [
+      "/events/?tier=60"
+    ],
+    "include": [
+      "^vct-\\d{4}-(americas|emea|pacific|china)-(kickoff|stage-\\d)$",
+      "^valorant-masters-",
+      "^valorant-champions-\\d{4}$"
+    ],
+    "exclude": [
+      "qualifier"
     ],
     "from": "2026-06-01",
-    "to": "2027-12-31",
-    "exclude": []
+    "to": "2027-12-31"
   },
+  "recheckVideosAfterDays": 14,
   "siteUrl": "https://spoilerfreecs2.github.io/Valorant-spoiler-free/",
   "highlights": {
     "channels": [

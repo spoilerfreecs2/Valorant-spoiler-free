@@ -39,10 +39,10 @@ export function titleMatches(title, formsA, formsB, anyTitle = false) {
 export function matchUploads(uploads, matches, teamName, maxDays = 4, aliases = {}, anyTitle = []) {
   const found = {};
   const forms = new Map();
-  // The site's name ("NAVI") and Liquipedia's full one from the id ("lp-natus-vincere" -> "Natus Vincere").
+  // The site's name ("NAVI") and the full one from the id ("vlr-natus-vincere" -> "Natus Vincere").
   const formsOf = id => {
     // Plus any other names from config.highlights.aliases, such as MOUZ's YouTube handle "@mousesports".
-    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' ')), arr(aliases[id]).flatMap(nameForms)))]);
+    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^(lp|vlr)-/, '').replace(/-/g, ' ')), arr(aliases[id]).flatMap(nameForms)))]);
     return forms.get(id);
   };
   for (const up of uploads) {

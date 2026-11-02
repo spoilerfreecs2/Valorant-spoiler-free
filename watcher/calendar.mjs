@@ -4,7 +4,7 @@
   Each event gets calendar/<event-id>.ics with one all-day entry per match day, placed on
   the day after it ("Saturday's matches are ready to watch"), since videos usually come out
   within a day. Entries never name teams, so a calendar can't give away who went through.
-  Match days come from Liquipedia's schedule, including matches whose teams aren't known
+  Match days come from vlr.gg's schedule, including matches whose teams aren't known
   yet, plus the event's last day. Calendar apps that subscribed pick up new days on their
   next refresh.
 
