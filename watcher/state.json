@@ -1,1 +1,2681 @@
-{}
+{
+  "source": "vlr",
+  "events": {
+    "/event/2765/valorant-masters-london-2026": {
+      "info": {
+        "name": "Valorant Masters London 2026",
+        "sdate": "2026-06-05",
+        "edate": "2026-06-21",
+        "location": "Copper Box Arena, London",
+        "logo": "https://owcdn.net/img/692fc18a04f4a.png"
+      },
+      "infoAt": "2026-11-02T01:44:53.329Z",
+      "matches": [
+        {
+          "id": "684613",
+          "path": "/684613/xi-lai-gaming-vs-nrg-valorant-masters-london-2026-r1",
+          "day": "2026-06-06",
+          "order": 0,
+          "a": "Xi Lai Gaming",
+          "b": "NRG",
+          "stage": "Swiss Stage",
+          "round": "Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684610",
+          "path": "/684610/team-vitality-vs-dragon-ranger-gaming-valorant-masters-london-2026-r1",
+          "day": "2026-06-06",
+          "order": 1,
+          "a": "Team Vitality",
+          "b": "Dragon Ranger Gaming",
+          "stage": "Swiss Stage",
+          "round": "Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684611",
+          "path": "/684611/full-sense-vs-fut-esports-valorant-masters-london-2026-r1",
+          "day": "2026-06-07",
+          "order": 2,
+          "a": "FULL SENSE",
+          "b": "FUT Esports",
+          "stage": "Swiss Stage",
+          "round": "Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684612",
+          "path": "/684612/leviat-n-vs-global-esports-valorant-masters-london-2026-r1",
+          "day": "2026-06-07",
+          "order": 3,
+          "a": "LEVIATÁN",
+          "b": "Global Esports",
+          "stage": "Swiss Stage",
+          "round": "Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684614",
+          "path": "/684614/team-vitality-vs-fut-esports-valorant-masters-london-2026-r2-1-0",
+          "day": "2026-06-08",
+          "order": 4,
+          "a": "Team Vitality",
+          "b": "FUT Esports",
+          "stage": "Swiss Stage",
+          "round": "Round 2 (1-0)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684615",
+          "path": "/684615/nrg-vs-leviat-n-valorant-masters-london-2026-r2-1-0",
+          "day": "2026-06-08",
+          "order": 5,
+          "a": "NRG",
+          "b": "LEVIATÁN",
+          "stage": "Swiss Stage",
+          "round": "Round 2 (1-0)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684616",
+          "path": "/684616/dragon-ranger-gaming-vs-xi-lai-gaming-valorant-masters-london-2026-r2-0-1",
+          "day": "2026-06-09",
+          "order": 6,
+          "a": "Dragon Ranger Gaming",
+          "b": "Xi Lai Gaming",
+          "stage": "Swiss Stage",
+          "round": "Round 2 (0-1)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684617",
+          "path": "/684617/global-esports-vs-full-sense-valorant-masters-london-2026-r2-0-1",
+          "day": "2026-06-09",
+          "order": 7,
+          "a": "Global Esports",
+          "b": "FULL SENSE",
+          "stage": "Swiss Stage",
+          "round": "Round 2 (0-1)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684619",
+          "path": "/684619/fut-esports-vs-nrg-valorant-masters-london-2026-r3-1-1",
+          "day": "2026-06-10",
+          "order": 8,
+          "a": "FUT Esports",
+          "b": "NRG",
+          "stage": "Swiss Stage",
+          "round": "Round 3 (1-1)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "684618",
+          "path": "/684618/global-esports-vs-xi-lai-gaming-valorant-masters-london-2026-r3-1-1",
+          "day": "2026-06-10",
+          "order": 9,
+          "a": "Global Esports",
+          "b": "Xi Lai Gaming",
+          "stage": "Swiss Stage",
+          "round": "Round 3 (1-1)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670466",
+          "path": "/670466/paper-rex-vs-leviat-n-valorant-masters-london-2026-ubqf",
+          "day": "2026-06-12",
+          "order": 10,
+          "a": "Paper Rex",
+          "b": "LEVIATÁN",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670467",
+          "path": "/670467/team-heretics-vs-team-vitality-valorant-masters-london-2026-ubqf",
+          "day": "2026-06-12",
+          "order": 11,
+          "a": "Team Heretics",
+          "b": "Team Vitality",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670465",
+          "path": "/670465/edward-gaming-vs-fut-esports-valorant-masters-london-2026-ubqf",
+          "day": "2026-06-13",
+          "order": 12,
+          "a": "EDward Gaming",
+          "b": "FUT Esports",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670464",
+          "path": "/670464/g2-esports-vs-xi-lai-gaming-valorant-masters-london-2026-ubqf",
+          "day": "2026-06-13",
+          "order": 13,
+          "a": "G2 Esports",
+          "b": "Xi Lai Gaming",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670473",
+          "path": "/670473/leviat-n-vs-team-heretics-valorant-masters-london-2026-lr1",
+          "day": "2026-06-14",
+          "order": 14,
+          "a": "LEVIATÁN",
+          "b": "Team Heretics",
+          "stage": "Playoffs",
+          "round": "Lower Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670472",
+          "path": "/670472/g2-esports-vs-fut-esports-valorant-masters-london-2026-lr1",
+          "day": "2026-06-14",
+          "order": 15,
+          "a": "G2 Esports",
+          "b": "FUT Esports",
+          "stage": "Playoffs",
+          "round": "Lower Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670468",
+          "path": "/670468/xi-lai-gaming-vs-edward-gaming-valorant-masters-london-2026-ubsf",
+          "day": "2026-06-15",
+          "order": 16,
+          "a": "Xi Lai Gaming",
+          "b": "EDward Gaming",
+          "stage": "Playoffs",
+          "round": "Upper Semifinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670469",
+          "path": "/670469/paper-rex-vs-team-vitality-valorant-masters-london-2026-ubsf",
+          "day": "2026-06-15",
+          "order": 17,
+          "a": "Paper Rex",
+          "b": "Team Vitality",
+          "stage": "Playoffs",
+          "round": "Upper Semifinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670475",
+          "path": "/670475/xi-lai-gaming-vs-leviat-n-valorant-masters-london-2026-lr2",
+          "day": "2026-06-16",
+          "order": 18,
+          "a": "Xi Lai Gaming",
+          "b": "LEVIATÁN",
+          "stage": "Playoffs",
+          "round": "Lower Round 2",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670474",
+          "path": "/670474/team-vitality-vs-fut-esports-valorant-masters-london-2026-lr2",
+          "day": "2026-06-16",
+          "order": 19,
+          "a": "Team Vitality",
+          "b": "FUT Esports",
+          "stage": "Playoffs",
+          "round": "Lower Round 2",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670470",
+          "path": "/670470/edward-gaming-vs-paper-rex-valorant-masters-london-2026-ubf",
+          "day": "2026-06-19",
+          "order": 20,
+          "a": "EDward Gaming",
+          "b": "Paper Rex",
+          "stage": "Playoffs",
+          "round": "Upper Final",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670476",
+          "path": "/670476/team-vitality-vs-leviat-n-valorant-masters-london-2026-lr3",
+          "day": "2026-06-19",
+          "order": 21,
+          "a": "Team Vitality",
+          "b": "LEVIATÁN",
+          "stage": "Playoffs",
+          "round": "Lower Round 3",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670477",
+          "path": "/670477/edward-gaming-vs-leviat-n-valorant-masters-london-2026-lbf",
+          "day": "2026-06-20",
+          "order": 22,
+          "a": "EDward Gaming",
+          "b": "LEVIATÁN",
+          "stage": "Playoffs",
+          "round": "Lower Final",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "670471",
+          "path": "/670471/paper-rex-vs-leviat-n-valorant-masters-london-2026-gf",
+          "day": "2026-06-21",
+          "order": 23,
+          "a": "Paper Rex",
+          "b": "LEVIATÁN",
+          "stage": "Playoffs",
+          "round": "Grand Final",
+          "completed": true,
+          "youtube": true
+        }
+      ],
+      "matchesAt": "2026-11-02T01:44:53.329Z",
+      "result": "24 matches, 65 map videos"
+    },
+    "/event/2766/valorant-champions-2026": {
+      "info": {
+        "name": "Valorant Champions 2026",
+        "sdate": "2026-09-24",
+        "edate": "2026-10-18",
+        "location": "Shanghai",
+        "logo": "https://owcdn.net/img/692fc60a022bb.png"
+      },
+      "infoAt": "2026-11-02T01:44:53.329Z",
+      "matches": [
+        {
+          "id": "753455",
+          "path": "/753455/team-liquid-vs-paper-rex-valorant-champions-2026-opening-c",
+          "day": "2026-09-24",
+          "order": 0,
+          "a": "Team Liquid",
+          "b": "Paper Rex",
+          "stage": "Group Stage",
+          "round": "Opening (C)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753454",
+          "path": "/753454/tyloo-vs-g2-esports-valorant-champions-2026-opening-c",
+          "day": "2026-09-24",
+          "order": 1,
+          "a": "TYLOO",
+          "b": "G2 Esports",
+          "stage": "Group Stage",
+          "round": "Opening (C)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753460",
+          "path": "/753460/nongshim-redforce-vs-nrg-valorant-champions-2026-opening-d",
+          "day": "2026-09-25",
+          "order": 2,
+          "a": "Nongshim RedForce",
+          "b": "NRG",
+          "stage": "Group Stage",
+          "round": "Opening (D)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753459",
+          "path": "/753459/karmine-corp-vs-xi-lai-gaming-valorant-champions-2026-opening-d",
+          "day": "2026-09-25",
+          "order": 3,
+          "a": "Karmine Corp",
+          "b": "Xi Lai Gaming",
+          "stage": "Group Stage",
+          "round": "Opening (D)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753449",
+          "path": "/753449/global-esports-vs-team-vitality-valorant-champions-2026-opening-b",
+          "day": "2026-09-26",
+          "order": 4,
+          "a": "Global Esports",
+          "b": "Team Vitality",
+          "stage": "Group Stage",
+          "round": "Opening (B)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753450",
+          "path": "/753450/loud-vs-edward-gaming-valorant-champions-2026-opening-b",
+          "day": "2026-09-26",
+          "order": 5,
+          "a": "LOUD",
+          "b": "EDward Gaming",
+          "stage": "Group Stage",
+          "round": "Opening (B)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753444",
+          "path": "/753444/100-thieves-vs-t1-valorant-champions-2026-opening-a",
+          "day": "2026-09-27",
+          "order": 6,
+          "a": "100 Thieves",
+          "b": "T1",
+          "stage": "Group Stage",
+          "round": "Opening (A)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753445",
+          "path": "/753445/jd-gaming-vs-fut-esports-valorant-champions-2026-opening-a",
+          "day": "2026-09-27",
+          "order": 7,
+          "a": "JD Gaming",
+          "b": "FUT Esports",
+          "stage": "Group Stage",
+          "round": "Opening (A)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753456",
+          "path": "/753456/g2-esports-vs-paper-rex-valorant-champions-2026-winners-c",
+          "day": "2026-09-29",
+          "order": 8,
+          "a": "G2 Esports",
+          "b": "Paper Rex",
+          "stage": "Group Stage",
+          "round": "Winner's (C)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753461",
+          "path": "/753461/karmine-corp-vs-nrg-valorant-champions-2026-winners-d",
+          "day": "2026-09-29",
+          "order": 9,
+          "a": "Karmine Corp",
+          "b": "NRG",
+          "stage": "Group Stage",
+          "round": "Winner's (D)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753451",
+          "path": "/753451/team-vitality-vs-loud-valorant-champions-2026-winners-b",
+          "day": "2026-09-30",
+          "order": 10,
+          "a": "Team Vitality",
+          "b": "LOUD",
+          "stage": "Group Stage",
+          "round": "Winner's (B)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753446",
+          "path": "/753446/100-thieves-vs-fut-esports-valorant-champions-2026-winners-a",
+          "day": "2026-09-30",
+          "order": 11,
+          "a": "100 Thieves",
+          "b": "FUT Esports",
+          "stage": "Group Stage",
+          "round": "Winner's (A)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753457",
+          "path": "/753457/tyloo-vs-team-liquid-valorant-champions-2026-elim-c",
+          "day": "2026-10-01",
+          "order": 12,
+          "a": "TYLOO",
+          "b": "Team Liquid",
+          "stage": "Group Stage",
+          "round": "Elimination (C)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753462",
+          "path": "/753462/xi-lai-gaming-vs-nongshim-redforce-valorant-champions-2026-elim-d",
+          "day": "2026-10-01",
+          "order": 13,
+          "a": "Xi Lai Gaming",
+          "b": "Nongshim RedForce",
+          "stage": "Group Stage",
+          "round": "Elimination (D)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753452",
+          "path": "/753452/global-esports-vs-edward-gaming-valorant-champions-2026-elim-b",
+          "day": "2026-10-02",
+          "order": 14,
+          "a": "Global Esports",
+          "b": "EDward Gaming",
+          "stage": "Group Stage",
+          "round": "Elimination (B)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753447",
+          "path": "/753447/t1-vs-jd-gaming-valorant-champions-2026-elim-a",
+          "day": "2026-10-02",
+          "order": 15,
+          "a": "T1",
+          "b": "JD Gaming",
+          "stage": "Group Stage",
+          "round": "Elimination (A)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753458",
+          "path": "/753458/g2-esports-vs-team-liquid-valorant-champions-2026-decider-c",
+          "day": "2026-10-03",
+          "order": 16,
+          "a": "G2 Esports",
+          "b": "Team Liquid",
+          "stage": "Group Stage",
+          "round": "Decider (C)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753463",
+          "path": "/753463/karmine-corp-vs-nongshim-redforce-valorant-champions-2026-decider-d",
+          "day": "2026-10-03",
+          "order": 17,
+          "a": "Karmine Corp",
+          "b": "Nongshim RedForce",
+          "stage": "Group Stage",
+          "round": "Decider (D)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753453",
+          "path": "/753453/loud-vs-global-esports-valorant-champions-2026-decider-b",
+          "day": "2026-10-04",
+          "order": 18,
+          "a": "LOUD",
+          "b": "Global Esports",
+          "stage": "Group Stage",
+          "round": "Decider (B)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "753448",
+          "path": "/753448/fut-esports-vs-t1-valorant-champions-2026-decider-a",
+          "day": "2026-10-04",
+          "order": 19,
+          "a": "FUT Esports",
+          "b": "T1",
+          "stage": "Group Stage",
+          "round": "Decider (A)",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754732",
+          "path": "/754732/nrg-vs-t1-valorant-champions-2026-ubqf",
+          "day": "2026-10-07",
+          "order": 20,
+          "a": "NRG",
+          "b": "T1",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754733",
+          "path": "/754733/paper-rex-vs-loud-valorant-champions-2026-ubqf",
+          "day": "2026-10-07",
+          "order": 21,
+          "a": "Paper Rex",
+          "b": "LOUD",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754730",
+          "path": "/754730/100-thieves-vs-g2-esports-valorant-champions-2026-ubqf",
+          "day": "2026-10-08",
+          "order": 22,
+          "a": "100 Thieves",
+          "b": "G2 Esports",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754731",
+          "path": "/754731/team-vitality-vs-nongshim-redforce-valorant-champions-2026-ubqf",
+          "day": "2026-10-08",
+          "order": 23,
+          "a": "Team Vitality",
+          "b": "Nongshim RedForce",
+          "stage": "Playoffs",
+          "round": "Upper Quarterfinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754739",
+          "path": "/754739/t1-vs-paper-rex-valorant-champions-2026-lr1",
+          "day": "2026-10-09",
+          "order": 24,
+          "a": "T1",
+          "b": "Paper Rex",
+          "stage": "Playoffs",
+          "round": "Lower Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754738",
+          "path": "/754738/100-thieves-vs-nongshim-redforce-valorant-champions-2026-lr1",
+          "day": "2026-10-09",
+          "order": 25,
+          "a": "100 Thieves",
+          "b": "Nongshim RedForce",
+          "stage": "Playoffs",
+          "round": "Lower Round 1",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754735",
+          "path": "/754735/nrg-vs-loud-valorant-champions-2026-ubsf",
+          "day": "2026-10-10",
+          "order": 26,
+          "a": "NRG",
+          "b": "LOUD",
+          "stage": "Playoffs",
+          "round": "Upper Semifinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754734",
+          "path": "/754734/g2-esports-vs-team-vitality-valorant-champions-2026-ubsf",
+          "day": "2026-10-10",
+          "order": 27,
+          "a": "G2 Esports",
+          "b": "Team Vitality",
+          "stage": "Playoffs",
+          "round": "Upper Semifinals",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754740",
+          "path": "/754740/nrg-vs-100-thieves-valorant-champions-2026-lr2",
+          "day": "2026-10-11",
+          "order": 28,
+          "a": "NRG",
+          "b": "100 Thieves",
+          "stage": "Playoffs",
+          "round": "Lower Round 2",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754741",
+          "path": "/754741/g2-esports-vs-t1-valorant-champions-2026-lr2",
+          "day": "2026-10-11",
+          "order": 29,
+          "a": "G2 Esports",
+          "b": "T1",
+          "stage": "Playoffs",
+          "round": "Lower Round 2",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754736",
+          "path": "/754736/team-vitality-vs-loud-valorant-champions-2026-ubf",
+          "day": "2026-10-16",
+          "order": 30,
+          "a": "Team Vitality",
+          "b": "LOUD",
+          "stage": "Playoffs",
+          "round": "Upper Final",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754742",
+          "path": "/754742/100-thieves-vs-g2-esports-valorant-champions-2026-lr3",
+          "day": "2026-10-16",
+          "order": 31,
+          "a": "100 Thieves",
+          "b": "G2 Esports",
+          "stage": "Playoffs",
+          "round": "Lower Round 3",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754743",
+          "path": "/754743/team-vitality-vs-100-thieves-valorant-champions-2026-lbf",
+          "day": "2026-10-17",
+          "order": 32,
+          "a": "Team Vitality",
+          "b": "100 Thieves",
+          "stage": "Playoffs",
+          "round": "Lower Final",
+          "completed": true,
+          "youtube": true
+        },
+        {
+          "id": "754737",
+          "path": "/754737/loud-vs-team-vitality-valorant-champions-2026-gf",
+          "day": "2026-10-18",
+          "order": 33,
+          "a": "LOUD",
+          "b": "Team Vitality",
+          "stage": "Playoffs",
+          "round": "Grand Final",
+          "completed": true,
+          "youtube": true
+        }
+      ],
+      "matchesAt": "2026-11-02T01:44:53.329Z",
+      "result": "34 matches, 27 map videos"
+    },
+    "/event/2776/vct-2026-pacific-stage-2": {},
+    "/event/2976/vct-2026-emea-stage-2": {},
+    "/event/2977/vct-2026-americas-stage-2": {},
+    "/event/2978/vct-2026-china-stage-2": {},
+    "/event/3161/valorant-masters-seoul-2027": {},
+    "/event/3162/valorant-masters-valencia-2027": {},
+    "/event/3163/valorant-champions-2027": {},
+    "/event/3176/vct-2027-emea-kickoff": {},
+    "/event/3178/vct-2027-americas-kickoff": {},
+    "/event/3181/vct-2027-pacific-kickoff": {},
+    "/event/3182/vct-2027-china-kickoff": {}
+  },
+  "matches": {
+    "670464": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-06-13T13:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11058",
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "logo": "https://owcdn.net/img/633822848a741.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "z2p_eCxcIAI",
+              "start": 113
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "z2p_eCxcIAI",
+              "start": 3098
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "z2p_eCxcIAI",
+              "start": 5621
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670465": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-06-13T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "vFmM51y2IEk",
+              "start": 139
+            }
+          },
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "vFmM51y2IEk",
+              "start": 2288
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "vFmM51y2IEk",
+              "start": 5537
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670466": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-06-12T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "624",
+            "slug": "paper-rex",
+            "name": "Paper Rex",
+            "logo": "https://owcdn.net/img/62bbeba74d5cb.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "BAH3zpoOYXQ",
+              "start": 85
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "BAH3zpoOYXQ",
+              "start": 1857
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670467": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-06-12T12:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1001",
+            "slug": "team-heretics",
+            "name": "Team Heretics",
+            "logo": "https://owcdn.net/img/637b755224c12.png"
+          },
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "pMYvVg8VjWE",
+              "start": 141
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "pMYvVg8VjWE",
+              "start": 2654
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670468": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Semifinals",
+        "date": "2026-06-15T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "9PwEfkFweiE",
+              "start": 129
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "9PwEfkFweiE",
+              "start": 3308
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "9PwEfkFweiE",
+              "start": 6606
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670469": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Semifinals",
+        "date": "2026-06-15T13:15:00Z",
+        "teams": [
+          {
+            "vlrId": "624",
+            "slug": "paper-rex",
+            "name": "Paper Rex",
+            "logo": "https://owcdn.net/img/62bbeba74d5cb.png"
+          },
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "1VqGWzbVVL8",
+              "start": 148
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "1VqGWzbVVL8",
+              "start": 2085
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "1VqGWzbVVL8",
+              "start": 4683
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670470": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Final",
+        "date": "2026-06-19T09:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "624",
+            "slug": "paper-rex",
+            "name": "Paper Rex",
+            "logo": "https://owcdn.net/img/62bbeba74d5cb.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "-nfe8xeT-ao",
+              "start": 82
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "-nfe8xeT-ao",
+              "start": 3431
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "-nfe8xeT-ao",
+              "start": 6908
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670471": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Grand Final",
+        "date": "2026-06-21T10:20:00Z",
+        "teams": [
+          {
+            "vlrId": "624",
+            "slug": "paper-rex",
+            "name": "Paper Rex",
+            "logo": "https://owcdn.net/img/62bbeba74d5cb.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 5,
+        "maps": [
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "yWqPVOvSJPg",
+              "start": 128
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "yWqPVOvSJPg",
+              "start": 2049
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "yWqPVOvSJPg",
+              "start": 4283
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "yWqPVOvSJPg",
+              "start": 7250
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "yWqPVOvSJPg",
+              "start": 10636
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670472": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 1",
+        "date": "2026-06-14T13:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11058",
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "logo": "https://owcdn.net/img/633822848a741.png"
+          },
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "QCianVVO54A",
+              "start": 133
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "QCianVVO54A",
+              "start": 2956
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670473": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 1",
+        "date": "2026-06-14T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          },
+          {
+            "vlrId": "1001",
+            "slug": "team-heretics",
+            "name": "Team Heretics",
+            "logo": "https://owcdn.net/img/637b755224c12.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "vaEwNmGq364",
+              "start": 261
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "vaEwNmGq364",
+              "start": 2113
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "vaEwNmGq364",
+              "start": 5213
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670474": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 2",
+        "date": "2026-06-16T12:05:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "FpGHDFsnKJM",
+              "start": 137
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "FpGHDFsnKJM",
+              "start": 2970
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670475": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 2",
+        "date": "2026-06-16T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "yuN_-2pPxAQ",
+              "start": 107
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "yuN_-2pPxAQ",
+              "start": 2610
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670476": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 3",
+        "date": "2026-06-19T12:35:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "Zxy9lFlO8Jc",
+              "start": 149
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "Zxy9lFlO8Jc",
+              "start": 2673
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "670477": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Final",
+        "date": "2026-06-20T09:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 5,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "n4jX567C_hw",
+              "start": 104
+            }
+          },
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "n4jX567C_hw",
+              "start": 2192
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "n4jX567C_hw",
+              "start": 5018
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684610": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 1",
+        "date": "2026-06-06T12:30:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "Xo1sU79Fvas",
+              "start": 140
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "Xo1sU79Fvas",
+              "start": 2799
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684611": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 1",
+        "date": "2026-06-07T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "4050",
+            "slug": "full-sense",
+            "name": "FULL SENSE",
+            "logo": "https://owcdn.net/img/6537a7954d915.png"
+          },
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "TVOx7WKAu_A",
+              "start": 273
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "TVOx7WKAu_A",
+              "start": 2324
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684612": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 1",
+        "date": "2026-06-07T12:00:00Z",
+        "teams": [
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          },
+          {
+            "vlrId": "918",
+            "slug": "global-esports",
+            "name": "Global Esports",
+            "logo": "https://owcdn.net/img/629f316ddd4dd.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "opiaS8K3ZIM",
+              "start": 230
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "opiaS8K3ZIM",
+              "start": 2518
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "opiaS8K3ZIM",
+              "start": 5666
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684613": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 1",
+        "date": "2026-06-06T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "1034",
+            "slug": "nrg",
+            "name": "NRG",
+            "logo": "https://owcdn.net/img/6610f026c1a9e.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "jD3cGBf_Vw4",
+              "start": 143
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "jD3cGBf_Vw4",
+              "start": 2871
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684614": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 2 (1-0)",
+        "date": "2026-06-08T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "pL4dzDvZkLs",
+              "start": 136
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "pL4dzDvZkLs",
+              "start": 3451
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "pL4dzDvZkLs",
+              "start": 5941
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684615": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 2 (1-0)",
+        "date": "2026-06-08T13:15:00Z",
+        "teams": [
+          {
+            "vlrId": "1034",
+            "slug": "nrg",
+            "name": "NRG",
+            "logo": "https://owcdn.net/img/6610f026c1a9e.png"
+          },
+          {
+            "vlrId": "2359",
+            "slug": "leviat-n",
+            "name": "LEVIATÁN",
+            "logo": "https://owcdn.net/img/61b8888cc3860.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "q-wuLNx0d5k",
+              "start": 133
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "q-wuLNx0d5k",
+              "start": 2976
+            }
+          },
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "q-wuLNx0d5k",
+              "start": 5269
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684616": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 2 (0-1)",
+        "date": "2026-06-09T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "9h3r8pTV618",
+              "start": 116
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "9h3r8pTV618",
+              "start": 2424
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "9h3r8pTV618",
+              "start": 5268
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684617": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 2 (0-1)",
+        "date": "2026-06-09T13:20:00Z",
+        "teams": [
+          {
+            "vlrId": "918",
+            "slug": "global-esports",
+            "name": "Global Esports",
+            "logo": "https://owcdn.net/img/629f316ddd4dd.png"
+          },
+          {
+            "vlrId": "4050",
+            "slug": "full-sense",
+            "name": "FULL SENSE",
+            "logo": "https://owcdn.net/img/6537a7954d915.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "rXGUHJMRiK8",
+              "start": 71
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "rXGUHJMRiK8",
+              "start": 3090
+            }
+          },
+          {
+            "name": "Pearl",
+            "played": true,
+            "vod": {
+              "id": "rXGUHJMRiK8",
+              "start": 5524
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684618": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 3 (1-1)",
+        "date": "2026-06-10T13:40:00Z",
+        "teams": [
+          {
+            "vlrId": "918",
+            "slug": "global-esports",
+            "name": "Global Esports",
+            "logo": "https://owcdn.net/img/629f316ddd4dd.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "nBjwduhpzmM",
+              "start": 119
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "nBjwduhpzmM",
+              "start": 2879
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "nBjwduhpzmM",
+              "start": 6045
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "684619": {
+      "parsed": {
+        "stage": "Swiss Stage",
+        "round": "Round 3 (1-1)",
+        "date": "2026-06-10T10:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1184",
+            "slug": "fut-esports",
+            "name": "FUT Esports",
+            "logo": "https://owcdn.net/img/632be9976b8fe.png"
+          },
+          {
+            "vlrId": "1034",
+            "slug": "nrg",
+            "name": "NRG",
+            "logo": "https://owcdn.net/img/6610f026c1a9e.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "ep-ofVqg81s",
+              "start": 238
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "ep-ofVqg81s",
+              "start": 3626
+            }
+          },
+          {
+            "name": "Fracture",
+            "played": true,
+            "vod": {
+              "id": "ep-ofVqg81s",
+              "start": 7142
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754734": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Semifinals",
+        "date": "2026-10-10T08:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11058",
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "logo": "https://owcdn.net/img/633822848a741.png"
+          },
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Abyss",
+            "played": true,
+            "vod": {
+              "id": "gorOwJphwKE",
+              "start": 73
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "gorOwJphwKE",
+              "start": 3560
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754735": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Semifinals",
+        "date": "2026-10-10T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1034",
+            "slug": "nrg",
+            "name": "NRG",
+            "logo": "https://owcdn.net/img/6610f026c1a9e.png"
+          },
+          {
+            "vlrId": "6961",
+            "slug": "loud",
+            "name": "LOUD",
+            "logo": "https://owcdn.net/img/62bbec8dc1b9f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "91OQEM7i78w",
+              "start": 78
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "91OQEM7i78w",
+              "start": 2815
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "91OQEM7i78w",
+              "start": 5893
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754736": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Final",
+        "date": "2026-10-16T02:00:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "6961",
+            "slug": "loud",
+            "name": "LOUD",
+            "logo": "https://owcdn.net/img/62bbec8dc1b9f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "lXdvR5iMU3Y",
+              "start": 90
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "lXdvR5iMU3Y",
+              "start": 2945
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "lXdvR5iMU3Y",
+              "start": 5565
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754737": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Grand Final",
+        "date": "2026-10-18T02:00:00Z",
+        "teams": [
+          {
+            "vlrId": "6961",
+            "slug": "loud",
+            "name": "LOUD",
+            "logo": "https://owcdn.net/img/62bbec8dc1b9f.png"
+          },
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          }
+        ],
+        "bo": 5,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "QnBTE-UVpX4",
+              "start": 115
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "QnBTE-UVpX4",
+              "start": 3400
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "QnBTE-UVpX4",
+              "start": 6447
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "QnBTE-UVpX4",
+              "start": 8979
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754739": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 1",
+        "date": "2026-10-09T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "14",
+            "slug": "t1",
+            "name": "T1",
+            "logo": "https://owcdn.net/img/62fe0b8f6b084.png"
+          },
+          {
+            "vlrId": "624",
+            "slug": "paper-rex",
+            "name": "Paper Rex",
+            "logo": "https://owcdn.net/img/62bbeba74d5cb.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "mbsqsNT6ClQ",
+              "start": 60
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "mbsqsNT6ClQ",
+              "start": 2730
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "mbsqsNT6ClQ",
+              "start": 5374
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754740": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 2",
+        "date": "2026-10-11T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1034",
+            "slug": "nrg",
+            "name": "NRG",
+            "logo": "https://owcdn.net/img/6610f026c1a9e.png"
+          },
+          {
+            "vlrId": "120",
+            "slug": "100-thieves",
+            "name": "100 Thieves",
+            "logo": "https://owcdn.net/img/603c00d5c5a08.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "UMIkxgmsOTA",
+              "start": 70
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "UMIkxgmsOTA",
+              "start": 3457
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754741": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 2",
+        "date": "2026-10-11T07:15:00Z",
+        "teams": [
+          {
+            "vlrId": "11058",
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "logo": "https://owcdn.net/img/633822848a741.png"
+          },
+          {
+            "vlrId": "14",
+            "slug": "t1",
+            "name": "T1",
+            "logo": "https://owcdn.net/img/62fe0b8f6b084.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "2EzWX2VemjM",
+              "start": 79
+            }
+          },
+          {
+            "name": "Abyss",
+            "played": true,
+            "vod": {
+              "id": "2EzWX2VemjM",
+              "start": 3249
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "2EzWX2VemjM",
+              "start": 6428
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754742": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Round 3",
+        "date": "2026-10-16T06:10:00Z",
+        "teams": [
+          {
+            "vlrId": "120",
+            "slug": "100-thieves",
+            "name": "100 Thieves",
+            "logo": "https://owcdn.net/img/603c00d5c5a08.png"
+          },
+          {
+            "vlrId": "11058",
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "logo": "https://owcdn.net/img/633822848a741.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "a0sIMtIto6g",
+              "start": 67
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "a0sIMtIto6g",
+              "start": 4505
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "a0sIMtIto6g",
+              "start": 7712
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    },
+    "754743": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Lower Final",
+        "date": "2026-10-17T03:00:00Z",
+        "teams": [
+          {
+            "vlrId": "2059",
+            "slug": "team-vitality",
+            "name": "Team Vitality",
+            "logo": "https://owcdn.net/img/6466d79e1ed40.png"
+          },
+          {
+            "vlrId": "120",
+            "slug": "100-thieves",
+            "name": "100 Thieves",
+            "logo": "https://owcdn.net/img/603c00d5c5a08.png"
+          }
+        ],
+        "bo": 5,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "MZjaOtjtRlU",
+              "start": 114
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "MZjaOtjtRlU",
+              "start": 2688
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "MZjaOtjtRlU",
+              "start": 5810
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "MZjaOtjtRlU",
+              "start": 9315
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T01:44:53.329Z",
+      "done": true
+    }
+  },
+  "teams": {
+    "vlr-xi-lai-gaming": {
+      "id": "vlr-xi-lai-gaming",
+      "name": "Xi Lai Gaming",
+      "logoUrl": "https://owcdn.net/img/671742f863b9b.png"
+    },
+    "vlr-nrg": {
+      "id": "vlr-nrg",
+      "name": "NRG",
+      "logoUrl": "https://owcdn.net/img/6610f026c1a9e.png"
+    },
+    "vlr-team-vitality": {
+      "id": "vlr-team-vitality",
+      "name": "Team Vitality",
+      "logoUrl": "https://owcdn.net/img/6466d79e1ed40.png"
+    },
+    "vlr-dragon-ranger-gaming": {
+      "id": "vlr-dragon-ranger-gaming",
+      "name": "Dragon Ranger Gaming",
+      "logoUrl": "https://owcdn.net/img/642233fc01f26.png"
+    },
+    "vlr-full-sense": {
+      "id": "vlr-full-sense",
+      "name": "FULL SENSE",
+      "logoUrl": "https://owcdn.net/img/6537a7954d915.png"
+    },
+    "vlr-fut-esports": {
+      "id": "vlr-fut-esports",
+      "name": "FUT Esports",
+      "logoUrl": "https://owcdn.net/img/632be9976b8fe.png"
+    },
+    "vlr-leviatan": {
+      "id": "vlr-leviatan",
+      "name": "LEVIATÁN",
+      "logoUrl": "https://owcdn.net/img/61b8888cc3860.png"
+    },
+    "vlr-global-esports": {
+      "id": "vlr-global-esports",
+      "name": "Global Esports",
+      "logoUrl": "https://owcdn.net/img/629f316ddd4dd.png"
+    },
+    "vlr-paper-rex": {
+      "id": "vlr-paper-rex",
+      "name": "Paper Rex",
+      "logoUrl": "https://owcdn.net/img/62bbeba74d5cb.png"
+    },
+    "vlr-team-heretics": {
+      "id": "vlr-team-heretics",
+      "name": "Team Heretics",
+      "logoUrl": "https://owcdn.net/img/637b755224c12.png"
+    },
+    "vlr-edward-gaming": {
+      "id": "vlr-edward-gaming",
+      "name": "EDward Gaming",
+      "logoUrl": "https://owcdn.net/img/62c82049253b2.png"
+    },
+    "vlr-g2-esports": {
+      "id": "vlr-g2-esports",
+      "name": "G2 Esports",
+      "logoUrl": "https://owcdn.net/img/633822848a741.png"
+    },
+    "vlr-team-liquid": {
+      "id": "vlr-team-liquid",
+      "name": "Team Liquid"
+    },
+    "vlr-tyloo": {
+      "id": "vlr-tyloo",
+      "name": "TYLOO"
+    },
+    "vlr-nongshim-redforce": {
+      "id": "vlr-nongshim-redforce",
+      "name": "Nongshim RedForce"
+    },
+    "vlr-karmine-corp": {
+      "id": "vlr-karmine-corp",
+      "name": "Karmine Corp"
+    },
+    "vlr-loud": {
+      "id": "vlr-loud",
+      "name": "LOUD",
+      "logoUrl": "https://owcdn.net/img/62bbec8dc1b9f.png"
+    },
+    "vlr-100-thieves": {
+      "id": "vlr-100-thieves",
+      "name": "100 Thieves",
+      "logoUrl": "https://owcdn.net/img/603c00d5c5a08.png"
+    },
+    "vlr-t1": {
+      "id": "vlr-t1",
+      "name": "T1",
+      "logoUrl": "https://owcdn.net/img/62fe0b8f6b084.png"
+    },
+    "vlr-jd-gaming": {
+      "id": "vlr-jd-gaming",
+      "name": "JD Gaming"
+    }
+  },
+  "videos": {},
+  "resolved": {},
+  "parserVersion": 1,
+  "buildVersion": 1,
+  "discover": {
+    "info": {
+      "/event/3182/vct-2027-china-kickoff": {
+        "name": "VCT 2027: China Kickoff",
+        "sdate": "2027-01-01",
+        "edate": "2027-02-27"
+      },
+      "/event/3176/vct-2027-emea-kickoff": {
+        "name": "VCT 2027: EMEA Kickoff",
+        "sdate": "2027-01-02",
+        "edate": "2027-02-26"
+      },
+      "/event/3178/vct-2027-americas-kickoff": {
+        "name": "VCT 2027: Americas Kickoff",
+        "sdate": "2027-01-03",
+        "edate": "2027-02-26"
+      },
+      "/event/3181/vct-2027-pacific-kickoff": {
+        "name": "VCT 2027: Pacific Kickoff",
+        "sdate": "2027-01-10",
+        "edate": "2027-01-31"
+      },
+      "/event/3161/valorant-masters-seoul-2027": {
+        "name": "Valorant Masters Seoul 2027",
+        "sdate": "2027-02-19",
+        "edate": "2027-03-07"
+      },
+      "/event/3162/valorant-masters-valencia-2027": {
+        "name": "Valorant Masters Valencia 2027",
+        "sdate": "2027-06-05",
+        "edate": "2027-06-20"
+      },
+      "/event/3163/valorant-champions-2027": {
+        "name": "Valorant Champions 2027",
+        "sdate": "2027-09-15",
+        "edate": "2027-10-10"
+      },
+      "/event/2766/valorant-champions-2026": {
+        "name": "Valorant Champions 2026",
+        "sdate": "2026-09-24",
+        "edate": "2026-10-18"
+      },
+      "/event/2977/vct-2026-americas-stage-2": {
+        "name": "VCT 2026: Americas Stage 2",
+        "sdate": "2026-07-16",
+        "edate": "2026-09-06"
+      },
+      "/event/2776/vct-2026-pacific-stage-2": {
+        "name": "VCT 2026: Pacific Stage 2",
+        "sdate": "2026-07-15",
+        "edate": "2026-09-06"
+      },
+      "/event/2976/vct-2026-emea-stage-2": {
+        "name": "VCT 2026: EMEA Stage 2",
+        "sdate": "2026-07-15",
+        "edate": "2026-08-30"
+      },
+      "/event/2978/vct-2026-china-stage-2": {
+        "name": "VCT 2026: China Stage 2",
+        "sdate": "2026-07-08",
+        "edate": "2026-08-23"
+      },
+      "/event/2765/valorant-masters-london-2026": {
+        "name": "Valorant Masters London 2026",
+        "sdate": "2026-06-05",
+        "edate": "2026-06-21"
+      },
+      "/event/2860/vct-2026-americas-stage-1": {
+        "name": "VCT 2026: Americas Stage 1",
+        "sdate": "2026-04-10",
+        "edate": "2026-05-25"
+      },
+      "/event/2863/vct-2026-emea-stage-1": {
+        "name": "VCT 2026: EMEA Stage 1",
+        "sdate": "2026-04-01",
+        "edate": "2026-05-17"
+      },
+      "/event/2775/vct-2026-pacific-stage-1": {
+        "name": "VCT 2026: Pacific Stage 1",
+        "sdate": "2026-04-02",
+        "edate": "2026-05-17"
+      },
+      "/event/2864/vct-2026-china-stage-1": {
+        "name": "VCT 2026: China Stage 1",
+        "sdate": "2026-03-31",
+        "edate": "2026-05-10"
+      },
+      "/event/2760/valorant-masters-santiago-2026": {
+        "name": "Valorant Masters Santiago 2026",
+        "sdate": "2026-02-28",
+        "edate": "2026-03-15"
+      },
+      "/event/2682/vct-2026-americas-kickoff": {
+        "name": "VCT 2026: Americas Kickoff",
+        "sdate": "2026-01-15",
+        "edate": "2026-02-16"
+      },
+      "/event/2684/vct-2026-emea-kickoff": {
+        "name": "VCT 2026: EMEA Kickoff",
+        "sdate": "2026-01-20",
+        "edate": "2026-02-15"
+      },
+      "/event/2683/vct-2026-pacific-kickoff": {
+        "name": "VCT 2026: Pacific Kickoff",
+        "sdate": "2026-01-22",
+        "edate": "2026-02-15"
+      },
+      "/event/2685/vct-2026-china-kickoff": {
+        "name": "VCT 2026: China Kickoff",
+        "sdate": "2026-01-21",
+        "edate": "2026-02-09"
+      }
+    },
+    "found": [
+      "/event/2682/vct-2026-americas-kickoff",
+      "/event/2683/vct-2026-pacific-kickoff",
+      "/event/2684/vct-2026-emea-kickoff",
+      "/event/2685/vct-2026-china-kickoff",
+      "/event/2760/valorant-masters-santiago-2026",
+      "/event/2765/valorant-masters-london-2026",
+      "/event/2766/valorant-champions-2026",
+      "/event/2775/vct-2026-pacific-stage-1",
+      "/event/2776/vct-2026-pacific-stage-2",
+      "/event/2860/vct-2026-americas-stage-1",
+      "/event/2863/vct-2026-emea-stage-1",
+      "/event/2864/vct-2026-china-stage-1",
+      "/event/2976/vct-2026-emea-stage-2",
+      "/event/2977/vct-2026-americas-stage-2",
+      "/event/2978/vct-2026-china-stage-2",
+      "/event/3161/valorant-masters-seoul-2027",
+      "/event/3162/valorant-masters-valencia-2027",
+      "/event/3163/valorant-champions-2027",
+      "/event/3176/vct-2027-emea-kickoff",
+      "/event/3178/vct-2027-americas-kickoff",
+      "/event/3181/vct-2027-pacific-kickoff",
+      "/event/3182/vct-2027-china-kickoff"
+    ],
+    "checkedAt": "2026-11-02T01:44:53.329Z",
+    "key": "{\"lists\":[\"/events/?tier=60\"],\"include\":[\"^vct-\\\\d{4}-(americas|emea|pacific|china)-(kickoff|stage-\\\\d)$\",\"^valorant-masters-\",\"^valorant-champions-\\\\d{4}$\"],\"exclude\":[\"qualifier\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\"}"
+  },
+  "highlights": {},
+  "images": {
+    "valorant-champions-2026": {
+      "url": "https://owcdn.net/img/692fc60a022bb.png",
+      "saved": "valorant-champions-2026.png"
+    },
+    "valorant-masters-london-2026": {
+      "url": "https://owcdn.net/img/692fc18a04f4a.png",
+      "saved": "valorant-masters-london-2026.png"
+    },
+    "team:vlr-100-thieves": {
+      "url": "https://owcdn.net/img/603c00d5c5a08.png",
+      "saved": "vlr-100-thieves.png"
+    },
+    "team:vlr-dragon-ranger-gaming": {
+      "url": "https://owcdn.net/img/642233fc01f26.png",
+      "saved": "vlr-dragon-ranger-gaming.png"
+    },
+    "team:vlr-edward-gaming": {
+      "url": "https://owcdn.net/img/62c82049253b2.png",
+      "saved": "vlr-edward-gaming.png"
+    },
+    "team:vlr-full-sense": {
+      "url": "https://owcdn.net/img/6537a7954d915.png",
+      "saved": "vlr-full-sense.png"
+    },
+    "team:vlr-fut-esports": {
+      "url": "https://owcdn.net/img/632be9976b8fe.png",
+      "saved": "vlr-fut-esports.png"
+    },
+    "team:vlr-g2-esports": {
+      "url": "https://owcdn.net/img/633822848a741.png",
+      "saved": "vlr-g2-esports.png"
+    },
+    "team:vlr-global-esports": {
+      "url": "https://owcdn.net/img/629f316ddd4dd.png",
+      "saved": "vlr-global-esports.png"
+    },
+    "team:vlr-leviatan": {
+      "url": "https://owcdn.net/img/61b8888cc3860.png",
+      "saved": "vlr-leviatan.png"
+    },
+    "team:vlr-loud": {
+      "url": "https://owcdn.net/img/62bbec8dc1b9f.png",
+      "saved": "vlr-loud.png"
+    },
+    "team:vlr-nrg": {
+      "url": "https://owcdn.net/img/6610f026c1a9e.png",
+      "saved": "vlr-nrg.png"
+    },
+    "team:vlr-paper-rex": {
+      "url": "https://owcdn.net/img/62bbeba74d5cb.png",
+      "saved": "vlr-paper-rex.png"
+    },
+    "team:vlr-t1": {
+      "url": "https://owcdn.net/img/62fe0b8f6b084.png",
+      "saved": "vlr-t1.png"
+    },
+    "team:vlr-team-heretics": {
+      "url": "https://owcdn.net/img/637b755224c12.png",
+      "saved": "vlr-team-heretics.png"
+    },
+    "team:vlr-team-vitality": {
+      "url": "https://owcdn.net/img/6466d79e1ed40.png",
+      "saved": "vlr-team-vitality.png"
+    },
+    "team:vlr-xi-lai-gaming": {
+      "url": "https://owcdn.net/img/671742f863b9b.png",
+      "saved": "vlr-xi-lai-gaming.png"
+    }
+  }
+}

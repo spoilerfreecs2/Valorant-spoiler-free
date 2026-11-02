@@ -1,0 +1,334 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Valorant Champions 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260924@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Valorant Champions 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260925@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Valorant Champions 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260926@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Valorant Champions 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260927@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Valorant Champions 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260929@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Valorant Champions 2026: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of Valorant Champions 2026 shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20260930@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Valorant Champions 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Valorant Champions 2026 sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261001@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Valorant Champions 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261002@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Valorant Champions 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261003@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Valorant Champions 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261004@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Valorant Champions 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261007@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Valorant Champions 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Valorant Champions 2026 sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261008@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Valorant Champions 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261009@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Valorant Champions 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261010@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Valorant Champions 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261011@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Valorant Champions 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261016@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Valorant Champions 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Champions 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261017@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Valorant Champions 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Champions 2026 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2026-20261018@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Valorant Champions 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Champions 2026 should be 
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-s
+ poiler-free/#/t/valorant-champions-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,244 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Valorant Masters London 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260606@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+SUMMARY:Valorant Masters London 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Masters London 202
+ 6 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.i
+ o/Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260607@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+SUMMARY:Valorant Masters London 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260608@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260610
+SUMMARY:Valorant Masters London 2026: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260609@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Valorant Masters London 2026: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of Valorant Masters London 2026
+  should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io
+ /Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260610@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:Valorant Masters London 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Valorant Masters London 20
+ 26 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.
+ io/Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260612@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260614
+SUMMARY:Valorant Masters London 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260613@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:Valorant Masters London 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Masters London 202
+ 6 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.i
+ o/Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260614@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+SUMMARY:Valorant Masters London 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260615@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+SUMMARY:Valorant Masters London 2026: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260616@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260618
+SUMMARY:Valorant Masters London 2026: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of Valorant Masters London 2026
+  should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io
+ /Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260619@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+SUMMARY:Valorant Masters London 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Masters London 2026 
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260620@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+SUMMARY:Valorant Masters London 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Masters London 202
+ 6 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.i
+ o/Valorant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-london-2026-20260621@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260623
+SUMMARY:Valorant Masters London 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Masters London 2026 shoul
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
+ ant-spoiler-free/#/t/valorant-masters-london-2026
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-london-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters London 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
