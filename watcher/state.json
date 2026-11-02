@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-02T05:56:23.856Z",
+      "infoAt": "2026-11-02T06:28:56.628Z",
       "matches": [
         {
           "id": "753455",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-02T05:56:23.856Z",
+      "matchesAt": "2026-11-02T06:28:56.628Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -3731,9 +3731,21 @@
         }
       ],
       "matchesAt": "2026-11-02T05:56:23.856Z",
-      "result": "66 matches, 32 map videos"
+      "result": "66 matches, 164 map videos"
     },
-    "/event/3161/valorant-masters-seoul-2027": {},
+    "/event/3161/valorant-masters-seoul-2027": {
+      "info": {
+        "name": "Valorant Masters Seoul 2027",
+        "sdate": "2027-02-19",
+        "edate": "2027-03-07",
+        "location": "Seoul",
+        "logo": "https://owcdn.net/img/692fc18a04f4a.png"
+      },
+      "infoAt": "2026-11-02T06:28:56.628Z",
+      "matches": [],
+      "matchesAt": "2026-11-02T06:28:56.628Z",
+      "result": "coming up, no matches drawn yet"
+    },
     "/event/3162/valorant-masters-valencia-2027": {
       "info": {
         "name": "Valorant Masters Valencia 2027",
@@ -3782,9 +3794,21 @@
         "logo": "https://owcdn.net/img/640f5ab71dfbb.png"
       },
       "infoAt": "2026-11-02T05:56:23.856Z",
+      "result": "coming up, no matches drawn yet",
+      "matches": [],
+      "matchesAt": "2026-11-02T06:28:56.628Z"
+    },
+    "/event/3181/vct-2027-pacific-kickoff": {
+      "info": {
+        "name": "VCT 2027: Pacific Kickoff",
+        "sdate": "2027-01-11",
+        "edate": "2027-01-31",
+        "location": "Bangkok",
+        "logo": "https://owcdn.net/img/640f5ae002674.png"
+      },
+      "infoAt": "2026-11-02T06:28:56.628Z",
       "result": "coming up, no matches drawn yet"
     },
-    "/event/3181/vct-2027-pacific-kickoff": {},
     "/event/3182/vct-2027-china-kickoff": {}
   },
   "matches": {
@@ -6372,6 +6396,1671 @@
         "seriesVod": null
       },
       "checkedAt": "2026-11-02T03:50:19.459Z",
+      "done": true
+    },
+    "701025": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-09T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "_m70tneb5_k",
+              "start": 4224
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "_m70tneb5_k",
+              "start": 7379
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701026": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-09T06:20:00Z",
+        "teams": [
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          },
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "_m70tneb5_k",
+              "start": 12611
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "_m70tneb5_k",
+              "start": 17330
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701027": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-10T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "5M3N_7ETRtA",
+              "start": 4196
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "5M3N_7ETRtA",
+              "start": 6855
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701028": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-10T06:10:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "5M3N_7ETRtA",
+              "start": 12276
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "5M3N_7ETRtA",
+              "start": 16120
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701029": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-11T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 4018
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 8865
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 12499
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701030": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-11T07:35:00Z",
+        "teams": [
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 17037
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 20616
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "ySsjhhIbe4A",
+              "start": 23577
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701031": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-12T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          },
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": null
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "XaJYJmGKbTc",
+              "start": 7709
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": false
+    },
+    "701032": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 1",
+        "date": "2026-07-12T06:10:00Z",
+        "teams": [
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "XaJYJmGKbTc",
+              "start": 12211
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "XaJYJmGKbTc",
+              "start": 15045
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701036": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-14T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          },
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "P2GVYVewZqE",
+              "start": 4043
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "P2GVYVewZqE",
+              "start": 8051
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701037": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-14T07:15:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "P2GVYVewZqE",
+              "start": 12249
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "P2GVYVewZqE",
+              "start": 16474
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "P2GVYVewZqE",
+              "start": 19863
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701038": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-15T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "vhH5u4c450c",
+              "start": 4269
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "vhH5u4c450c",
+              "start": 8070
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701039": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-15T07:20:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "vhH5u4c450c",
+              "start": 13024
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "vhH5u4c450c",
+              "start": 16563
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "vhH5u4c450c",
+              "start": 19540
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701040": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-16T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "xMvAZOktu2g",
+              "start": 4089
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "xMvAZOktu2g",
+              "start": 7928
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "xMvAZOktu2g",
+              "start": 11894
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701041": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-16T08:25:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "xMvAZOktu2g",
+              "start": 17213
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "xMvAZOktu2g",
+              "start": 20529
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701042": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-17T03:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          },
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 4103
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 6989
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 10279
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701043": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-17T06:00:00Z",
+        "teams": [
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          },
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 15365
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 18469
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 22264
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701044": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-17T09:30:00Z",
+        "teams": [
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          },
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 27647
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "ZIWyItG65JY",
+              "start": 30280
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701045": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-18T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          },
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "gZO0O4UUSJk",
+              "start": 12867
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "gZO0O4UUSJk",
+              "start": 16885
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "gZO0O4UUSJk",
+              "start": 20654
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701046": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-18T09:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "gZO0O4UUSJk",
+              "start": 25503
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "gZO0O4UUSJk",
+              "start": 29636
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701047": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-19T03:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          },
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 4046
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 7230
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 10268
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701048": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-19T06:25:00Z",
+        "teams": [
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 16196
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 20193
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 23700
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701049": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 2",
+        "date": "2026-07-19T09:45:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 28606
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "4_-gD4SVu68",
+              "start": 31900
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701050": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-20T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          },
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "lpKKgMo-JVI",
+              "start": 4109
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "lpKKgMo-JVI",
+              "start": 8056
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701051": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-20T07:25:00Z",
+        "teams": [
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "lpKKgMo-JVI",
+              "start": 12445
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "lpKKgMo-JVI",
+              "start": 15023
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "lpKKgMo-JVI",
+              "start": 18722
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701052": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-21T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "9gWW2MAC1og",
+              "start": 4027
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "9gWW2MAC1og",
+              "start": 7600
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701053": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-21T07:15:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "9gWW2MAC1og",
+              "start": 12366
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "9gWW2MAC1og",
+              "start": 16327
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701054": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-22T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 4182
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 8926
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 11610
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701055": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-22T08:20:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 16500
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 19372
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "6oxjS58o3AA",
+              "start": 22525
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701056": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-23T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          },
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "53fWZWJ2r94",
+              "start": 4140
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "53fWZWJ2r94",
+              "start": 8189
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701057": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Week 3",
+        "date": "2026-07-23T07:35:00Z",
+        "teams": [
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          },
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "53fWZWJ2r94",
+              "start": 13444
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "53fWZWJ2r94",
+              "start": 16933
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "53fWZWJ2r94",
+              "start": 20423
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701058": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-24T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "FDZDqXfDYb0",
+              "start": 4128
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "FDZDqXfDYb0",
+              "start": 8019
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701059": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-24T07:35:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "FDZDqXfDYb0",
+              "start": 13603
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "FDZDqXfDYb0",
+              "start": 16808
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701060": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-25T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "seJqFhH5Mng",
+              "start": 3990
+            }
+          },
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "seJqFhH5Mng",
+              "start": 8621
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "seJqFhH5Mng",
+              "start": 12124
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701061": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-25T08:35:00Z",
+        "teams": [
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          },
+          {
+            "vlrId": "13581",
+            "slug": "xi-lai-gaming",
+            "name": "Xi Lai Gaming",
+            "logo": "https://owcdn.net/img/671742f863b9b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "seJqFhH5Mng",
+              "start": 17500
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "seJqFhH5Mng",
+              "start": 20670
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701062": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-26T05:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "gIrs4QbtPwk",
+              "start": 4304
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "gIrs4QbtPwk",
+              "start": 8057
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "701063": {
+      "parsed": {
+        "stage": "Group Stage",
+        "round": "Seeding",
+        "date": "2026-07-26T07:30:00Z",
+        "teams": [
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          },
+          {
+            "vlrId": "12010",
+            "slug": "bilibili-gaming",
+            "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
+            "logo": "https://owcdn.net/img/63f25d72216c1.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "gIrs4QbtPwk",
+              "start": 13360
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "gIrs4QbtPwk",
+              "start": 16519
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
       "done": true
     },
     "706349": {
@@ -9130,6 +10819,860 @@
       "checkedAt": "2026-11-02T04:55:04.475Z",
       "done": true
     },
+    "724619": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Round 1",
+        "date": "2026-08-05T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          },
+          {
+            "vlrId": "20603",
+            "slug": "a-team",
+            "name": "A Team",
+            "logo": "https://owcdn.net/img/6a70722c7c24b.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "JI8Wk9Hvu3E",
+              "start": 4581
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "JI8Wk9Hvu3E",
+              "start": 8288
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724620": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Round 1",
+        "date": "2026-08-05T06:00:00Z",
+        "teams": [
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          },
+          {
+            "vlrId": "12784",
+            "slug": "keepbest-gaming",
+            "name": "KeepBest Gaming",
+            "logo": "https://owcdn.net/img/64461a1131da5.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "JI8Wk9Hvu3E",
+              "start": 12684
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "JI8Wk9Hvu3E",
+              "start": 16391
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "JI8Wk9Hvu3E",
+              "start": 21307
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724621": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-06T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          },
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 4165
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 6391
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 10249
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724622": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-06T07:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 14974
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 18782
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "R8DO_E0Sahw",
+              "start": 22109
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724623": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-07T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 4132
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 7233
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 10872
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724624": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-07T07:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 15032
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 18154
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "--3pzC5hF-E",
+              "start": 21564
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724625": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 1",
+        "date": "2026-08-08T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "20603",
+            "slug": "a-team",
+            "name": "A Team",
+            "logo": "https://owcdn.net/img/6a70722c7c24b.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "sk_6a4YDx2Y",
+              "start": 4162
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "sk_6a4YDx2Y",
+              "start": 7929
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "sk_6a4YDx2Y",
+              "start": 11388
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724626": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 1",
+        "date": "2026-08-08T07:35:00Z",
+        "teams": [
+          {
+            "vlrId": "12784",
+            "slug": "keepbest-gaming",
+            "name": "KeepBest Gaming",
+            "logo": "https://owcdn.net/img/64461a1131da5.png"
+          },
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "sk_6a4YDx2Y",
+              "start": 17637
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "sk_6a4YDx2Y",
+              "start": 21230
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724627": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 2",
+        "date": "2026-08-09T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          },
+          {
+            "vlrId": "13790",
+            "slug": "wolves-esports",
+            "name": "Wolves Esports",
+            "logo": "https://owcdn.net/img/651d33f8e6a1f.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "XrjA3vFNKPA",
+              "start": 4107
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "XrjA3vFNKPA",
+              "start": 8140
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "XrjA3vFNKPA",
+              "start": 11822
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724628": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 2",
+        "date": "2026-08-09T07:25:00Z",
+        "teams": [
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          },
+          {
+            "vlrId": "11328",
+            "slug": "funplus-phoenix",
+            "name": "FunPlus Phoenix",
+            "logo": "https://owcdn.net/img/65a17b313b131.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "XrjA3vFNKPA",
+              "start": 16105
+            }
+          },
+          {
+            "name": "Lotus",
+            "played": true,
+            "vod": {
+              "id": "XrjA3vFNKPA",
+              "start": 19296
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724629": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Semifinals",
+        "date": "2026-08-10T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "367GcnxKSTw",
+              "start": 4160
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "367GcnxKSTw",
+              "start": 8335
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724630": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Semifinals",
+        "date": "2026-08-10T06:40:00Z",
+        "teams": [
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          },
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "367GcnxKSTw",
+              "start": 13947
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "367GcnxKSTw",
+              "start": 17591
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "367GcnxKSTw",
+              "start": 20257
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724631": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 3",
+        "date": "2026-08-11T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "1120",
+            "slug": "edward-gaming",
+            "name": "EDward Gaming",
+            "logo": "https://owcdn.net/img/62c82049253b2.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Breeze",
+            "played": true,
+            "vod": {
+              "id": "4l1ANR6eDmM",
+              "start": 4119
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "4l1ANR6eDmM",
+              "start": 7140
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724632": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Round 3",
+        "date": "2026-08-11T06:05:00Z",
+        "teams": [
+          {
+            "vlrId": "11981",
+            "slug": "dragon-ranger-gaming",
+            "name": "Dragon Ranger Gaming",
+            "logo": "https://owcdn.net/img/642233fc01f26.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "4l1ANR6eDmM",
+              "start": 12023
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "4l1ANR6eDmM",
+              "start": 16502
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "4l1ANR6eDmM",
+              "start": 19269
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724633": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Upper Final",
+        "date": "2026-08-12T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "1119",
+            "slug": "all-gamers",
+            "name": "All Gamers",
+            "logo": "https://owcdn.net/img/6549c2b905061.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "4HnDwWhlZ8I",
+              "start": 4141
+            }
+          },
+          {
+            "name": "Ascent",
+            "played": true,
+            "vod": {
+              "id": "4HnDwWhlZ8I",
+              "start": 8020
+            }
+          },
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "4HnDwWhlZ8I",
+              "start": 12423
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724634": {
+      "parsed": {
+        "stage": "Play-Ins",
+        "round": "Lower Final",
+        "date": "2026-08-12T07:45:00Z",
+        "teams": [
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          },
+          {
+            "vlrId": "12685",
+            "slug": "trace-esports",
+            "name": "Trace Esports",
+            "logo": "https://owcdn.net/img/6433a2cc3ae72.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "4HnDwWhlZ8I",
+              "start": 17689
+            }
+          },
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "4HnDwWhlZ8I",
+              "start": 21137
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724638": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-14T06:30:00Z",
+        "teams": [
+          {
+            "vlrId": "731",
+            "slug": "tyloo",
+            "name": "TYLOO",
+            "logo": "https://owcdn.net/img/63eb60fb08390.png"
+          },
+          {
+            "vlrId": "14137",
+            "slug": "titan-esports-club",
+            "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+            "logo": "https://owcdn.net/img/65487414b8562.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Sunset",
+            "played": true,
+            "vod": {
+              "id": "Q0-PewKbauU",
+              "start": 12675
+            }
+          },
+          {
+            "name": "Haven",
+            "played": true,
+            "vod": {
+              "id": "Q0-PewKbauU",
+              "start": 15886
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
+    "724639": {
+      "parsed": {
+        "stage": "Playoffs",
+        "round": "Upper Quarterfinals",
+        "date": "2026-08-14T04:00:00Z",
+        "teams": [
+          {
+            "vlrId": "12064",
+            "slug": "nova-esports",
+            "name": "Nova Esports",
+            "logo": "https://owcdn.net/img/6404c0174250b.png"
+          },
+          {
+            "vlrId": "13576",
+            "slug": "jd-gaming",
+            "name": "JD Gaming",
+            "logo": "https://owcdn.net/img/64f9825408326.png"
+          }
+        ],
+        "bo": 3,
+        "maps": [
+          {
+            "name": "Summit",
+            "played": true,
+            "vod": {
+              "id": "Q0-PewKbauU",
+              "start": 4319
+            }
+          },
+          {
+            "name": "Split",
+            "played": true,
+            "vod": {
+              "id": "Q0-PewKbauU",
+              "start": 7964
+            }
+          }
+        ],
+        "seriesVod": null
+      },
+      "checkedAt": "2026-11-02T06:28:56.628Z",
+      "done": true
+    },
     "724640": {
       "parsed": {
         "stage": "Playoffs",
@@ -9176,7 +11719,7 @@
         "seriesVod": null
       },
       "checkedAt": "2026-11-02T05:56:23.856Z",
-      "done": false
+      "done": true
     },
     "724641": {
       "parsed": {
@@ -15870,7 +18413,8 @@
     },
     "vlr-wolves-esports": {
       "id": "vlr-wolves-esports",
-      "name": "Wolves Esports"
+      "name": "Wolves Esports",
+      "logoUrl": "https://owcdn.net/img/651d33f8e6a1f.png"
     },
     "vlr-titan-esports-club": {
       "id": "vlr-titan-esports-club",
@@ -15884,7 +18428,8 @@
     },
     "vlr-funplus-phoenix": {
       "id": "vlr-funplus-phoenix",
-      "name": "FunPlus Phoenix"
+      "name": "FunPlus Phoenix",
+      "logoUrl": "https://owcdn.net/img/65a17b313b131.png"
     },
     "vlr-trace-esports": {
       "id": "vlr-trace-esports",
@@ -15903,14 +18448,1067 @@
     },
     "vlr-a-team": {
       "id": "vlr-a-team",
-      "name": "A Team"
+      "name": "A Team",
+      "logoUrl": "https://owcdn.net/img/6a70722c7c24b.png"
     },
     "vlr-keepbest-gaming": {
       "id": "vlr-keepbest-gaming",
-      "name": "KeepBest Gaming"
+      "name": "KeepBest Gaming",
+      "logoUrl": "https://owcdn.net/img/64461a1131da5.png"
     }
   },
-  "videos": {},
+  "videos": {
+    "jD3cGBf_Vw4": {
+      "ok": true,
+      "seconds": 6290,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Xo1sU79Fvas": {
+      "ok": true,
+      "seconds": 5514,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "TVOx7WKAu_A": {
+      "ok": true,
+      "seconds": 4740,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "opiaS8K3ZIM": {
+      "ok": true,
+      "seconds": 8589,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "pL4dzDvZkLs": {
+      "ok": true,
+      "seconds": 8617,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "q-wuLNx0d5k": {
+      "ok": true,
+      "seconds": 7985,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "9h3r8pTV618": {
+      "ok": true,
+      "seconds": 8657,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "rXGUHJMRiK8": {
+      "ok": true,
+      "seconds": 8130,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ep-ofVqg81s": {
+      "ok": true,
+      "seconds": 10266,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "nBjwduhpzmM": {
+      "ok": true,
+      "seconds": 8761,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "BAH3zpoOYXQ": {
+      "ok": true,
+      "seconds": 4790,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "pMYvVg8VjWE": {
+      "ok": true,
+      "seconds": 5413,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "vFmM51y2IEk": {
+      "ok": true,
+      "seconds": 7629,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "z2p_eCxcIAI": {
+      "ok": true,
+      "seconds": 8748,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "vaEwNmGq364": {
+      "ok": true,
+      "seconds": 7755,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "QCianVVO54A": {
+      "ok": true,
+      "seconds": 6746,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "9PwEfkFweiE": {
+      "ok": true,
+      "seconds": 8583,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "1VqGWzbVVL8": {
+      "ok": true,
+      "seconds": 7049,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "yuN_-2pPxAQ": {
+      "ok": true,
+      "seconds": 4713,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FpGHDFsnKJM": {
+      "ok": true,
+      "seconds": 4859,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "-nfe8xeT-ao": {
+      "ok": true,
+      "seconds": 9499,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Zxy9lFlO8Jc": {
+      "ok": true,
+      "seconds": 4915,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "n4jX567C_hw": {
+      "ok": true,
+      "seconds": 8196,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "yWqPVOvSJPg": {
+      "ok": true,
+      "seconds": 13027,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lfZ3nXSWT5g": {
+      "ok": true,
+      "seconds": 7559,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "8dHXUnSTWtc": {
+      "ok": true,
+      "seconds": 4861,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "fwPdFHPLY4k": {
+      "ok": true,
+      "seconds": 6092,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "6VPsYp9D7iM": {
+      "ok": true,
+      "seconds": 4846,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "TWjd0AoZdaY": {
+      "ok": true,
+      "seconds": 9412,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ZphbktbT26k": {
+      "ok": true,
+      "seconds": 4659,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ZWhEMQVk4x0": {
+      "ok": true,
+      "seconds": 6659,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "fFfCJDNHEvc": {
+      "ok": true,
+      "seconds": 5403,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "z_aPp2s4d_o": {
+      "ok": true,
+      "seconds": 9433,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "y6wwIZysHns": {
+      "ok": true,
+      "seconds": 9721,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "XdGX65LMxig": {
+      "ok": true,
+      "seconds": 7685,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "gYE4F6g9f9s": {
+      "ok": true,
+      "seconds": 21829,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "m29QjckzB7w": {
+      "ok": true,
+      "seconds": 8335,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "WdGW0L-3iCc": {
+      "ok": true,
+      "seconds": 6608,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "hDHTJkgLsLg": {
+      "ok": true,
+      "seconds": 4791,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "QL2P-AwdZjw": {
+      "ok": true,
+      "seconds": 7681,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Ma4ipFeW7Mc": {
+      "ok": true,
+      "seconds": 6121,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "HVOUB9c8pDY": {
+      "ok": true,
+      "seconds": 8554,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "0Yr0XKJJmZE": {
+      "ok": true,
+      "seconds": 5617,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "G4qJLMntBCo": {
+      "ok": true,
+      "seconds": 6309,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ANktybjyQ4k": {
+      "ok": true,
+      "seconds": 6555,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "wX7SJF9xoCM": {
+      "ok": true,
+      "seconds": 6237,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "7zKE36y96zo": {
+      "ok": true,
+      "seconds": 5913,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "7NPrRv2vq94": {
+      "ok": true,
+      "seconds": 8841,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "mbsqsNT6ClQ": {
+      "ok": true,
+      "seconds": 8727,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "gc23eK0xEr0": {
+      "ok": true,
+      "seconds": 7822,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "91OQEM7i78w": {
+      "ok": true,
+      "seconds": 8129,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "gorOwJphwKE": {
+      "ok": true,
+      "seconds": 5564,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "UMIkxgmsOTA": {
+      "ok": true,
+      "seconds": 5584,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "2EzWX2VemjM": {
+      "ok": true,
+      "seconds": 9062,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lXdvR5iMU3Y": {
+      "ok": true,
+      "seconds": 8521,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "a0sIMtIto6g": {
+      "ok": true,
+      "seconds": 10721,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "MZjaOtjtRlU": {
+      "ok": true,
+      "seconds": 12405,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "QnBTE-UVpX4": {
+      "ok": true,
+      "seconds": 12136,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lD4j-0j2aRo": {
+      "ok": true,
+      "seconds": 26871,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "65ws4w7oWMA": {
+      "ok": true,
+      "seconds": 25044,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "G55rgXKLZeY": {
+      "ok": true,
+      "seconds": 26914,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "nryFkAz-Qmc": {
+      "ok": true,
+      "seconds": 21508,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "NTvT07LERYQ": {
+      "ok": true,
+      "seconds": 19213,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "dyvlNtPYTSA": {
+      "ok": true,
+      "seconds": 21472,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "5zyOrpxOaFs": {
+      "ok": true,
+      "seconds": 20315,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "mDYgcbedn7Q": {
+      "ok": true,
+      "seconds": 21885,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FUjzscGQfX4": {
+      "ok": true,
+      "seconds": 28795,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "TKi5srwaBwk": {
+      "ok": true,
+      "seconds": 24217,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "beldPCfRSrA": {
+      "ok": true,
+      "seconds": 26713,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "3vh8LvBpips": {
+      "ok": true,
+      "seconds": 25977,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "dsaXsVUVuvI": {
+      "ok": true,
+      "seconds": 23268,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ufwgNrVyuIU": {
+      "ok": true,
+      "seconds": 19186,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "UFgbrg_pGas": {
+      "ok": true,
+      "seconds": 23470,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "7zM9CLVkuas": {
+      "ok": true,
+      "seconds": 22189,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "E7Bd31QPk9g": {
+      "ok": true,
+      "seconds": 20896,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "b9W1vTB9kns": {
+      "ok": true,
+      "seconds": 28107,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "VUK6v3kOuXQ": {
+      "ok": true,
+      "seconds": 17179,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "EOUMPbmVURY": {
+      "ok": true,
+      "seconds": 22875,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "w694WoU7pMA": {
+      "ok": true,
+      "seconds": 26886,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "oc_znv7oOrA": {
+      "ok": true,
+      "seconds": 23212,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "wm7PO4IXfHs": {
+      "ok": true,
+      "seconds": 17929,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "WbiXUb_WO1U": {
+      "ok": true,
+      "seconds": 22032,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "xiGdE6rVkKE": {
+      "ok": true,
+      "seconds": 23434,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "zk7SEaTZw_Q": {
+      "ok": true,
+      "seconds": 22837,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "zUb4epIvN9s": {
+      "ok": true,
+      "seconds": 19411,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "5b5x2btGmQw": {
+      "ok": true,
+      "seconds": 24870,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "BOW_qTF2yes": {
+      "ok": true,
+      "seconds": 22419,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "0-rCgacITXA": {
+      "ok": true,
+      "seconds": 17811,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "pef7IBjqN1U": {
+      "ok": true,
+      "seconds": 21975,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "XqJSe5GRpNY": {
+      "ok": true,
+      "seconds": 15966,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "DGtFZHSCoSc": {
+      "ok": true,
+      "seconds": 20276,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "0su4MYVOBo8": {
+      "ok": true,
+      "seconds": 21281,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Jf4I3Qu8CHM": {
+      "ok": true,
+      "seconds": 18585,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "CUjDMA_CUEQ": {
+      "ok": true,
+      "seconds": 17971,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Kb6915YBlf0": {
+      "ok": true,
+      "seconds": 26936,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "z6LHYb9eTUI": {
+      "ok": true,
+      "seconds": 18166,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "05AL8b9bhP8": {
+      "ok": true,
+      "seconds": 20331,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "6CRbjVAKqDU": {
+      "ok": true,
+      "seconds": 16291,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "jY0uDMKlBd0": {
+      "ok": true,
+      "seconds": 19326,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Li13uvkpoLQ": {
+      "ok": true,
+      "seconds": 22055,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "fp_wl0rvjyQ": {
+      "ok": true,
+      "seconds": 18450,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "nrQBo6E6RVU": {
+      "ok": true,
+      "seconds": 24880,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "rUqBBfl8bkE": {
+      "ok": true,
+      "seconds": 24285,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FDTYBH3ECs0": {
+      "ok": true,
+      "seconds": 21460,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "hcUbCTTScos": {
+      "ok": true,
+      "seconds": 24690,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lWQMt-jR5a4": {
+      "ok": true,
+      "seconds": 20770,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "tEjwsuT4-is": {
+      "ok": true,
+      "seconds": 20735,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "LH-DaWS04C4": {
+      "ok": true,
+      "seconds": 20285,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "b9T7SRndhX0": {
+      "ok": true,
+      "seconds": 23646,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ufl9ufzyc8A": {
+      "ok": true,
+      "seconds": 19716,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "QjfmP3SiTPc": {
+      "ok": true,
+      "seconds": 18926,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FEMSGBxLnq0": {
+      "ok": true,
+      "seconds": 18911,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "5EV4DuA1WWo": {
+      "ok": true,
+      "seconds": 16976,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "2C7mKxPzWgY": {
+      "ok": true,
+      "seconds": 20680,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Uhf7b4fmheE": {
+      "ok": true,
+      "seconds": 23426,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "GX2k1UPcyQo": {
+      "ok": true,
+      "seconds": 22410,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "XcxrGXFLiZw": {
+      "ok": true,
+      "seconds": 18380,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "xz72AAu_Q5A": {
+      "ok": true,
+      "seconds": 20191,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "qWuLVxGLFoo": {
+      "ok": true,
+      "seconds": 17621,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "nGEeNT4zUeg": {
+      "ok": true,
+      "seconds": 20501,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "TxcxAoH4tPA": {
+      "ok": true,
+      "seconds": 9013,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Jzj8AzjTxMM": {
+      "ok": true,
+      "seconds": 10297,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "YysBiH4bddU": {
+      "ok": true,
+      "seconds": 5801,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "0TmQWgpu5NQ": {
+      "ok": true,
+      "seconds": 9687,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "f31Pk-lxbMU": {
+      "ok": true,
+      "seconds": 9700,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "jYRLSnJKKUo": {
+      "ok": true,
+      "seconds": 8502,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "MjdwDrIDKcI": {
+      "ok": true,
+      "seconds": 14621,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "grqFAnvh_vU": {
+      "ok": true,
+      "seconds": 6838,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "yu1i4iLr6pQ": {
+      "ok": true,
+      "seconds": 5063,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "-j0VhZ00HSI": {
+      "ok": true,
+      "seconds": 4670,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "q7CRrLbmskc": {
+      "ok": true,
+      "seconds": 5998,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "BAFRt5EfZ6E": {
+      "ok": true,
+      "seconds": 4631,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "YX2rYuQxvJQ": {
+      "ok": true,
+      "seconds": 6249,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Bk49IAud6pg": {
+      "ok": true,
+      "seconds": 6646,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "yr6oyvQLKgE": {
+      "ok": true,
+      "seconds": 9121,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "iVx9-xbibto": {
+      "ok": true,
+      "seconds": 8763,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "fR7yhg3Sy14": {
+      "ok": true,
+      "seconds": 5352,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "urWZukn4YI4": {
+      "ok": true,
+      "seconds": 27981,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "rLQ1SxDNh8w": {
+      "ok": true,
+      "seconds": 5242,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "zzu0L05r_Hg": {
+      "ok": true,
+      "seconds": 9969,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "eX-Sqx8cCrM": {
+      "ok": true,
+      "seconds": 5945,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FMHRBi_s93Y": {
+      "ok": true,
+      "seconds": 5914,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lp-IlWP2raQ": {
+      "ok": true,
+      "seconds": 7250,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "d1JL8lgodl0": {
+      "ok": true,
+      "seconds": 5600,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "G41UmgkCBJM": {
+      "ok": true,
+      "seconds": 8225,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "7ltvZPp7hg8": {
+      "ok": true,
+      "seconds": 5749,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "sy_RPXg50x8": {
+      "ok": true,
+      "seconds": 4679,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "wxLBIUFxLTg": {
+      "ok": true,
+      "seconds": 5111,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Qxrn_FzY7XY": {
+      "ok": true,
+      "seconds": 6576,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "_vLlW4C8HKo": {
+      "ok": true,
+      "seconds": 5237,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "IJ30wK0c8p0": {
+      "ok": true,
+      "seconds": 8862,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Wm741MPXQXo": {
+      "ok": true,
+      "seconds": 7525,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Hywz8RzvSGo": {
+      "ok": true,
+      "seconds": 5179,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "d2vjfOosma8": {
+      "ok": true,
+      "seconds": 5777,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Pqqx0NLbSFI": {
+      "ok": true,
+      "seconds": 10260,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "LN73fH5Keyg": {
+      "ok": true,
+      "seconds": 8586,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "CjIbz3UhxDA": {
+      "ok": true,
+      "seconds": 6067,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "d1GkyqMSud8": {
+      "ok": true,
+      "seconds": 6256,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "0I3p9jxx5rs": {
+      "ok": true,
+      "seconds": 6150,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "zs1MJgQjtrU": {
+      "ok": true,
+      "seconds": 6413,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "iwPa53Ky9P0": {
+      "ok": true,
+      "seconds": 7374,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "qIi4ztKsZJQ": {
+      "ok": true,
+      "seconds": 8003,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "R_zmu13Ca3E": {
+      "ok": true,
+      "seconds": 5448,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "GZ1IZEPHgzs": {
+      "ok": true,
+      "seconds": 6420,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "9-LJ9avVPxU": {
+      "ok": true,
+      "seconds": 8869,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "hjp6x6AQzkk": {
+      "ok": true,
+      "seconds": 8776,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "DKES_1v3uxY": {
+      "ok": true,
+      "seconds": 16121,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "-LinWApTGXA": {
+      "ok": true,
+      "seconds": 8966,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "C6ZrKm5wiHU": {
+      "ok": true,
+      "seconds": 4759,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "f4DX65zN2IU": {
+      "ok": true,
+      "seconds": 8189,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ug4i0ltrXuA": {
+      "ok": true,
+      "seconds": 10527,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ibXBRAHP4Dw": {
+      "ok": true,
+      "seconds": 8763,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "kstncYQf1dw": {
+      "ok": true,
+      "seconds": 6191,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "TntlDvMFTX0": {
+      "ok": true,
+      "seconds": 4835,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "kpOe4HSX-aQ": {
+      "ok": true,
+      "seconds": 6230,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "wKj6GWnzxbo": {
+      "ok": true,
+      "seconds": 12991,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "6fNuxyJtfq0": {
+      "ok": true,
+      "seconds": 15574,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "_m70tneb5_k": {
+      "ok": true,
+      "seconds": 21179,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "5M3N_7ETRtA": {
+      "ok": true,
+      "seconds": 19969,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ySsjhhIbe4A": {
+      "ok": true,
+      "seconds": 27158,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "XaJYJmGKbTc": {
+      "ok": true,
+      "seconds": 18550,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "P2GVYVewZqE": {
+      "ok": true,
+      "seconds": 24210,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "vhH5u4c450c": {
+      "ok": true,
+      "seconds": 22679,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "xMvAZOktu2g": {
+      "ok": true,
+      "seconds": 24370,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "ZIWyItG65JY": {
+      "ok": true,
+      "seconds": 34664,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "gZO0O4UUSJk": {
+      "ok": true,
+      "seconds": 33792,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "4_-gD4SVu68": {
+      "ok": true,
+      "seconds": 35407,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "lpKKgMo-JVI": {
+      "ok": true,
+      "seconds": 23283,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "9gWW2MAC1og": {
+      "ok": true,
+      "seconds": 19791,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "6oxjS58o3AA": {
+      "ok": true,
+      "seconds": 27322,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "53fWZWJ2r94": {
+      "ok": true,
+      "seconds": 23580,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "FDZDqXfDYb0": {
+      "ok": true,
+      "seconds": 20461,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "seJqFhH5Mng": {
+      "ok": true,
+      "seconds": 24963,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "gIrs4QbtPwk": {
+      "ok": true,
+      "seconds": 20288,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "JI8Wk9Hvu3E": {
+      "ok": true,
+      "seconds": 24336,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "R8DO_E0Sahw": {
+      "ok": true,
+      "seconds": 25596,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "--3pzC5hF-E": {
+      "ok": true,
+      "seconds": 25426,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "sk_6a4YDx2Y": {
+      "ok": true,
+      "seconds": 24956,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "XrjA3vFNKPA": {
+      "ok": true,
+      "seconds": 23019,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "367GcnxKSTw": {
+      "ok": true,
+      "seconds": 23746,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "4l1ANR6eDmM": {
+      "ok": true,
+      "seconds": 23744,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "4HnDwWhlZ8I": {
+      "ok": true,
+      "seconds": 24604,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "Q0-PewKbauU": {
+      "ok": true,
+      "seconds": 19677,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "_dGO1M166Nw": {
+      "ok": true,
+      "seconds": 26736,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "SvNW8DnuPYQ": {
+      "ok": true,
+      "seconds": 26453,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "58nfTGxmzek": {
+      "ok": true,
+      "seconds": 35564,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "eT8ILJ3npJU": {
+      "ok": true,
+      "seconds": 23508,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "vN4iOApetlE": {
+      "ok": true,
+      "seconds": 20628,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "l5vfspd_7DQ": {
+      "ok": true,
+      "seconds": 25157,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    },
+    "WavNz2ct_SQ": {
+      "ok": true,
+      "seconds": 20823,
+      "checkedAt": "2026-11-02T06:28:56.628Z"
+    }
+  },
   "resolved": {},
   "parserVersion": 1,
   "buildVersion": 1,
@@ -16327,6 +19925,103 @@
     "team:vlr-trace-esports": {
       "url": "https://owcdn.net/img/6433a2cc3ae72.png",
       "saved": "vlr-trace-esports.png"
+    },
+    "valorant-masters-seoul-2027": {
+      "url": "https://owcdn.net/img/692fc18a04f4a.png",
+      "saved": "valorant-masters-seoul-2027.png"
+    },
+    "vct-2027-pacific-kickoff": {
+      "url": "https://owcdn.net/img/640f5ae002674.png",
+      "saved": "vct-2027-pacific-kickoff.png"
+    },
+    "team:vlr-a-team": {
+      "url": "https://owcdn.net/img/6a70722c7c24b.png",
+      "saved": "vlr-a-team.png"
+    },
+    "team:vlr-funplus-phoenix": {
+      "url": "https://owcdn.net/img/65a17b313b131.png",
+      "saved": "vlr-funplus-phoenix.png"
+    },
+    "team:vlr-keepbest-gaming": {
+      "url": "https://owcdn.net/img/64461a1131da5.png",
+      "saved": "vlr-keepbest-gaming.png"
+    },
+    "team:vlr-wolves-esports": {
+      "url": "https://owcdn.net/img/651d33f8e6a1f.png",
+      "saved": "vlr-wolves-esports.png"
+    }
+  },
+  "highlightScan": {
+    "uploads": {
+      "@valorantesports": "UUA1d3HFGFUmkKr2JIUA5Vlw"
+    },
+    "checkedAt": "2026-11-02T06:28:56.628Z",
+    "key": "{\"channels\":[\"@valorantesports\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[],\"aliases\":{},\"maxDaysAfter\":4,\"lookBackDays\":21}",
+    "last": {
+      "matchesLookedFor": 4,
+      "matchesFrom": "2026-10-16",
+      "matchesTo": "2026-10-18",
+      "found": 0,
+      "channels": {
+        "@valorantesports": {
+          "uploads": 500,
+          "sayHighlights": 103,
+          "oldest": "2026-09-24T10:16:36Z",
+          "newest": "2026-11-02T00:13:12Z"
+        }
+      },
+      "samples": [
+        {
+          "channel": "@valorantesports",
+          "at": "2026-11-02T00:13",
+          "title": "M8 vs. KRU | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Grand Finals"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-11-01T23:20",
+          "title": "M8 vs. KRU | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Grand Finals #shorts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-11-01T16:59",
+          "title": "SRG vs. KRU | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Lower Finals #shorts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-31T22:55",
+          "title": "SRG vs. KRU | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Lower Finals"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-31T00:17",
+          "title": "KRU vs. MIBR | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts #shorts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-31T00:16",
+          "title": "KRU vs. MIBR | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-30T21:52",
+          "title": "M8 vs. SRG | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-30T21:39",
+          "title": "M8 vs. SRG | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts #shorts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-28T22:00",
+          "title": "KRU vs. TLV | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts #shorts"
+        },
+        {
+          "channel": "@valorantesports",
+          "at": "2026-10-28T21:54",
+          "title": "KRU vs. TLV | MATCH HIGHLIGHTS | VALORANT Game Changers Championship - Knockouts"
+        }
+      ]
     }
   }
 }

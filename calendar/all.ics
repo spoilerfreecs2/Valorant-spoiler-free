@@ -80,6 +80,78 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:valorant-masters-seoul-2027-20270219@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Valorant Masters Seoul 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Masters Seoul 2027 s
+ hould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/V
+ alorant-spoiler-free/#/t/valorant-masters-seoul-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-seoul-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Seoul 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-seoul-2027-20270307@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:Valorant Masters Seoul 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Masters Seoul 2027 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/valorant-masters-seoul-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-seoul-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Seoul 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-pacific-kickoff-20270111@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:VCT 2027: Pacific Kickoff: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of VCT 2027: Pacific Kickoff sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2027-pacific-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-pac
+ ific-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Pacific Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-pacific-kickoff-20270131@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:VCT 2027: Pacific Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: Pacific Kickoff should b
+ e up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant
+ -spoiler-free/#/t/vct-2027-pacific-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-pac
+ ific-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Pacific Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:vct-2027-americas-kickoff-20270103@valorant-spoiler-free
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270104

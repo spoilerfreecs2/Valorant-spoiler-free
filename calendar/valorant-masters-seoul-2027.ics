@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Valorant Masters Seoul 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-masters-seoul-2027-20270219@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Valorant Masters Seoul 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Valorant Masters Seoul 2027 s
+ hould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/V
+ alorant-spoiler-free/#/t/valorant-masters-seoul-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-seoul-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Seoul 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-seoul-2027-20270307@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:Valorant Masters Seoul 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Masters Seoul 2027 should
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valora
+ nt-spoiler-free/#/t/valorant-masters-seoul-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-seoul-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Seoul 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
