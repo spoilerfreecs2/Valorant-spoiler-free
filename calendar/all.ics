@@ -7,4 +7,148 @@ X-WR-CALNAME:Spoiler-Free Valorant
 X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-champions-2027-20270915@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270916
+DTEND;VALUE=DATE:20270917
+SUMMARY:Valorant Champions 2027: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Valorant Champions 2027 sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/valorant-champions-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2027-20271010@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Valorant Champions 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Champions 2027 should be 
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-s
+ poiler-free/#/t/valorant-champions-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-valencia-2027-20270605@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Valorant Masters Valencia 2027: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Masters Valencia 2
+ 027 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github
+ .io/Valorant-spoiler-free/#/t/valorant-masters-valencia-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-valencia-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Valencia 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-valencia-2027-20270620@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:Valorant Masters Valencia 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Masters Valencia 2027 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-masters-valencia-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-valencia-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Valencia 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-americas-kickoff-20270103@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:VCT 2027: Americas Kickoff: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2027: Americas Kickoff sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/vct-2027-americas-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-ame
+ ricas-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Americas Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-americas-kickoff-20270226@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:VCT 2027: Americas Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: Americas Kickoff should 
+ be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valoran
+ t-spoiler-free/#/t/vct-2027-americas-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-ame
+ ricas-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Americas Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-emea-kickoff-20270102@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:VCT 2027: EMEA Kickoff: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2027: EMEA Kickoff shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2027-emea-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-eme
+ a-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: EMEA Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-emea-kickoff-20270226@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:VCT 2027: EMEA Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: EMEA Kickoff should be u
+ p by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-sp
+ oiler-free/#/t/vct-2027-emea-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-eme
+ a-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: EMEA Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
 END:VCALENDAR

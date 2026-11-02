@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VCT 2027: Americas Kickoff (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:vct-2027-americas-kickoff-20270103@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:VCT 2027: Americas Kickoff: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2027: Americas Kickoff sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/vct-2027-americas-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-ame
+ ricas-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Americas Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-americas-kickoff-20270226@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:VCT 2027: Americas Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: Americas Kickoff should 
+ be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valoran
+ t-spoiler-free/#/t/vct-2027-americas-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-ame
+ ricas-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: Americas Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

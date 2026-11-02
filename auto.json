@@ -3,6 +3,74 @@
   "source": "vlr.gg, https://www.vlr.gg/",
   "tournaments": [
     {
+      "id": "valorant-champions-2027",
+      "name": "Valorant Champions 2027",
+      "page": "/event/3163/valorant-champions-2027",
+      "year": "2027",
+      "sdate": "2027-09-15",
+      "edate": "2027-10-10",
+      "dates": "15 September – 10 October 2027",
+      "location": "Austin",
+      "teamsText": "",
+      "image": "https://owcdn.net/img/692fc60a022bb.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/valorant-champions-2027.png",
+      "logoDark": ""
+    },
+    {
+      "id": "valorant-masters-valencia-2027",
+      "name": "Valorant Masters Valencia 2027",
+      "page": "/event/3162/valorant-masters-valencia-2027",
+      "year": "2027",
+      "sdate": "2027-06-05",
+      "edate": "2027-06-20",
+      "dates": "5–20 June 2027",
+      "location": "Valencia",
+      "teamsText": "",
+      "image": "https://owcdn.net/img/692fc18a04f4a.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/valorant-masters-valencia-2027.png",
+      "logoDark": ""
+    },
+    {
+      "id": "vct-2027-americas-kickoff",
+      "name": "VCT 2027: Americas Kickoff",
+      "page": "/event/3178/vct-2027-americas-kickoff",
+      "year": "2027",
+      "sdate": "2027-01-03",
+      "edate": "2027-02-26",
+      "dates": "3 January – 26 February 2027",
+      "location": "Riot Games Arena, São Paulo",
+      "teamsText": "",
+      "image": "https://owcdn.net/img/640f5ab71dfbb.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/vct-2027-americas-kickoff.png",
+      "logoDark": ""
+    },
+    {
+      "id": "vct-2027-emea-kickoff",
+      "name": "VCT 2027: EMEA Kickoff",
+      "page": "/event/3176/vct-2027-emea-kickoff",
+      "year": "2027",
+      "sdate": "2027-01-02",
+      "edate": "2027-02-26",
+      "dates": "2 January – 26 February 2027",
+      "location": "Riot Games Arena, Berlin",
+      "teamsText": "",
+      "image": "https://owcdn.net/img/65ab59620a233.png",
+      "imageDark": "",
+      "days": [],
+      "art": "",
+      "logo": "images/auto/vct-2027-emea-kickoff.png",
+      "logoDark": ""
+    },
+    {
       "id": "valorant-champions-2026",
       "name": "Valorant Champions 2026",
       "page": "/event/2766/valorant-champions-2026",
@@ -186,6 +254,57 @@
       "logoDark": ""
     },
     {
+      "id": "vct-2026-china-stage-2",
+      "name": "VCT 2026: China Stage 2",
+      "page": "/event/2978/vct-2026-china-stage-2",
+      "year": "2026",
+      "sdate": "2026-07-09",
+      "edate": "2026-08-23",
+      "dates": "9 July – 23 August 2026",
+      "location": "Changsha & Chengdu",
+      "teamsText": "14 teams",
+      "image": "https://owcdn.net/img/65dd97cea9a25.png",
+      "imageDark": "",
+      "days": [
+        "2026-07-09",
+        "2026-07-10",
+        "2026-07-11",
+        "2026-07-12",
+        "2026-07-14",
+        "2026-07-15",
+        "2026-07-16",
+        "2026-07-17",
+        "2026-07-18",
+        "2026-07-19",
+        "2026-07-20",
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16",
+        "2026-08-19",
+        "2026-08-20",
+        "2026-08-21",
+        "2026-08-22",
+        "2026-08-23"
+      ],
+      "art": "",
+      "logo": "images/auto/vct-2026-china-stage-2.png",
+      "logoDark": ""
+    },
+    {
       "id": "valorant-masters-london-2026",
       "name": "Valorant Masters London 2026",
       "page": "/event/2765/valorant-masters-london-2026",
@@ -229,6 +348,15 @@
       "logo": "images/teams/vlr-2game-esports.png"
     },
     {
+      "id": "vlr-a-team",
+      "name": "A Team"
+    },
+    {
+      "id": "vlr-all-gamers",
+      "name": "All Gamers",
+      "logo": "images/teams/vlr-all-gamers.png"
+    },
+    {
       "id": "vlr-bbl-esports",
       "name": "BBL Esports",
       "logo": "images/teams/vlr-bbl-esports.png"
@@ -237,6 +365,11 @@
       "id": "vlr-bestia",
       "name": "BESTIA",
       "logo": "images/teams/vlr-bestia.png"
+    },
+    {
+      "id": "vlr-bilibili-gaming",
+      "name": "Bilibili Gaming",
+      "logo": "images/teams/vlr-bilibili-gaming.png"
     },
     {
       "id": "vlr-cloud9",
@@ -304,6 +437,10 @@
       "logo": "images/teams/vlr-full-sense.png"
     },
     {
+      "id": "vlr-funplus-phoenix",
+      "name": "FunPlus Phoenix"
+    },
+    {
       "id": "vlr-furia",
       "name": "FURIA",
       "logo": "images/teams/vlr-furia.png"
@@ -354,6 +491,10 @@
       "logo": "images/teams/vlr-karmine-corp.png"
     },
     {
+      "id": "vlr-keepbest-gaming",
+      "name": "KeepBest Gaming"
+    },
+    {
       "id": "vlr-kiwoom-drx",
       "name": "KIWOOM DRX",
       "logo": "images/teams/vlr-kiwoom-drx.png"
@@ -392,6 +533,11 @@
       "id": "vlr-nongshim-redforce",
       "name": "Nongshim RedForce",
       "logo": "images/teams/vlr-nongshim-redforce.png"
+    },
+    {
+      "id": "vlr-nova-esports",
+      "name": "Nova Esports",
+      "logo": "images/teams/vlr-nova-esports.png"
     },
     {
       "id": "vlr-nrg",
@@ -459,6 +605,16 @@
       "logo": "images/teams/vlr-team-vitality.png"
     },
     {
+      "id": "vlr-titan-esports-club",
+      "name": "Titan Esports Club",
+      "logo": "images/teams/vlr-titan-esports-club.png"
+    },
+    {
+      "id": "vlr-trace-esports",
+      "name": "Trace Esports",
+      "logo": "images/teams/vlr-trace-esports.png"
+    },
+    {
       "id": "vlr-tyloo",
       "name": "TYLOO",
       "logo": "images/teams/vlr-tyloo.png"
@@ -467,6 +623,10 @@
       "id": "vlr-varrel",
       "name": "VARREL",
       "logo": "images/teams/vlr-varrel.png"
+    },
+    {
+      "id": "vlr-wolves-esports",
+      "name": "Wolves Esports"
     },
     {
       "id": "vlr-xi-lai-gaming",
@@ -3167,7 +3327,7 @@
       "b": "vlr-furia",
       "bo": 3,
       "date": "16 Jul",
-      "time": "",
+      "time": "2026-07-16T17:00:00Z",
       "page": "/706349/leviat-n-vs-furia-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3182,7 +3342,7 @@
       "b": "vlr-cloud9",
       "bo": 3,
       "date": "16 Jul",
-      "time": "",
+      "time": "2026-07-16T20:20:00Z",
       "page": "/706350/sentinels-vs-cloud9-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3197,7 +3357,7 @@
       "b": "vlr-evil-geniuses",
       "bo": 3,
       "date": "17 Jul",
-      "time": "",
+      "time": "2026-07-17T17:00:00Z",
       "page": "/706351/envy-vs-evil-geniuses-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3212,7 +3372,7 @@
       "b": "vlr-loud",
       "bo": 3,
       "date": "17 Jul",
-      "time": "",
+      "time": "2026-07-17T19:15:00Z",
       "page": "/706352/kr-esports-vs-loud-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3227,7 +3387,7 @@
       "b": "vlr-100-thieves",
       "bo": 3,
       "date": "18 Jul",
-      "time": "",
+      "time": "2026-07-18T17:00:00Z",
       "page": "/706353/g2-esports-vs-100-thieves-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3242,7 +3402,7 @@
       "b": "vlr-mibr",
       "bo": 3,
       "date": "18 Jul",
-      "time": "",
+      "time": "2026-07-18T20:30:00Z",
       "page": "/706354/nrg-vs-mibr-vct-2026-americas-stage-2-w1"
     },
     {
@@ -3257,7 +3417,7 @@
       "b": "vlr-leviatan",
       "bo": 3,
       "date": "23 Jul",
-      "time": "",
+      "time": "2026-07-23T17:00:00Z",
       "page": "/706355/evil-geniuses-vs-leviat-n-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3272,7 +3432,7 @@
       "b": "vlr-mibr",
       "bo": 3,
       "date": "23 Jul",
-      "time": "",
+      "time": "2026-07-23T19:05:00Z",
       "page": "/706356/envy-vs-mibr-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3287,7 +3447,7 @@
       "b": "vlr-nrg",
       "bo": 3,
       "date": "24 Jul",
-      "time": "",
+      "time": "2026-07-24T17:00:00Z",
       "page": "/706357/furia-vs-nrg-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3302,7 +3462,7 @@
       "b": "vlr-kru-esports",
       "bo": 3,
       "date": "24 Jul",
-      "time": "",
+      "time": "2026-07-24T19:35:00Z",
       "page": "/706358/100-thieves-vs-kr-esports-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3317,7 +3477,7 @@
       "b": "vlr-cloud9",
       "bo": 3,
       "date": "25 Jul",
-      "time": "",
+      "time": "2026-07-25T17:00:00Z",
       "page": "/706359/g2-esports-vs-cloud9-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3332,7 +3492,7 @@
       "b": "vlr-loud",
       "bo": 3,
       "date": "25 Jul",
-      "time": "",
+      "time": "2026-07-25T18:55:00Z",
       "page": "/706360/sentinels-vs-loud-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3347,7 +3507,7 @@
       "b": "vlr-leviatan",
       "bo": 3,
       "date": "26 Jul",
-      "time": "",
+      "time": "2026-07-26T17:00:00Z",
       "page": "/706361/envy-vs-leviat-n-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3362,7 +3522,7 @@
       "b": "vlr-mibr",
       "bo": 3,
       "date": "26 Jul",
-      "time": "",
+      "time": "2026-07-26T19:00:00Z",
       "page": "/706362/furia-vs-mibr-vct-2026-americas-stage-2-w2"
     },
     {
@@ -3377,7 +3537,7 @@
       "b": "vlr-g2-esports",
       "bo": 3,
       "date": "30 Jul",
-      "time": "",
+      "time": "2026-07-30T17:00:00Z",
       "page": "/706364/kr-esports-vs-g2-esports-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3392,7 +3552,7 @@
       "b": "vlr-sentinels",
       "bo": 3,
       "date": "30 Jul",
-      "time": "",
+      "time": "2026-07-30T19:20:00Z",
       "page": "/706365/100-thieves-vs-sentinels-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3407,7 +3567,7 @@
       "b": "vlr-loud",
       "bo": 3,
       "date": "31 Jul",
-      "time": "",
+      "time": "2026-07-31T17:00:00Z",
       "page": "/706366/cloud9-vs-loud-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3422,7 +3582,7 @@
       "b": "vlr-mibr",
       "bo": 3,
       "date": "31 Jul",
-      "time": "",
+      "time": "2026-07-31T20:25:00Z",
       "page": "/706367/evil-geniuses-vs-mibr-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3437,7 +3597,7 @@
       "b": "vlr-furia",
       "bo": 3,
       "date": "1 Aug",
-      "time": "",
+      "time": "2026-08-01T17:00:00Z",
       "page": "/706368/envy-vs-furia-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3452,7 +3612,7 @@
       "b": "vlr-nrg",
       "bo": 3,
       "date": "1 Aug",
-      "time": "",
+      "time": "2026-08-01T21:00:00Z",
       "page": "/706369/leviat-n-vs-nrg-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3467,7 +3627,7 @@
       "b": "vlr-kru-esports",
       "bo": 3,
       "date": "2 Aug",
-      "time": "",
+      "time": "2026-08-02T17:00:00Z",
       "page": "/706370/cloud9-vs-kr-esports-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3482,7 +3642,7 @@
       "b": "vlr-sentinels",
       "bo": 3,
       "date": "2 Aug",
-      "time": "",
+      "time": "2026-08-02T19:05:00Z",
       "page": "/706371/g2-esports-vs-sentinels-vct-2026-americas-stage-2-w3"
     },
     {
@@ -3497,7 +3657,7 @@
       "b": "vlr-furia",
       "bo": 3,
       "date": "6 Aug",
-      "time": "",
+      "time": "2026-08-06T17:00:00Z",
       "page": "/706372/evil-geniuses-vs-furia-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3512,7 +3672,7 @@
       "b": "vlr-nrg",
       "bo": 3,
       "date": "6 Aug",
-      "time": "",
+      "time": "2026-08-06T19:15:00Z",
       "page": "/706373/envy-vs-nrg-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3527,7 +3687,7 @@
       "b": "vlr-cloud9",
       "bo": 3,
       "date": "7 Aug",
-      "time": "",
+      "time": "2026-08-07T17:00:00Z",
       "page": "/706374/100-thieves-vs-cloud9-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3542,7 +3702,7 @@
       "b": "vlr-loud",
       "bo": 3,
       "date": "7 Aug",
-      "time": "",
+      "time": "2026-08-07T19:40:00Z",
       "page": "/706375/g2-esports-vs-loud-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3557,7 +3717,7 @@
       "b": "vlr-sentinels",
       "bo": 3,
       "date": "8 Aug",
-      "time": "",
+      "time": "2026-08-08T17:00:00Z",
       "page": "/706376/kr-esports-vs-sentinels-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3572,7 +3732,7 @@
       "b": "vlr-mibr",
       "bo": 3,
       "date": "8 Aug",
-      "time": "",
+      "time": "2026-08-08T20:20:00Z",
       "page": "/706377/leviat-n-vs-mibr-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3587,7 +3747,7 @@
       "b": "vlr-nrg",
       "bo": 3,
       "date": "9 Aug",
-      "time": "",
+      "time": "2026-08-09T17:00:00Z",
       "page": "/706378/evil-geniuses-vs-nrg-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3602,7 +3762,7 @@
       "b": "vlr-100-thieves",
       "bo": 3,
       "date": "9 Aug",
-      "time": "",
+      "time": "2026-08-09T18:55:00Z",
       "page": "/706379/loud-vs-100-thieves-vct-2026-americas-stage-2-w4"
     },
     {
@@ -3617,7 +3777,7 @@
       "b": "vlr-bestia",
       "bo": 3,
       "date": "13 Aug",
-      "time": "",
+      "time": "2026-08-13T17:00:00Z",
       "page": "/729742/kr-esports-vs-bestia-vct-2026-americas-stage-2-ur1"
     },
     {
@@ -3632,7 +3792,7 @@
       "b": "vlr-m80",
       "bo": 3,
       "date": "13 Aug",
-      "time": "",
+      "time": "2026-08-13T19:55:00Z",
       "page": "/729743/envy-vs-m80-vct-2026-americas-stage-2-ur1"
     },
     {
@@ -3647,7 +3807,7 @@
       "b": "vlr-2game-esports",
       "bo": 3,
       "date": "14 Aug",
-      "time": "",
+      "time": "2026-08-14T17:00:00Z",
       "page": "/729744/furia-vs-2game-esports-vct-2026-americas-stage-2-ur1"
     },
     {
@@ -3662,7 +3822,7 @@
       "b": "vlr-fluxo-w7m",
       "bo": 3,
       "date": "14 Aug",
-      "time": "",
+      "time": "2026-08-14T20:20:00Z",
       "page": "/729745/cloud9-vs-fluxo-w7m-vct-2026-americas-stage-2-ur1"
     },
     {
@@ -3677,7 +3837,7 @@
       "b": "vlr-kru-esports",
       "bo": 3,
       "date": "15 Aug",
-      "time": "",
+      "time": "2026-08-15T17:00:00Z",
       "page": "/729746/mibr-vs-kr-esports-vct-2026-americas-stage-2-ubqf"
     },
     {
@@ -3692,23 +3852,8 @@
       "b": "vlr-envy",
       "bo": 3,
       "date": "15 Aug",
-      "time": "",
+      "time": "2026-08-15T19:05:00Z",
       "page": "/729747/sentinels-vs-envy-vct-2026-americas-stage-2-ubqf"
-    },
-    {
-      "id": "vlr-729749",
-      "tournamentId": "vct-2026-americas-stage-2",
-      "tournament": "VCT 2026: Americas Stage 2",
-      "stage": "Play-Ins",
-      "stageOrder": 1,
-      "round": "Upper Quarterfinals",
-      "roundOrder": 6,
-      "a": "vlr-evil-geniuses",
-      "b": "vlr-cloud9",
-      "bo": 3,
-      "date": "16 Aug",
-      "time": "",
-      "page": "/729749/evil-geniuses-vs-cloud9-vct-2026-americas-stage-2-ubqf"
     },
     {
       "id": "vlr-729748",
@@ -3724,6 +3869,21 @@
       "date": "16 Aug",
       "time": "2026-08-16T17:00:00Z",
       "page": "/729748/g2-esports-vs-furia-vct-2026-americas-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-729749",
+      "tournamentId": "vct-2026-americas-stage-2",
+      "tournament": "VCT 2026: Americas Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 6,
+      "a": "vlr-evil-geniuses",
+      "b": "vlr-cloud9",
+      "bo": 3,
+      "date": "16 Aug",
+      "time": "2026-08-16T20:40:00Z",
+      "page": "/729749/evil-geniuses-vs-cloud9-vct-2026-americas-stage-2-ubqf"
     },
     {
       "id": "vlr-729752",
@@ -4054,6 +4214,996 @@
       "date": "6 Sept",
       "time": "2026-09-06T13:00:00Z",
       "page": "/734308/100-thieves-vs-loud-vct-2026-americas-stage-2-gf"
+    },
+    {
+      "id": "vlr-701025",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-wolves-esports",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "9 Jul",
+      "time": "",
+      "page": "/701025/wolves-esports-vs-titan-esports-club-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701026",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-dragon-ranger-gaming",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "9 Jul",
+      "time": "",
+      "page": "/701026/dragon-ranger-gaming-vs-bilibili-gaming-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701027",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-funplus-phoenix",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "10 Jul",
+      "time": "",
+      "page": "/701027/funplus-phoenix-vs-trace-esports-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701028",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-tyloo",
+      "bo": 3,
+      "date": "10 Jul",
+      "time": "",
+      "page": "/701028/jdg-esports-vs-tyloo-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701029",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-dragon-ranger-gaming",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "11 Jul",
+      "time": "",
+      "page": "/701029/dragon-ranger-gaming-vs-titan-esports-club-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701030",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-bilibili-gaming",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "11 Jul",
+      "time": "",
+      "page": "/701030/bilibili-gaming-vs-wolves-esports-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701031",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-nova-esports",
+      "b": "vlr-funplus-phoenix",
+      "bo": 3,
+      "date": "12 Jul",
+      "time": "",
+      "page": "/701031/nova-esports-vs-funplus-phoenix-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701032",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 1",
+      "roundOrder": 1,
+      "a": "vlr-tyloo",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "12 Jul",
+      "time": "",
+      "page": "/701032/tyloo-vs-trace-esports-vct-2026-china-stage-2-w1"
+    },
+    {
+      "id": "vlr-701036",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-wolves-esports",
+      "b": "vlr-all-gamers",
+      "bo": 3,
+      "date": "14 Jul",
+      "time": "",
+      "page": "/701036/wolves-esports-vs-all-gamers-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701037",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "14 Jul",
+      "time": "",
+      "page": "/701037/xi-lai-gaming-vs-titan-esports-club-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701038",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-funplus-phoenix",
+      "bo": 3,
+      "date": "15 Jul",
+      "time": "",
+      "page": "/701038/jdg-esports-vs-funplus-phoenix-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701039",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-tyloo",
+      "bo": 3,
+      "date": "15 Jul",
+      "time": "",
+      "page": "/701039/edward-gaming-vs-tyloo-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701040",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-all-gamers",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "16 Jul",
+      "time": "",
+      "page": "/701040/all-gamers-vs-bilibili-gaming-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701041",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "16 Jul",
+      "time": "",
+      "page": "/701041/xi-lai-gaming-vs-dragon-ranger-gaming-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701042",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-nova-esports",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "17 Jul",
+      "time": "",
+      "page": "/701042/nova-esports-vs-jdg-esports-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701043",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-tyloo",
+      "b": "vlr-funplus-phoenix",
+      "bo": 3,
+      "date": "17 Jul",
+      "time": "",
+      "page": "/701043/tyloo-vs-funplus-phoenix-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701044",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-trace-esports",
+      "b": "vlr-edward-gaming",
+      "bo": 3,
+      "date": "17 Jul",
+      "time": "",
+      "page": "/701044/trace-esports-vs-edward-gaming-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701045",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-titan-esports-club",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "18 Jul",
+      "time": "",
+      "page": "/701045/titan-esports-club-vs-bilibili-gaming-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701046",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-all-gamers",
+      "b": "vlr-xi-lai-gaming",
+      "bo": 3,
+      "date": "18 Jul",
+      "time": "",
+      "page": "/701046/all-gamers-vs-xi-lai-gaming-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701047",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-trace-esports",
+      "b": "vlr-nova-esports",
+      "bo": 3,
+      "date": "19 Jul",
+      "time": "",
+      "page": "/701047/trace-esports-vs-nova-esports-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701048",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-dragon-ranger-gaming",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "19 Jul",
+      "time": "",
+      "page": "/701048/dragon-ranger-gaming-vs-wolves-esports-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701049",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 2",
+      "roundOrder": 2,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "19 Jul",
+      "time": "",
+      "page": "/701049/edward-gaming-vs-jdg-esports-vct-2026-china-stage-2-w2"
+    },
+    {
+      "id": "vlr-701050",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-titan-esports-club",
+      "b": "vlr-all-gamers",
+      "bo": 3,
+      "date": "20 Jul",
+      "time": "",
+      "page": "/701050/titan-esports-club-vs-all-gamers-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701051",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-bilibili-gaming",
+      "b": "vlr-xi-lai-gaming",
+      "bo": 3,
+      "date": "20 Jul",
+      "time": "",
+      "page": "/701051/bilibili-gaming-vs-xi-lai-gaming-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701052",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "21 Jul",
+      "time": "",
+      "page": "/701052/jdg-esports-vs-trace-esports-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701053",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-nova-esports",
+      "bo": 3,
+      "date": "21 Jul",
+      "time": "",
+      "page": "/701053/edward-gaming-vs-nova-esports-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701054",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "22 Jul",
+      "time": "",
+      "page": "/701054/xi-lai-gaming-vs-wolves-esports-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701055",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-all-gamers",
+      "b": "vlr-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "22 Jul",
+      "time": "",
+      "page": "/701055/all-gamers-vs-dragon-ranger-gaming-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701056",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-tyloo",
+      "b": "vlr-nova-esports",
+      "bo": 3,
+      "date": "23 Jul",
+      "time": "",
+      "page": "/701056/tyloo-vs-nova-esports-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701057",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Week 3",
+      "roundOrder": 3,
+      "a": "vlr-funplus-phoenix",
+      "b": "vlr-edward-gaming",
+      "bo": 3,
+      "date": "23 Jul",
+      "time": "",
+      "page": "/701057/funplus-phoenix-vs-edward-gaming-vct-2026-china-stage-2-w3"
+    },
+    {
+      "id": "vlr-701058",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-trace-esports",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "24 Jul",
+      "time": "",
+      "page": "/701058/trace-esports-vs-titan-esports-club-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-701059",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-all-gamers",
+      "bo": 3,
+      "date": "24 Jul",
+      "time": "",
+      "page": "/701059/edward-gaming-vs-all-gamers-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-701060",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "25 Jul",
+      "time": "",
+      "page": "/701060/jdg-esports-vs-dragon-ranger-gaming-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-701061",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-tyloo",
+      "b": "vlr-xi-lai-gaming",
+      "bo": 3,
+      "date": "25 Jul",
+      "time": "",
+      "page": "/701061/tyloo-vs-xi-lai-gaming-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-701062",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-funplus-phoenix",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "26 Jul",
+      "time": "",
+      "page": "/701062/funplus-phoenix-vs-wolves-esports-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-701063",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Seeding",
+      "roundOrder": 4,
+      "a": "vlr-nova-esports",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "26 Jul",
+      "time": "",
+      "page": "/701063/nova-esports-vs-bilibili-gaming-vct-2026-china-stage-2-seeding"
+    },
+    {
+      "id": "vlr-724619",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Round 1",
+      "roundOrder": 5,
+      "a": "vlr-trace-esports",
+      "b": "vlr-a-team",
+      "bo": 3,
+      "date": "5 Aug",
+      "time": "",
+      "page": "/724619/trace-esports-vs-a-team-vct-2026-china-stage-2-ur1"
+    },
+    {
+      "id": "vlr-724620",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Round 1",
+      "roundOrder": 5,
+      "a": "vlr-titan-esports-club",
+      "b": "vlr-keepbest-gaming",
+      "bo": 3,
+      "date": "5 Aug",
+      "time": "",
+      "page": "/724620/titan-esports-club-vs-keepbest-gaming-vct-2026-china-stage-2-ur1"
+    },
+    {
+      "id": "vlr-724621",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 6,
+      "a": "vlr-funplus-phoenix",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "6 Aug",
+      "time": "",
+      "page": "/724621/funplus-phoenix-vs-jdg-esports-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724622",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 6,
+      "a": "vlr-wolves-esports",
+      "b": "vlr-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "6 Aug",
+      "time": "",
+      "page": "/724622/wolves-esports-vs-dragon-ranger-gaming-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724623",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 6,
+      "a": "vlr-all-gamers",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "7 Aug",
+      "time": "",
+      "page": "/724623/all-gamers-vs-trace-esports-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724624",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 6,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "7 Aug",
+      "time": "",
+      "page": "/724624/edward-gaming-vs-titan-esports-club-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724625",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 1",
+      "roundOrder": 7,
+      "a": "vlr-a-team",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "8 Aug",
+      "time": "",
+      "page": "/724625/a-team-vs-wolves-esports-vct-2026-china-stage-2-lr1"
+    },
+    {
+      "id": "vlr-724626",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 1",
+      "roundOrder": 7,
+      "a": "vlr-keepbest-gaming",
+      "b": "vlr-funplus-phoenix",
+      "bo": 3,
+      "date": "8 Aug",
+      "time": "",
+      "page": "/724626/keepbest-gaming-vs-funplus-phoenix-vct-2026-china-stage-2-lr1"
+    },
+    {
+      "id": "vlr-724627",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 2",
+      "roundOrder": 8,
+      "a": "vlr-edward-gaming",
+      "b": "vlr-wolves-esports",
+      "bo": 3,
+      "date": "9 Aug",
+      "time": "",
+      "page": "/724627/edward-gaming-vs-wolves-esports-vct-2026-china-stage-2-lr2"
+    },
+    {
+      "id": "vlr-724628",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 2",
+      "roundOrder": 8,
+      "a": "vlr-trace-esports",
+      "b": "vlr-funplus-phoenix",
+      "bo": 3,
+      "date": "9 Aug",
+      "time": "",
+      "page": "/724628/trace-esports-vs-funplus-phoenix-vct-2026-china-stage-2-lr2"
+    },
+    {
+      "id": "vlr-724629",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Semifinals",
+      "roundOrder": 9,
+      "a": "vlr-all-gamers",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "10 Aug",
+      "time": "",
+      "page": "/724629/all-gamers-vs-jdg-esports-vct-2026-china-stage-2-ubsf"
+    },
+    {
+      "id": "vlr-724630",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Semifinals",
+      "roundOrder": 9,
+      "a": "vlr-titan-esports-club",
+      "b": "vlr-dragon-ranger-gaming",
+      "bo": 3,
+      "date": "10 Aug",
+      "time": "",
+      "page": "/724630/titan-esports-club-vs-dragon-ranger-gaming-vct-2026-china-stage-2-ubsf"
+    },
+    {
+      "id": "vlr-724631",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 3",
+      "roundOrder": 10,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-edward-gaming",
+      "bo": 3,
+      "date": "11 Aug",
+      "time": "",
+      "page": "/724631/jdg-esports-vs-edward-gaming-vct-2026-china-stage-2-lr3"
+    },
+    {
+      "id": "vlr-724632",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Round 3",
+      "roundOrder": 10,
+      "a": "vlr-dragon-ranger-gaming",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "11 Aug",
+      "time": "",
+      "page": "/724632/dragon-ranger-gaming-vs-trace-esports-vct-2026-china-stage-2-lr3"
+    },
+    {
+      "id": "vlr-724633",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Upper Final",
+      "roundOrder": 11,
+      "a": "vlr-all-gamers",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "12 Aug",
+      "time": "",
+      "page": "/724633/all-gamers-vs-titan-esports-club-vct-2026-china-stage-2-ubf"
+    },
+    {
+      "id": "vlr-724634",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Play-Ins",
+      "stageOrder": 1,
+      "round": "Lower Final",
+      "roundOrder": 12,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "12 Aug",
+      "time": "",
+      "page": "/724634/jd-gaming-vs-trace-esports-vct-2026-china-stage-2-lbf"
+    },
+    {
+      "id": "vlr-724639",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 13,
+      "a": "vlr-nova-esports",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "14 Aug",
+      "time": "",
+      "page": "/724639/nova-esports-vs-jd-gaming-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724638",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 13,
+      "a": "vlr-tyloo",
+      "b": "vlr-titan-esports-club",
+      "bo": 3,
+      "date": "14 Aug",
+      "time": "",
+      "page": "/724638/tyloo-vs-titan-esports-club-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724641",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 13,
+      "a": "vlr-bilibili-gaming",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "15 Aug",
+      "time": "2026-08-15T04:00:00Z",
+      "page": "/724641/bilibili-gaming-vs-trace-esports-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724640",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Quarterfinals",
+      "roundOrder": 13,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-all-gamers",
+      "bo": 3,
+      "date": "15 Aug",
+      "time": "2026-08-15T07:30:00Z",
+      "page": "/724640/xi-lai-gaming-vs-all-gamers-vct-2026-china-stage-2-ubqf"
+    },
+    {
+      "id": "vlr-724646",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Round 1",
+      "roundOrder": 14,
+      "a": "vlr-titan-esports-club",
+      "b": "vlr-nova-esports",
+      "bo": 3,
+      "date": "16 Aug",
+      "time": "2026-08-16T04:00:00Z",
+      "page": "/724646/titan-esports-club-vs-nova-esports-vct-2026-china-stage-2-lr1"
+    },
+    {
+      "id": "vlr-724647",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Round 1",
+      "roundOrder": 14,
+      "a": "vlr-all-gamers",
+      "b": "vlr-trace-esports",
+      "bo": 3,
+      "date": "16 Aug",
+      "time": "2026-08-16T06:35:00Z",
+      "page": "/724647/all-gamers-vs-trace-esports-vct-2026-china-stage-2-lr1"
+    },
+    {
+      "id": "vlr-724642",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Semifinals",
+      "roundOrder": 15,
+      "a": "vlr-tyloo",
+      "b": "vlr-jd-gaming",
+      "bo": 3,
+      "date": "19 Aug",
+      "time": "2026-08-19T04:00:00Z",
+      "page": "/724642/tyloo-vs-jd-gaming-vct-2026-china-stage-2-ubsf"
+    },
+    {
+      "id": "vlr-724643",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Semifinals",
+      "roundOrder": 15,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "19 Aug",
+      "time": "2026-08-19T07:45:00Z",
+      "page": "/724643/xi-lai-gaming-vs-bilibili-gaming-vct-2026-china-stage-2-ubsf"
+    },
+    {
+      "id": "vlr-724649",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Round 2",
+      "roundOrder": 16,
+      "a": "vlr-tyloo",
+      "b": "vlr-all-gamers",
+      "bo": 3,
+      "date": "20 Aug",
+      "time": "2026-08-20T04:00:00Z",
+      "page": "/724649/tyloo-vs-all-gamers-vct-2026-china-stage-2-lr2"
+    },
+    {
+      "id": "vlr-724648",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Round 2",
+      "roundOrder": 16,
+      "a": "vlr-xi-lai-gaming",
+      "b": "vlr-nova-esports",
+      "bo": 3,
+      "date": "20 Aug",
+      "time": "2026-08-20T06:35:00Z",
+      "page": "/724648/xi-lai-gaming-vs-nova-esports-vct-2026-china-stage-2-lr2"
+    },
+    {
+      "id": "vlr-724644",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Upper Final",
+      "roundOrder": 17,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-bilibili-gaming",
+      "bo": 3,
+      "date": "21 Aug",
+      "time": "2026-08-21T04:00:00Z",
+      "page": "/724644/jd-gaming-vs-bilibili-gaming-vct-2026-china-stage-2-ubf"
+    },
+    {
+      "id": "vlr-724650",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Round 3",
+      "roundOrder": 18,
+      "a": "vlr-nova-esports",
+      "b": "vlr-tyloo",
+      "bo": 3,
+      "date": "21 Aug",
+      "time": "2026-08-21T06:00:00Z",
+      "page": "/724650/nova-esports-vs-tyloo-vct-2026-china-stage-2-lr3"
+    },
+    {
+      "id": "vlr-724651",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Lower Final",
+      "roundOrder": 19,
+      "a": "vlr-bilibili-gaming",
+      "b": "vlr-tyloo",
+      "bo": 5,
+      "date": "22 Aug",
+      "time": "2026-08-22T04:00:00Z",
+      "page": "/724651/bilibili-gaming-vs-tyloo-vct-2026-china-stage-2-lbf"
+    },
+    {
+      "id": "vlr-724645",
+      "tournamentId": "vct-2026-china-stage-2",
+      "tournament": "VCT 2026: China Stage 2",
+      "stage": "Playoffs",
+      "stageOrder": 2,
+      "round": "Grand Final",
+      "roundOrder": 20,
+      "a": "vlr-jd-gaming",
+      "b": "vlr-tyloo",
+      "bo": 5,
+      "date": "23 Aug",
+      "time": "2026-08-23T04:00:00Z",
+      "page": "/724645/jd-gaming-vs-tyloo-vct-2026-china-stage-2-gf"
     }
   ],
   "videos": {
@@ -8622,24 +9772,24 @@
     "vlr-706349": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/TxcxAoH4tPA",
+          "start": "304",
+          "end": "3711",
+          "name": "Haven",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/TxcxAoH4tPA",
+          "start": "3711",
+          "end": "5687",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/TxcxAoH4tPA",
+          "start": "5687",
           "end": "",
-          "name": "",
+          "name": "Split",
           "notPlayed": false
         }
       ]
@@ -8647,24 +9797,24 @@
     "vlr-706350": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Jzj8AzjTxMM",
+          "start": "304",
+          "end": "3001",
+          "name": "Summit",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Jzj8AzjTxMM",
+          "start": "3001",
+          "end": "6164",
+          "name": "Haven",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Jzj8AzjTxMM",
+          "start": "6164",
           "end": "",
-          "name": "",
+          "name": "Lotus",
           "notPlayed": false
         }
       ]
@@ -8672,10 +9822,17 @@
     "vlr-706351": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/YysBiH4bddU",
+          "start": "353",
+          "end": "2982",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/YysBiH4bddU",
+          "start": "2982",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -8683,38 +9840,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706352": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/0TmQWgpu5NQ",
+          "start": "389",
+          "end": "3530",
+          "name": "Lotus",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/0TmQWgpu5NQ",
+          "start": "3530",
+          "end": "7852",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/0TmQWgpu5NQ",
+          "start": "7852",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         }
       ]
@@ -8722,24 +9872,24 @@
     "vlr-706353": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/f31Pk-lxbMU",
+          "start": "384",
+          "end": "2659",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/f31Pk-lxbMU",
+          "start": "2659",
+          "end": "6660",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/f31Pk-lxbMU",
+          "start": "6660",
           "end": "",
-          "name": "",
+          "name": "Haven",
           "notPlayed": false
         }
       ]
@@ -8747,24 +9897,24 @@
     "vlr-706354": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/jYRLSnJKKUo",
+          "start": "305",
+          "end": "3252",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/jYRLSnJKKUo",
+          "start": "3252",
+          "end": "6295",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/jYRLSnJKKUo",
+          "start": "6295",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         }
       ]
@@ -8772,10 +9922,17 @@
     "vlr-706355": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/MjdwDrIDKcI",
+          "start": "2132",
+          "end": "5323",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/MjdwDrIDKcI",
+          "start": "5323",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
@@ -8783,24 +9940,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706356": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/MjdwDrIDKcI",
+          "start": "9082",
+          "end": "11995",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/MjdwDrIDKcI",
+          "start": "11995",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
@@ -8808,24 +9965,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706357": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/grqFAnvh_vU",
+          "start": "182",
+          "end": "3848",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/grqFAnvh_vU",
+          "start": "3848",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         },
         {
@@ -8833,24 +9990,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706358": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/yu1i4iLr6pQ",
+          "start": "200",
+          "end": "1857",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/yu1i4iLr6pQ",
+          "start": "1857",
           "end": "",
-          "name": "",
+          "name": "Ascent",
           "notPlayed": false
         },
         {
@@ -8858,24 +10015,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706359": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/-j0VhZ00HSI",
+          "start": "181",
+          "end": "2208",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/-j0VhZ00HSI",
+          "start": "2208",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
@@ -8883,24 +10040,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706360": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/q7CRrLbmskc",
+          "start": "612",
+          "end": "3410",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/q7CRrLbmskc",
+          "start": "3410",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -8908,24 +10065,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706361": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/BAFRt5EfZ6E",
+          "start": "6",
+          "end": "2111",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/BAFRt5EfZ6E",
+          "start": "2111",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         },
         {
@@ -8933,24 +10090,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706362": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/YX2rYuQxvJQ",
+          "start": "1",
+          "end": "3399",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/YX2rYuQxvJQ",
+          "start": "3399",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -8958,24 +10115,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706364": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Bk49IAud6pg",
+          "start": "328",
+          "end": "3082",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Bk49IAud6pg",
+          "start": "3082",
           "end": "",
-          "name": "",
+          "name": "Lotus",
           "notPlayed": false
         },
         {
@@ -8983,38 +10140,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706365": {
       "maps": [
         {
-          "video": "",
+          "video": "https://youtu.be/yr6oyvQLKgE",
           "start": "",
-          "end": "",
-          "name": "",
+          "end": "3691",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/yr6oyvQLKgE",
+          "start": "3691",
+          "end": "6683",
+          "name": "Ascent",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/yr6oyvQLKgE",
+          "start": "6683",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         }
       ]
@@ -9022,24 +10172,24 @@
     "vlr-706366": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/iVx9-xbibto",
+          "start": "7",
+          "end": "3394",
+          "name": "Haven",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/iVx9-xbibto",
+          "start": "3394",
+          "end": "6094",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/iVx9-xbibto",
+          "start": "6094",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         }
       ]
@@ -9047,10 +10197,17 @@
     "vlr-706367": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/fR7yhg3Sy14",
+          "start": "1",
+          "end": "3318",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/fR7yhg3Sy14",
+          "start": "3318",
           "end": "",
-          "name": "",
+          "name": "Ascent",
           "notPlayed": false
         },
         {
@@ -9058,38 +10215,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706368": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "2191",
+          "end": "8161",
+          "name": "Haven",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "8161",
+          "end": "12194",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "12194",
           "end": "",
-          "name": "",
+          "name": "Ascent",
           "notPlayed": false
         }
       ]
@@ -9097,24 +10247,24 @@
     "vlr-706369": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "16174",
+          "end": "20095",
+          "name": "Summit",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "20095",
+          "end": "23067",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/urWZukn4YI4",
+          "start": "23067",
           "end": "",
-          "name": "",
+          "name": "Haven",
           "notPlayed": false
         }
       ]
@@ -9122,10 +10272,17 @@
     "vlr-706370": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/rLQ1SxDNh8w",
+          "start": "307",
+          "end": "2817",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/rLQ1SxDNh8w",
+          "start": "2817",
           "end": "",
-          "name": "",
+          "name": "Split",
           "notPlayed": false
         },
         {
@@ -9133,38 +10290,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706371": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/zzu0L05r_Hg",
+          "start": "4",
+          "end": "3829",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/zzu0L05r_Hg",
+          "start": "3829",
+          "end": "7144",
+          "name": "Lotus",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/zzu0L05r_Hg",
+          "start": "7144",
           "end": "",
-          "name": "",
+          "name": "Split",
           "notPlayed": false
         }
       ]
@@ -9172,10 +10322,17 @@
     "vlr-706372": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/eX-Sqx8cCrM",
+          "start": "326",
+          "end": "3713",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eX-Sqx8cCrM",
+          "start": "3713",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -9183,24 +10340,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706373": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/FMHRBi_s93Y",
+          "start": "396",
+          "end": "2958",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/FMHRBi_s93Y",
+          "start": "2958",
           "end": "",
-          "name": "",
+          "name": "Haven",
           "notPlayed": false
         },
         {
@@ -9208,24 +10365,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706374": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/lp-IlWP2raQ",
+          "start": "5",
+          "end": "3941",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/lp-IlWP2raQ",
+          "start": "3941",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -9233,24 +10390,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706375": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/d1JL8lgodl0",
+          "start": "1",
+          "end": "3697",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/d1JL8lgodl0",
+          "start": "3697",
           "end": "",
-          "name": "",
+          "name": "Lotus",
           "notPlayed": false
         },
         {
@@ -9258,38 +10415,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706376": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/G41UmgkCBJM",
+          "start": "18",
+          "end": "2728",
+          "name": "Summit",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/G41UmgkCBJM",
+          "start": "2728",
+          "end": "5326",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/G41UmgkCBJM",
+          "start": "5326",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         }
       ]
@@ -9297,10 +10447,17 @@
     "vlr-706377": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/7ltvZPp7hg8",
+          "start": "25",
+          "end": "3118",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/7ltvZPp7hg8",
+          "start": "3118",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
@@ -9308,24 +10465,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706378": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/sy_RPXg50x8",
+          "start": "11",
+          "end": "1931",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/sy_RPXg50x8",
+          "start": "1931",
           "end": "",
-          "name": "",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
@@ -9333,24 +10490,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-706379": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/wxLBIUFxLTg",
+          "start": "8",
+          "end": "2530",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/wxLBIUFxLTg",
+          "start": "2530",
           "end": "",
-          "name": "",
+          "name": "Haven",
           "notPlayed": false
         },
         {
@@ -9358,38 +10515,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-729742": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Qxrn_FzY7XY",
+          "start": "40",
+          "end": "2293",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Qxrn_FzY7XY",
+          "start": "2293",
+          "end": "4111",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Qxrn_FzY7XY",
+          "start": "4111",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         }
       ]
@@ -9397,10 +10547,17 @@
     "vlr-729743": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/_vLlW4C8HKo",
+          "start": "30",
+          "end": "2269",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_vLlW4C8HKo",
+          "start": "2269",
           "end": "",
-          "name": "",
+          "name": "Split",
           "notPlayed": false
         },
         {
@@ -9408,38 +10565,31 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-729744": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/IJ30wK0c8p0",
+          "start": "317",
+          "end": "3506",
+          "name": "Ascent",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/IJ30wK0c8p0",
+          "start": "3506",
+          "end": "5976",
+          "name": "Split",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/IJ30wK0c8p0",
+          "start": "5976",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         }
       ]
@@ -9447,24 +10597,24 @@
     "vlr-729745": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Wm741MPXQXo",
+          "start": "303",
+          "end": "3007",
+          "name": "Lotus",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/Wm741MPXQXo",
+          "start": "3007",
+          "end": "5128",
+          "name": "Breeze",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Wm741MPXQXo",
+          "start": "5128",
           "end": "",
-          "name": "",
+          "name": "Split",
           "notPlayed": false
         }
       ]
@@ -9472,10 +10622,17 @@
     "vlr-729746": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Hywz8RzvSGo",
+          "start": "29",
+          "end": "2670",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Hywz8RzvSGo",
+          "start": "2670",
           "end": "",
-          "name": "",
+          "name": "Sunset",
           "notPlayed": false
         },
         {
@@ -9483,24 +10640,24 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
     "vlr-729747": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/d2vjfOosma8",
+          "start": "26",
+          "end": "3458",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/d2vjfOosma8",
+          "start": "3458",
           "end": "",
-          "name": "",
+          "name": "Summit",
           "notPlayed": false
         },
         {
@@ -9508,39 +10665,7 @@
           "start": "",
           "end": "",
           "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "vlr-729749": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -9565,6 +10690,31 @@
           "start": "7265",
           "end": "",
           "name": "Breeze",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-729749": {
+      "maps": [
+        {
+          "video": "https://youtu.be/LN73fH5Keyg",
+          "start": "262",
+          "end": "2681",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/LN73fH5Keyg",
+          "start": "2681",
+          "end": "5148",
+          "name": "Haven",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/LN73fH5Keyg",
+          "start": "5148",
+          "end": "",
+          "name": "Sunset",
           "notPlayed": false
         }
       ]
@@ -10147,8 +11297,1686 @@
           "notPlayed": false
         }
       ]
+    },
+    "vlr-701025": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701026": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701027": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701028": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701029": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701030": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701031": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701032": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701036": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701037": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701038": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701039": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701040": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701041": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701042": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701043": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701044": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701045": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701046": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701047": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701048": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701049": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701050": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701051": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701052": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701053": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701054": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701055": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701056": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701057": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701058": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701059": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701060": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701061": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701062": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-701063": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724619": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724620": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724621": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724622": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724623": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724624": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724625": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724626": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724627": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724628": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724629": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724630": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724631": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724632": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724633": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724634": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724639": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724638": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724641": {
+      "maps": [
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "4072",
+          "end": "7528",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "7528",
+          "end": "12043",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "12043",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724640": {
+      "maps": [
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "17251",
+          "end": "20016",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/_dGO1M166Nw",
+          "start": "20016",
+          "end": "",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724646": {
+      "maps": [
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "4065",
+          "end": "8280",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "8280",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
+    },
+    "vlr-724647": {
+      "maps": [
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "12974",
+          "end": "17613",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "17613",
+          "end": "22045",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/SvNW8DnuPYQ",
+          "start": "22045",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724642": {
+      "maps": [
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "11715",
+          "end": "14987",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "14987",
+          "end": "18961",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "18961",
+          "end": "",
+          "name": "Ascent",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724643": {
+      "maps": [
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "24751",
+          "end": "28930",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "28930",
+          "end": "32225",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/58nfTGxmzek",
+          "start": "32225",
+          "end": "",
+          "name": "Haven",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724649": {
+      "maps": [
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "4176",
+          "end": "8486",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "8486",
+          "end": "",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
+    },
+    "vlr-724648": {
+      "maps": [
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "13902",
+          "end": "17060",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "17060",
+          "end": "19980",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/eT8ILJ3npJU",
+          "start": "19980",
+          "end": "",
+          "name": "Breeze",
+          "notPlayed": false
+        }
+      ]
+    },
+    "vlr-724644": {
+      "maps": [
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "4148",
+          "end": "7336",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "7336",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
+    },
+    "vlr-724650": {
+      "maps": [
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "12599",
+          "end": "16071",
+          "name": "Ascent",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/vN4iOApetlE",
+          "start": "16071",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
+    },
+    "vlr-724651": {
+      "maps": [
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "11446",
+          "end": "15746",
+          "name": "Sunset",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "15746",
+          "end": "19107",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l5vfspd_7DQ",
+          "start": "19107",
+          "end": "",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
+    },
+    "vlr-724645": {
+      "maps": [
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "6155",
+          "end": "9402",
+          "name": "Lotus",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "9402",
+          "end": "12846",
+          "name": "Split",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "12846",
+          "end": "16540",
+          "name": "Breeze",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WavNz2ct_SQ",
+          "start": "16540",
+          "end": "",
+          "name": "Summit",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": true
+        }
+      ]
     }
   },
-  "updatedAt": "2026-11-02T04:55:04.475Z",
+  "updatedAt": "2026-11-02T05:56:23.856Z",
   "featured": "valorant-champions-2026"
 }

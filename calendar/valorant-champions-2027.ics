@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Valorant Champions 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-champions-2027-20270915@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270916
+DTEND;VALUE=DATE:20270917
+SUMMARY:Valorant Champions 2027: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Valorant Champions 2027 sh
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Va
+ lorant-spoiler-free/#/t/valorant-champions-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-champions-2027-20271010@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Valorant Champions 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Champions 2027 should be 
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-s
+ poiler-free/#/t/valorant-champions-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-cha
+ mpions-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Champions 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

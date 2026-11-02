@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VCT 2027: EMEA Kickoff (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:vct-2027-emea-kickoff-20270102@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:VCT 2027: EMEA Kickoff: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of VCT 2027: EMEA Kickoff shou
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valo
+ rant-spoiler-free/#/t/vct-2027-emea-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-eme
+ a-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: EMEA Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vct-2027-emea-kickoff-20270226@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:VCT 2027: EMEA Kickoff: final day ready to watch
+DESCRIPTION:Videos from the final day of VCT 2027: EMEA Kickoff should be u
+ p by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valorant-sp
+ oiler-free/#/t/vct-2027-emea-kickoff
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-eme
+ a-kickoff
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VCT 2027: EMEA Kickoff is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

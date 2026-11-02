@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free Valorant//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Valorant Masters Valencia 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:valorant-masters-valencia-2027-20270605@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Valorant Masters Valencia 2027: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Valorant Masters Valencia 2
+ 027 should be up by now. Watch spoiler-free: https://spoilerfreecs2.github
+ .io/Valorant-spoiler-free/#/t/valorant-masters-valencia-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-valencia-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Valencia 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:valorant-masters-valencia-2027-20270620@valorant-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:Valorant Masters Valencia 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Valorant Masters Valencia 2027 sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/valorant-masters-valencia-2027
+URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/valorant-mas
+ ters-valencia-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Valorant Masters Valencia 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
