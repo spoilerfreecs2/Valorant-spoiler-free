@@ -58,9 +58,9 @@
       "name": "VCT 2027: Pacific Kickoff",
       "page": "/event/3181/vct-2027-pacific-kickoff",
       "year": "2027",
-      "sdate": "2027-01-10",
+      "sdate": "2027-01-11",
       "edate": "2027-01-31",
-      "dates": "10–31 January 2027",
+      "dates": "11–31 January 2027",
       "location": "Bangkok",
       "teamsText": "",
       "image": "https://owcdn.net/img/640f5ae002674.png",
@@ -13032,6 +13032,6 @@
       ]
     }
   },
-  "updatedAt": "2026-11-04T07:02:31.504Z",
+  "updatedAt": "2026-11-04T08:48:27.519Z",
   "featured": "valorant-champions-2026"
 }
