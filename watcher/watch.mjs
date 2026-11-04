@@ -49,7 +49,19 @@ const GH_REPO = process.env.GITHUB_REPOSITORY || '';
 const NOW = process.env.WATCHER_NOW ? new Date(process.env.WATCHER_NOW) : new Date();
 const HOUR = 3600 * 1000, DAY = 24 * HOUR;
 const BUILD_VERSION = 1;
-const USER_AGENT = 'valorant-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'spoilerfreecs2/Valorant-spoiler-free') + ')';
+// Who is asking, for the sites the watcher reads: the site's name, its address and a way to reach whoever
+// runs it (Liquipedia's API rules ask for this). The contact is site.contact.email in data.json once one
+// is set, and the GitHub issues page until then.
+const USER_AGENT = await (async () => {
+  let site = {}, cfg = {};
+  try { site = JSON.parse(await readFile(path.join(ROOT, 'data.json'), 'utf8')).site || {}; } catch (e) { /* defaults below */ }
+  try { cfg = JSON.parse(await readFile(FILES.config, 'utf8')); } catch (e) { /* defaults below */ }
+  const product = String(site.name || 'Live Again Valorant').replace(/[^A-Za-z0-9]+/g, '');
+  const url = cfg.siteUrl || 'https://spoilerfreecs2.github.io/Valorant-spoiler-free/';
+  const c = site.contact || {};
+  const contact = c.email || c.issues || 'https://github.com/' + (GH_REPO || 'spoilerfreecs2/Valorant-spoiler-free') + '/issues';
+  return product + '-VideoWatcher/1.0 (' + url + '; ' + contact + ')';
+})();
 
 /* ---------- small helpers ---------- */
 const str = v => (v === null || v === undefined) ? '' : String(v);

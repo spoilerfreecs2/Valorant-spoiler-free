@@ -2070,7 +2070,9 @@ function renderFooter() {
     !editing() ? h('button', { type: 'button', class: 'text-btn', 'aria-keyshortcuts': 'Shift+?', onClick: openKeys }, 'Keyboard shortcuts (?)') : null,
     // The match list and video links come from vlr.gg, so it's credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data and video links from ', h('a', { href: 'https://www.vlr.gg/', target: '_blank', rel: 'noopener' }, 'vlr.gg'), '.') : null,
-    h('nav', { class: 'footer-links', 'aria-label': 'About this site' }, h('a', { href: '#/privacy' }, 'Privacy'), h('a', { href: '#/terms' }, 'Terms'), h('a', { href: '#/contact' }, 'Contact')),
+    h('nav', { class: 'footer-links', 'aria-label': 'About this site' }, h('a', { href: '#/privacy' }, 'Privacy'), h('a', { href: '#/terms' }, 'Terms'), h('a', { href: '#/contact' }, 'Contact'),
+      // Videos play through YouTube's player, so its terms are one click away on every page.
+      h('a', { href: 'https://www.youtube.com/t/terms', target: '_blank', rel: 'noopener' }, 'YouTube Terms')),
     syncReady() ? h('button', { type: 'button', class: 'text-btn', onClick: () => openSyncDialog() }, syncCode() ? 'Synced devices' : 'Sync my devices') : null,
     ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null,
     // Not an official site: the game's owner is named on every page.
