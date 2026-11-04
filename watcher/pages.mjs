@@ -82,6 +82,8 @@ function page(html, o) {
     `<meta name="twitter:card" content="summary">`,
     o.verify ? `<meta name="google-site-verification" content="${esc(o.verify)}">` : '',
     o.noindex ? '<meta name="robots" content="noindex">' : '',
+    // Cloudflare Web Analytics: counts visits with no cookies and nothing stored on the visitor's device.
+    o.analytics ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="${esc(JSON.stringify({ token: o.analytics }))}"></script>` : '',
     // The site works from #/ addresses, so the visitor's address becomes the site's own one for this page,
     // with nothing reloaded. One they already had (from a shared #/ link) wins.
     o.hash ? `<script>window.SF_LANDING = ${JSON.stringify(o.landing || {})}; try { if (!/^#\\//.test(location.hash)) history.replaceState(null, '', document.baseURI.replace(/[?#].*$/, '') + location.search + ${JSON.stringify(o.hash)}); } catch (e) { /* stays on this address */ }</script>` : '',
@@ -100,12 +102,13 @@ function build(html, d, auto, config) {
   const base = siteUrl(config);
   const siteName = data.site.name || 'Live Again Valorant';
   const verify = str(d && d.site && d.site.googleVerification);
+  const analytics = str(d && d.site && d.site.cloudflareAnalytics).trim();
   const teamById = new Map(data.teams.map(t => [t.id, t]));
   const teamName = id => (teamById.get(id) || {}).name || 'TBD';
   const abs = rel => rel && !/^(data:|https?:)/.test(rel) ? base + rel : (/^https?:/.test(rel) ? rel : '');
   const files = {};
   const urls = [base, base + 'teams/'];
-  const common = { siteName, verify };
+  const common = { siteName, verify, analytics };
 
   // Matches, rounds and the open ones, as the browser has them.
   const rows = [];

@@ -865,6 +865,7 @@ function normalize(d) {
     footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
     // Kept so that saving from edit mode doesn't drop it (watcher/pages.mjs adds it to the pages for Google).
     ...(s.googleVerification ? { googleVerification: str(s.googleVerification) } : {}),
+    ...(s.cloudflareAnalytics ? { cloudflareAnalytics: str(s.cloudflareAnalytics) } : {}),
     firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, ''), sync: (s.firebase || {}).sync !== false }
   };
   const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), logoDark: str(x.logoDark), aliases: arr(x.aliases).map(str).filter(Boolean) }));

@@ -162,6 +162,18 @@ To get the site into Google:
 
 A `robots.txt` isn't needed. Crawlers only read it at the top of the domain, so one here would be ignored anyway.
 
+## Visitor numbers (Cloudflare Web Analytics)
+
+The site can count visits with [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/), which is free, sets no cookies and stores nothing on the visitor's device, so no cookie banner is needed. It shows visits, page views, countries, devices and which sites sent people here.
+
+1. Sign up at [dash.cloudflare.com](https://dash.cloudflare.com/sign-up) (free plan).
+2. Open **Analytics & Logs → Web Analytics**, choose **Add a site**, and enter `spoilerfreecs2.github.io`.
+3. Copy the `token` value from the snippet it shows (the long code in `{"token": "..."}`) and add it to `data.json` under `site`, as `"cloudflareAnalytics": "abc123..."`. The next publish (a few minutes) puts it on every page.
+
+Both Live Again sites are on `spoilerfreecs2.github.io`, so they can share one token. In the dashboard, filter by path (`/CS2-Spoil-free/` or `/Valorant-spoiler-free/`) to see each one. Moving between pages inside the site keeps the same address, so most page views are counted under the page someone landed on.
+
+To turn it off, remove `cloudflareAnalytics` from `data.json`.
+
 ## Event pictures
 
 Each event's logo is copied from vlr.gg into `images/auto/` automatically, and each team's logo into `images/teams/`.
