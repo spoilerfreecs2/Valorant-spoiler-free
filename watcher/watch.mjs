@@ -1,5 +1,5 @@
 /*
-  Video watcher for the spoiler-free Valorant site.
+  Video watcher for Live Again Valorant, the spoiler-free Valorant site.
 
   Runs in GitHub Actions on a schedule (see .github/workflows/watch.yml). Each run:
     1. finds the events to show: the ones listed in watcher/config.json, plus the ones on
