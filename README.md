@@ -1,4 +1,4 @@
-# Spoiler-free Valorant
+# Live Again Valorant
 
 A website for watching Valorant esports (VCT) as if it were live: no scores, no video lengths, nothing that gives a result away.
 
@@ -177,8 +177,8 @@ To use your own picture instead, upload it to the `images/events/` folder, named
 
 ## Credits
 
-This site started as a copy of [Spoiler-free CS2](https://github.com/spoilerfreecs2/CS2-Spoil-free).
+This site started as a copy of [Live Again CS](https://github.com/spoilerfreecs2/CS2-Spoil-free).
 
-Spoiler-Free Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+Live Again Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 
 Match data and video links come from [vlr.gg](https://www.vlr.gg/), credited in the site's footer. vlr.gg has no API, so the watcher reads its public pages politely: it identifies itself, waits 3 seconds between requests, stays within its robots.txt, and only re-reads pages that can still change (a finished match's page stops being read once its videos are linked). Videos are played from YouTube.
