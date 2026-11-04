@@ -94,6 +94,7 @@ function page(html, o) {
     o.image ? `<meta name="twitter:image" content="${esc(o.image)}">` : '',
     o.image ? `<meta name="twitter:image:alt" content="${esc(o.imageAlt || o.title || site)}">` : '',
     o.verify ? `<meta name="google-site-verification" content="${esc(o.verify)}">` : '',
+    o.bing ? `<meta name="msvalidate.01" content="${esc(o.bing)}">` : '',
     o.noindex ? '<meta name="robots" content="noindex">' : '',
     // Cloudflare Web Analytics: counts visits with no cookies and nothing stored on the visitor's device.
     o.analytics ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="${esc(JSON.stringify({ token: o.analytics }))}"></script>` : '',
@@ -116,6 +117,7 @@ async function build(html, d, auto, config, out) {
   const base = siteUrl(config);
   const siteName = data.site.name || 'Live Again Valorant';
   const verify = str(d && d.site && d.site.googleVerification);
+  const bing = str(d && d.site && d.site.bingVerification);
   const analytics = str(d && d.site && d.site.cloudflareAnalytics).trim();
   const teamById = new Map(data.teams.map(t => [t.id, t]));
   const teamName = id => (teamById.get(id) || {}).name || 'TBD';
@@ -125,7 +127,7 @@ async function build(html, d, auto, config, out) {
   // <base> is the site's root as an absolute path, so the site's files still load after it moves the
   // address bar to another page's address.
   const root = new URL(base).pathname;
-  const common = { siteName, verify, analytics, base: root, root };
+  const common = { siteName, verify, bing, analytics, base: root, root };
   // Pages wait here until their preview pictures are drawn: { rel: page options }.
   const pages = {};
   const cards = [];

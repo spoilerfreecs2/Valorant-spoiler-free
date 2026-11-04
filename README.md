@@ -163,6 +163,8 @@ To get the site into Google:
 2. Pick **HTML tag** as the way to verify. Copy the `content` value from the tag it shows and add it to `data.json` under `site`, as `"googleVerification": "abc123..."`. Wait for the next publish (a few minutes), then press **Verify**.
 3. Under **Sitemaps**, submit `sitemap.xml`.
 
+For Bing Webmaster Tools, either import the site from Search Console, or use its HTML meta tag: put the `content` value in `data.json` under `site`, as `"bingVerification": "..."`.
+
 A `robots.txt` isn't needed. Crawlers only read it at the top of the domain, so one here would be ignored anyway.
 
 ## Visitor numbers (Cloudflare Web Analytics)
