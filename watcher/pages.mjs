@@ -8,6 +8,7 @@
     team/<id>/index.html      one per team that plays in an open round
     match/<id>/index.html     one per match
     teams/index.html          the list of teams
+    privacy/, terms/, contact/ the privacy policy, terms of use and contact page (legalPage() in index.html)
     404.html                  turns any other address of that shape into the site's own (#/...)
     sitemap.xml               every page above, to submit in Google Search Console
 
@@ -162,6 +163,15 @@ function build(html, d, auto, config) {
       body: `<section class="wrap t-head"><h1 class="t-title">${esc(tm.name)}</h1><p>Matches in rounds that can’t give away results.</p>${body}</section>` });
     urls.push(base + 'team/' + id + '/');
   }
+  // Privacy policy, terms and contact: the same text the site shows at #/privacy and the rest, readable without JavaScript.
+  const legal = vm.runInNewContext([grab(html, 'LEGAL_SITE'), grab(html, 'legalPage')].join('\n') + '\n;({ L: LEGAL_SITE, legalPage })', {});
+  const contact = data.site.contact || {}, fb = data.site.firebase || {};
+  for (const k of ['privacy', 'terms', 'contact']) {
+    const lp = legal.legalPage(k, { legal: legal.L, name: siteName, email: str(contact.email), issues: str(contact.issues), firebase: !!(fb.apiKey && fb.databaseURL) });
+    files[k + '/index.html'] = page(html, { ...common, base: '../', url: base + k + '/', hash: '#/' + k, title: lp.title, desc: lp.desc,
+      body: `<section class="wrap legal">${lp.html}</section>` });
+    urls.push(base + k + '/');
+  }
   files['teams/index.html'] = page(html, { ...common, base: '../', url: base + 'teams/', hash: '#/teams', title: 'Teams',
     desc: 'Valorant teams and their matches, to watch without spoilers.',
     body: '<section class="wrap t-head"><h1 class="t-title">Teams</h1><ul>' + teams.map(id => `<li>${link('team/' + id + '/', teamName(id))}</li>`).join('') + '</ul></section>' });
@@ -171,7 +181,7 @@ function build(html, d, auto, config) {
   // Any other address: event/<id>/<stage>/<round>, match/<id>/<map> and the rest open the site's own.
   const root = new URL(base).pathname;
   files['404.html'] = page(html, { ...common, base: root, url: base, noindex: true, title: 'Page not found', desc: 'Page not found',
-    script: `<script>(function () { var p = location.pathname.slice(${JSON.stringify(root)}.length).split('/').filter(Boolean), k = { event: 't', match: 'match', team: 'team', teams: 'teams', collection: 'c' }[p[0]];
+    script: `<script>(function () { var p = location.pathname.slice(${JSON.stringify(root)}.length).split('/').filter(Boolean), k = { event: 't', match: 'match', team: 'team', teams: 'teams', collection: 'c', privacy: 'privacy', terms: 'terms', contact: 'contact' }[p[0]];
   if (k === 'match') window.SF_LANDING = { match: p[1] };
   if (k && !/^#\\//.test(location.hash)) try { history.replaceState(null, '', ${JSON.stringify(root)} + location.search + '#/' + [k].concat(p.slice(1)).join('/')); } catch (e) { /* stays here */ } })();</script>` });
 

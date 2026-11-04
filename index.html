@@ -314,6 +314,16 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .site-footer{margin-top:48px;border-top:1px solid var(--line)}
 .footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;padding-block:24px 48px;font-size:13px;color:var(--muted)}
 .footer-in a{color:var(--soft)}
+.footer-links{display:flex;gap:16px}
+.footer-notice{flex-basis:100%;margin:0;font-size:12px}
+/* Privacy, terms and contact */
+.legal{max-width:74ch;padding-block:24px 0;line-height:1.6}
+.legal .t-title{margin:0 0 8px}
+.legal h2{font:800 22px/1.1 var(--display);text-transform:uppercase;margin:32px 0 8px}
+.legal p,.legal ul{margin:0 0 12px;color:var(--soft)}
+.legal ul{padding-left:20px}
+.legal li{margin-bottom:6px}
+.legal a{color:var(--orange)}
 .footer-brand{font:800 18px/1 var(--display);text-transform:uppercase;color:var(--fg)}
 
 /* Event page */
@@ -866,6 +876,7 @@ function normalize(d) {
     // Kept so that saving from edit mode doesn't drop it (watcher/pages.mjs adds it to the pages for Google).
     ...(s.googleVerification ? { googleVerification: str(s.googleVerification) } : {}),
     ...(s.cloudflareAnalytics ? { cloudflareAnalytics: str(s.cloudflareAnalytics) } : {}),
+    contact: { email: str((s.contact || {}).email), issues: str((s.contact || {}).issues) },
     firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, ''), sync: (s.firebase || {}).sync !== false }
   };
   const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), logoDark: str(x.logoDark), aliases: arr(x.aliases).map(str).filter(Boolean) }));
@@ -1887,6 +1898,98 @@ function startSync() {
   });
 }
 
+/* ---------- privacy, terms and contact ----------
+   #/privacy, #/terms and #/contact (and privacy/, terms/, contact/ as real addresses, from watcher/pages.mjs).
+   YouTube's API rules ask every site that uses its player for a privacy policy that says so, links Google's
+   privacy policy and covers what's kept and who else gets data, and for terms that link YouTube's Terms of
+   Service. legalPage() is shared with watcher/pages.mjs (it reads it out of this file by name), so it must
+   only use its own arguments. If the site starts keeping or sending anything new, say so here. */
+const LEGAL_SITE = {"game": "Valorant", "owner": "Riot Games", "ownerNotice": "Live Again Valorant isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.", "dataName": "vlr.gg", "dataUrl": "https://www.vlr.gg/", "dataNote": "Match lists, team names and video links come from vlr.gg, a fan-run Valorant esports site.", "updated": "4 November 2026"};
+function legalPage(k, o) {
+  const e = s => String(s === null || s === undefined ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const a = (href, text) => '<a href="' + e(href) + '" target="_blank" rel="noopener">' + e(text) + '</a>';
+  const L = o.legal, name = e(o.name), mail = o.email ? '<a href="mailto:' + e(o.email) + '">' + e(o.email) + '</a>' : '';
+  const reach = mail ? 'email ' + mail : 'use the <a href="#/contact">contact page</a>';
+  const updated = '<p class="hint">Last updated ' + e(L.updated) + '.</p>';
+  const GOOGLE = a('https://policies.google.com/privacy', 'Google Privacy Policy'), YT = a('https://www.youtube.com/t/terms', 'YouTube Terms of Service');
+  if (k === 'privacy') return {
+    title: 'Privacy policy',
+    desc: 'What ' + o.name + ' keeps, what YouTube and other services receive when you use it, and your choices.',
+    html: '<h1 class="t-title">Privacy policy</h1>' + updated
+      + '<p>' + name + ' is a free fan site for watching ' + e(L.game) + ' tournament videos without spoilers. This page explains what the site keeps about you, which other services get information when you use it, and what you can do about it.</p>'
+      + '<h2>The short version</h2><ul>'
+      + '<li>There are no accounts, no ads and no tracking cookies. We don’t sell or share anything about you.</li>'
+      + '<li>What you’ve watched and your settings stay in your own browser.</li>'
+      + '<li>Videos play in YouTube’s player, so YouTube (Google) gets the usual information about your visit, under the ' + GOOGLE + '.</li>'
+      + '<li>We count visits with Cloudflare Web Analytics, which uses no cookies and doesn’t follow you from site to site.</li></ul>'
+      + '<h2>What’s kept in your browser</h2>'
+      + '<p>The site saves a few things in your browser’s local storage so it works the way you left it. They never leave your device unless you turn on syncing (below), and we can’t see them:</p><ul>'
+      + '<li>the matches you’ve marked as watched, where you stopped in a map, Continue watching, your pins, and the rounds and results you chose to open;</li>'
+      + '<li>your settings: light or dark theme, volume, speed, captions, quality, player size and which panel is open;</li>'
+      + '<li>the name you pick for watch parties' + (o.firebase ? ', your star ratings, your sync code if you use one, and the random sign-in key used for ratings' : '') + '.</li></ul>'
+      + '<p>The site itself sets no cookies. You can remove all of this at any time by clearing the site’s data in your browser’s settings.</p>'
+      + '<h2>YouTube</h2>'
+      + '<p>' + name + ' uses YouTube API Services. Every video on the site is played in YouTube’s embedded player, straight from YouTube. When a match page loads the player, YouTube (a Google service) receives information such as your IP address, your browser and device, and which video is playing, and it may place or read cookies and similar data on your device. If you’re signed in to YouTube, it may link this to your account. That information goes to Google, not to us, and Google uses it as described in the ' + GOOGLE + ' and the ' + YT + '.</p>'
+      + '<p>To find videos, our publishing system also uses the YouTube Data API to check that each video can be played on other sites. That check is about the videos, not about you. We never ask you to sign in with Google and we can’t see or change anything in your YouTube or Google account.</p>'
+      + (o.firebase ? '<h2>Star ratings and device sync</h2>'
+        + '<p>Ratings and syncing are kept in a Google Firebase Realtime Database. When you rate a match, your browser gets an anonymous Firebase sign-in: a random ID, with no name, email or account. Your rating is saved under that ID so there’s one vote per browser, and everyone sees the average.</p>'
+        + '<p>If you choose “Sync my devices”, your watched list, pins, Continue watching, map positions and opened rounds are saved in the same database under a random sync code, so your other devices can fetch them. Anyone with the code can read that list, so share it only with your own devices. “Stop syncing” stops this device sending updates; to have the stored copy deleted, ' + reach + ' with your sync code.</p>'
+        + '<p>Google processes this data for us under the ' + GOOGLE + ' and its ' + a('https://firebase.google.com/support/privacy', 'Firebase privacy terms') + ', and sees your IP address when your browser connects. You can hide ratings from the footer and never use syncing; the rest of the site works the same.</p>' : '')
+      + '<h2>Watch parties</h2>'
+      + '<p>A watch party connects your browser directly to your friends’ browsers (WebRTC). Public Nostr relay servers only help the browsers find each other; the party code locks what passes through them. Because the connection is direct, the people in your party can see each other’s IP addresses, as with most video calls. The party name you choose, the chat and play and pause go straight to the others in the party. We don’t store any of it, and it’s gone when everyone leaves.</p>'
+      + '<h2>Visitor statistics</h2>'
+      + '<p>We use ' + a('https://www.cloudflare.com/web-analytics/', 'Cloudflare Web Analytics') + ' to count how many people visit and which pages they open, so we can show sponsors how much the site is used. It sets no cookies, saves nothing in your browser and doesn’t build a profile of you or follow you across sites. It records things like the page, the site you came from, your country (worked out from your IP address, which Cloudflare says it doesn’t store), your browser and device type and how fast the page loaded. The numbers we see are totals. Cloudflare handles this under its ' + a('https://www.cloudflare.com/privacypolicy/', 'privacy policy') + '.</p>'
+      + '<h2>Hosting and fonts</h2>'
+      + '<p>The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address when your browser loads the site and may keep it in its logs for security, under the ' + a('https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement', 'GitHub Privacy Statement') + '. The site’s fonts come from Google Fonts, so Google receives your IP address when the fonts load. Links to other sites, such as ' + e(L.dataName) + ' or Google Calendar, only send you there when you click them.</p>'
+      + '<h2>What we don’t do</h2>'
+      + '<p>We don’t run ads, sell or rent data, build profiles, use tracking pixels or send newsletters. We don’t knowingly collect information from children under 13, and the site isn’t aimed at them.</p>'
+      + '<h2>Your choices and rights</h2>'
+      + '<p>Almost everything is in your own browser, so you’re in control of it: clear the site’s data to remove it. Depending on where you live (for example the EU, UK or California), you can ask us what we hold about you, and to correct or delete it. Because there are no accounts, we can only find ' + (o.firebase ? 'ratings or synced data if you give us your sync code or the details of what to look for' : 'something if you tell us what to look for') + '. To make a request, ' + reach + '. You can also complain to your local data protection authority.</p>'
+      + '<h2>Changes</h2>'
+      + '<p>If the site starts keeping or sharing anything new, we’ll update this page and the date at the top first.</p>'
+      + '<h2>Contact</h2><p>Questions about privacy? ' + (mail ? 'Email ' + mail + '.' : 'See the <a href="#/contact">contact page</a>.') + '</p>'
+  };
+  if (k === 'terms') return {
+    title: 'Terms of use',
+    desc: 'The terms for using ' + o.name + ', including YouTube’s Terms of Service for the videos.',
+    html: '<h1 class="t-title">Terms of use</h1>' + updated
+      + '<p>' + name + ' is a free fan site for watching ' + e(L.game) + ' tournament videos without spoilers. By using it, you agree to these terms. If you don’t agree, please don’t use the site.</p>'
+      + '<h2>The videos</h2>'
+      + '<p>We don’t host, copy or download any videos. Every video is played from YouTube in YouTube’s own embedded player, and belongs to the tournament organiser or channel that published it. By watching videos on this site, you agree to be bound by the ' + YT + '. Google’s handling of your data is covered by the ' + GOOGLE + '; see also our <a href="#/privacy">privacy policy</a>.</p>'
+      + '<h2>Spoilers</h2>'
+      + '<p>We work hard to keep results hidden, but we can’t promise that nothing ever slips through. A video, a caster, YouTube’s own screens, a party chat or another site could still give a result away. Use the site at your own risk, and maybe mute the chat.</p>'
+      + '<h2>Match data</h2>'
+      + '<p>' + e(L.dataNote) + ' Find the original at ' + a(L.dataUrl, L.dataName) + '.</p>'
+      + '<h2>Not an official site</h2>'
+      + '<p>' + e(L.ownerNotice) + ' Team names, logos and tournament names belong to their owners and are used only to say which match is which.</p>'
+      + '<h2>Ratings, chat and fair use</h2>'
+      + '<p>Please be decent in watch party chats and rate matches honestly. Don’t spam, harass people, post anything illegal, try to break or overload the site, or scrape it in bulk. We may remove ratings or block use that breaks these rules.</p>'
+      + '<h2>No warranty</h2>'
+      + '<p>The site is provided free and as it is. Videos can be removed by their owners, data can be wrong, and features can change or stop working without notice. As far as the law allows, we aren’t liable for any loss from using the site or from relying on it. Nothing here limits rights you have under the law where you live.</p>'
+      + '<h2>Changes</h2>'
+      + '<p>We may update these terms. The date at the top shows the latest version, and using the site after a change means you accept it.</p>'
+      + '<h2>Contact</h2><p>Questions about these terms? ' + (mail ? 'Email ' + mail + '.' : 'See the <a href="#/contact">contact page</a>.') + '</p>'
+  };
+  return {
+    title: 'Contact',
+    desc: 'How to reach the people behind ' + o.name + '.',
+    html: '<h1 class="t-title">Contact</h1>'
+      + '<p>' + name + ' is run by a small team of fans. We’d love to hear from you.</p>'
+      + (mail ? '<h2>Email</h2><p>' + mail + '</p><p>For anything at all: questions, privacy requests, press, partnerships and sponsorship.</p>' : '')
+      + (o.issues ? '<h2>Report a problem</h2><p>A video that won’t play, a missing match or a bug? ' + a(o.issues, 'Open an issue on GitHub') + '. Issues are public, so please leave results out of them, and ' + (mail ? 'email us' : 'don’t post anything private there') + ' instead for anything personal.</p>' : '')
+      + (!mail && !o.issues ? '<p>Contact details are coming soon.</p>' : '')
+      + '<p>See also our <a href="#/privacy">privacy policy</a> and <a href="#/terms">terms of use</a>.</p>'
+  };
+}
+const legalOpts = () => ({ legal: LEGAL_SITE, name: data.site.name || 'Live Again Valorant', email: data.site.contact.email, issues: data.site.contact.issues, firebase: ratingsReady() });
+function renderLegal(app, r) {
+  const p = legalPage(r.page, legalOpts());
+  pageTitle = p.title;
+  const box = h('section', { class: 'wrap legal' });
+  box.innerHTML = p.html;
+  app.append(box);
+}
+
 /* ---------- routing ---------- */
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
@@ -1895,6 +1998,7 @@ function parseRoute() {
   if (p[0] === 'c' && p[1]) return { name: 'collection', cid: p[1] };
   if (p[0] === 'team' && p[1]) return { name: 'team', id: p[1] };
   if (p[0] === 'teams') return { name: 'teams' };
+  if (p[0] === 'privacy' || p[0] === 'terms' || p[0] === 'contact') return { name: 'legal', page: p[0] };
   if (p[0] === 'tournaments' || p[0] === 'how' || p[0] === 'collections') return { name: 'home', section: p[0] };
   return { name: 'home' };
 }
@@ -1914,6 +2018,7 @@ function route(keepScroll, initial) {
   else if (r.name === 'collection') renderCollection(app, r);
   else if (r.name === 'team') renderTeam(app, r);
   else if (r.name === 'teams') renderTeams(app);
+  else if (r.name === 'legal') renderLegal(app, r);
   else renderHome(app, r);
   renderHeader();
   renderFooter();
@@ -1951,7 +2056,7 @@ function renderHeader() {
   document.querySelectorAll('[data-nav]').forEach(a => {
     const k = a.dataset.nav;
     const cur = (k === 'home' && r.name === 'home' && !r.section) ||
-      (k === 'tournaments' && ((r.name !== 'home' && r.name !== 'collection' && r.name !== 'team' && r.name !== 'teams') || r.section === 'tournaments')) ||
+      (k === 'tournaments' && ((r.name !== 'home' && r.name !== 'collection' && r.name !== 'team' && r.name !== 'teams' && r.name !== 'legal') || r.section === 'tournaments')) ||
       (k === 'teams' && (r.name === 'team' || r.name === 'teams')) ||
       (k === 'collections' && (r.name === 'collection' || r.section === 'collections')) ||
       (k === 'how' && r.section === 'how');
@@ -1965,8 +2070,11 @@ function renderFooter() {
     !editing() ? h('button', { type: 'button', class: 'text-btn', 'aria-keyshortcuts': 'Shift+?', onClick: openKeys }, 'Keyboard shortcuts (?)') : null,
     // The match list and video links come from vlr.gg, so it's credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data and video links from ', h('a', { href: 'https://www.vlr.gg/', target: '_blank', rel: 'noopener' }, 'vlr.gg'), '.') : null,
+    h('nav', { class: 'footer-links', 'aria-label': 'About this site' }, h('a', { href: '#/privacy' }, 'Privacy'), h('a', { href: '#/terms' }, 'Terms'), h('a', { href: '#/contact' }, 'Contact')),
     syncReady() ? h('button', { type: 'button', class: 'text-btn', onClick: () => openSyncDialog() }, syncCode() ? 'Synced devices' : 'Sync my devices') : null,
-    ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null));
+    ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null,
+    // Not an official site: the game's owner is named on every page.
+    h('p', { class: 'footer-notice' }, LEGAL_SITE.ownerNotice)));
 }
 function exampleNotice() {
   return h('div', { class: 'wrap' }, h('div', { class: 'edit-panel notice' },
