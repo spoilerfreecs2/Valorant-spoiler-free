@@ -24,10 +24,14 @@
         "text": "Matchups that would give away earlier results stay hidden until you open them."
       }
     ],
-    "footer": "Videos are played from YouTube. Live Again Valorant isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "footer": "Videos are played from YouTube.",
     "featuredId": "",
     "example": false,
-    "googleVerification": "Ntufg7b1s5P8KVCI28NTgEqUIQYNQwxJGLnA7xVq1Zs"
+    "googleVerification": "Ntufg7b1s5P8KVCI28NTgEqUIQYNQwxJGLnA7xVq1Zs",
+    "contact": {
+      "email": "",
+      "issues": "https://github.com/spoilerfreecs2/Valorant-spoiler-free/issues"
+    }
   },
   "teams": [],
   "tournaments": []
