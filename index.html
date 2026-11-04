@@ -1991,6 +1991,33 @@ function renderLegal(app, r) {
 }
 
 /* ---------- routing ---------- */
+/* The published site also has a real page for every event, match and team (watcher/pages.mjs), each
+   with its own spoiler-safe link preview. The address bar is kept on the one that matches what's
+   showing, so a link copied from it previews as that event or match when pasted into Discord, X or
+   Reddit, not as the home page. Only on the published site, which sets SF_ROOT. */
+function pageFor(r) {
+  if (r.name === 'tournament') return findT(r.tid) ? 'event/' + encodeURIComponent(r.tid) + '/' : '';
+  if (r.name === 'player') return findMatch(r.mid) ? 'match/' + encodeURIComponent(r.mid) + '/' : '';
+  if (r.name === 'teams' || r.name === 'legal') return (r.page || 'teams') + '/';
+  // Team pages exist only for teams with a match in an open round (the same rule as pages.mjs).
+  if (r.name === 'team' && team(r.id) && teamName(r.id) !== 'TBD' && data.tournaments.some(t => t.stages.some(s => s.rounds.some(rd => !rd.locked && rd.matches.some(m => m.a === r.id || m.b === r.id)))))
+    return 'team/' + encodeURIComponent(r.id) + '/';
+  return '';
+}
+const onPages = () => !EDIT && typeof window.SF_ROOT === 'string' && location.pathname.startsWith(window.SF_ROOT);
+function syncAddress(r) {
+  if (!onPages()) return;
+  const want = window.SF_ROOT + pageFor(r);
+  if (location.pathname !== want) try { history.replaceState(history.state, '', want + location.search + location.hash); } catch (e) { /* stays */ }
+}
+// Links like #/t/<id> are read against <base> (the site's root), so on another page's address a click
+// would load the whole site again. They change only the #/ part instead, like they always have.
+document.addEventListener('click', e => {
+  const a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank' || !onPages()) return;
+  e.preventDefault();
+  location.hash = a.getAttribute('href');
+});
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
   if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2], rid: p[3] };
@@ -2002,7 +2029,9 @@ function parseRoute() {
   if (p[0] === 'tournaments' || p[0] === 'how' || p[0] === 'collections') return { name: 'home', section: p[0] };
   return { name: 'home' };
 }
+let routedHash = null;
 function route(keepScroll, initial) {
+  routedHash = location.hash;
   const y = window.scrollY;
   destroyPlayer();
   const r = parseRoute();
@@ -2022,6 +2051,7 @@ function route(keepScroll, initial) {
   else renderHome(app, r);
   renderHeader();
   renderFooter();
+  syncAddress(r);
   paintRatings();
   if (keepScroll) { window.scrollTo(0, y); return; }
   const sec = r.section && document.getElementById('sec-' + r.section);
@@ -3868,6 +3898,9 @@ function setupEditBar() {
 
 /* ---------- start ---------- */
 window.addEventListener('hashchange', () => route(false));
+// Back and Forward between page addresses (event/<id>/#/..., match/<id>/#/...) may not count as a
+// hash change, so they're caught here too, after any hashchange has had its turn (routedHash).
+window.addEventListener('popstate', () => setTimeout(() => { if (location.hash !== routedHash) route(false); }, 0));
 (async () => {
   await loadSources();
   if (EDIT) {

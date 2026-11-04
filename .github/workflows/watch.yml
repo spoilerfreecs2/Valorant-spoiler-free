@@ -79,7 +79,10 @@ jobs:
           if [ -d tools ]; then cp -r tools _site/; fi
           if [ -d calendar ]; then cp -r calendar _site/; fi
           if [ -d vendor ]; then cp -r vendor _site/; fi
-          # A real address for every event, team and match, and a sitemap (watcher/pages.mjs).
+          # A real address for every event, team and match, and a sitemap (watcher/pages.mjs), with
+          # spoiler-safe link preview pictures (watcher/cards.mjs). resvg draws those; if it can't be
+          # installed, the pages still build with the logo as their preview.
+          npm install --no-save --no-package-lock --no-audit --no-fund @resvg/resvg-js@2.6.2 || echo "::warning::Couldn't install resvg, so link previews use logos this time."
           node watcher/pages.mjs _site
 
       - name: Set up GitHub Pages
