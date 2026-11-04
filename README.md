@@ -148,11 +148,14 @@ Every team playing in an open round has a page (**Teams** in the menu, or click 
 
 The site works from `#/` addresses, which search engines mostly skip. So when the site is published, `watcher/pages.mjs` also writes a real page for each event, team and match, plus a sitemap:
 
-- `event/<id>/`, `team/<id>/`, `match/<id>/` and `teams/`. Each has its own title, description and link preview (the event or team logo).
+- `event/<id>/`, `team/<id>/`, `match/<id>/` and `teams/`. Each has its own title, description and link preview picture.
+- `og/`, the link preview pictures (1200 × 630) that Discord, X, Reddit and WhatsApp show for a pasted link, drawn by `watcher/cards.mjs`.
 - `sitemap.xml`, which lists all of them.
 - `404.html`, so a longer address like `match/<id>/2` still opens the right page.
 
-Opening one of these starts the site on that page as usual, and the address bar then shows the `#/` address. The pages follow the same spoiler rules. A match in a hidden round never names its teams in its title, description or text, and someone who lands on it from Google is asked before the matchup is shown. Team pages only list matches in open rounds.
+Opening one of these starts the site on that page as usual. As visitors move around, the address bar stays on the matching page (for example `match/<id>/#/match/<id>/0`), so a link copied from it gets that page's preview. The pages follow the same spoiler rules. A match in a hidden round never names its teams in its title, description or text, and someone who lands on it from Google is asked before the matchup is shown. Team pages only list matches in open rounds.
+
+**Spoiler-safe link previews.** Every preview picture carries a "No scores · No spoilers" badge and is drawn only from the same data as the pages, which has no scores or winners. A match in an open round shows both teams' logos and names. A match in a hidden round shows a lock and the round's name, never the teams. Events show their logo, dates and place; teams show their logo. The workflow installs [resvg](https://github.com/thx/resvg-js) to draw them; if that fails, the pages still publish with the logo as a small preview.
 
 To get the site into Google:
 
