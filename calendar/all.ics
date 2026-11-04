@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Spoiler-Free Valorant//Calendar//EN
+PRODID:-//Live Again Valorant//Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Spoiler-Free Valorant
+X-WR-CALNAME:Live Again Valorant
 X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
