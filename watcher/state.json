@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-04T02:44:53.088Z",
+      "infoAt": "2026-11-04T03:47:51.231Z",
       "matches": [
         {
           "id": "753455",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-04T02:44:53.088Z",
+      "matchesAt": "2026-11-04T03:47:51.231Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -19663,7 +19663,7 @@
       "/event/3181/vct-2027-pacific-kickoff",
       "/event/3182/vct-2027-china-kickoff"
     ],
-    "checkedAt": "2026-11-03T14:53:38.660Z",
+    "checkedAt": "2026-11-04T03:47:51.231Z",
     "key": "{\"lists\":[\"/events/?tier=60\"],\"include\":[\"^vct-\\\\d{4}-(americas|emea|pacific|china)-(kickoff|stage-\\\\d)$\",\"^valorant-masters-\",\"^valorant-champions-\\\\d{4}$\"],\"exclude\":[\"qualifier\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\"}"
   },
   "highlights": {},
