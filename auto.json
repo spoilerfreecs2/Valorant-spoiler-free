@@ -58,9 +58,9 @@
       "name": "VCT 2027: Pacific Kickoff",
       "page": "/event/3181/vct-2027-pacific-kickoff",
       "year": "2027",
-      "sdate": "2027-01-10",
+      "sdate": "2027-01-11",
       "edate": "2027-01-31",
-      "dates": "10–31 January 2027",
+      "dates": "11–31 January 2027",
       "location": "Bangkok",
       "teamsText": "",
       "image": "https://owcdn.net/img/640f5ae002674.png",
@@ -108,10 +108,10 @@
       "id": "vct-2027-china-kickoff",
       "name": "VCT 2027: China Kickoff",
       "page": "/event/3182/vct-2027-china-kickoff",
-      "year": "2026",
-      "sdate": "2026-12-31",
+      "year": "2027",
+      "sdate": "2027-01-01",
       "edate": "2027-02-27",
-      "dates": "31 December 2026 – 27 February 2027",
+      "dates": "1 January – 27 February 2027",
       "location": "Hangzhou",
       "teamsText": "",
       "image": "https://owcdn.net/img/65dd97cea9a25.png",
@@ -13032,6 +13032,6 @@
       ]
     }
   },
-  "updatedAt": "2026-11-05T03:51:18.163Z",
+  "updatedAt": "2026-11-05T09:30:10.915Z",
   "featured": "valorant-champions-2026"
 }
