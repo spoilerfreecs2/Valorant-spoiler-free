@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-06T22:16:45.536Z",
+      "infoAt": "2026-11-06T23:12:55.295Z",
       "matches": [
         {
           "id": "753455",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-06T22:16:45.536Z",
+      "matchesAt": "2026-11-06T23:12:55.295Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -3741,9 +3741,9 @@
         "location": "Seoul",
         "logo": "https://owcdn.net/img/692fc18a04f4a.png"
       },
-      "infoAt": "2026-11-06T10:30:19.502Z",
+      "infoAt": "2026-11-06T23:12:55.295Z",
       "matches": [],
-      "matchesAt": "2026-11-06T10:30:19.502Z",
+      "matchesAt": "2026-11-06T23:12:55.295Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3162/valorant-masters-valencia-2027": {
@@ -3796,7 +3796,7 @@
       "infoAt": "2026-11-06T21:36:46.555Z",
       "result": "coming up, no matches drawn yet",
       "matches": [],
-      "matchesAt": "2026-11-06T10:30:19.502Z"
+      "matchesAt": "2026-11-06T23:12:55.295Z"
     },
     "/event/3181/vct-2027-pacific-kickoff": {
       "info": {
@@ -3806,22 +3806,22 @@
         "location": "Bangkok",
         "logo": "https://owcdn.net/img/640f5ae002674.png"
       },
-      "infoAt": "2026-11-06T10:30:19.502Z",
+      "infoAt": "2026-11-06T23:12:55.295Z",
       "result": "coming up, no matches drawn yet",
       "matches": [],
-      "matchesAt": "2026-11-06T10:30:19.502Z"
+      "matchesAt": "2026-11-06T23:12:55.295Z"
     },
     "/event/3182/vct-2027-china-kickoff": {
       "info": {
         "name": "VCT 2027: China Kickoff",
-        "sdate": "2027-01-01",
+        "sdate": "2026-12-31",
         "edate": "2027-02-27",
         "location": "Hangzhou",
         "logo": "https://owcdn.net/img/65dd97cea9a25.png"
       },
-      "infoAt": "2026-11-06T10:30:19.502Z",
+      "infoAt": "2026-11-06T23:12:55.295Z",
       "matches": [],
-      "matchesAt": "2026-11-06T10:30:19.502Z",
+      "matchesAt": "2026-11-06T23:12:55.295Z",
       "result": "coming up, no matches drawn yet"
     }
   },
