@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-07T04:47:32.872Z",
+      "infoAt": "2026-11-07T05:43:47.708Z",
       "matches": [
         {
           "id": "753455",
@@ -676,7 +676,7 @@
         {
           "id": "754736",
           "path": "/754736/team-vitality-vs-loud-valorant-champions-2026-ubf",
-          "day": "2026-10-16",
+          "day": "2026-10-15",
           "order": 30,
           "a": "Team Vitality",
           "b": "LOUD",
@@ -712,7 +712,7 @@
         {
           "id": "754737",
           "path": "/754737/loud-vs-team-vitality-valorant-champions-2026-gf",
-          "day": "2026-10-18",
+          "day": "2026-10-17",
           "order": 33,
           "a": "LOUD",
           "b": "Team Vitality",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-07T04:47:32.872Z",
+      "matchesAt": "2026-11-07T05:43:47.708Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -19973,11 +19973,11 @@
     "uploads": {
       "@valorantesports": "UUA1d3HFGFUmkKr2JIUA5Vlw"
     },
-    "checkedAt": "2026-11-07T01:53:45.236Z",
+    "checkedAt": "2026-11-07T05:43:47.708Z",
     "key": "{\"channels\":[\"@valorantesports\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[],\"aliases\":{},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 2,
-      "matchesFrom": "2026-10-17",
+      "matchesLookedFor": 1,
+      "matchesFrom": "2026-10-18",
       "matchesTo": "2026-10-18",
       "found": 0,
       "channels": {
