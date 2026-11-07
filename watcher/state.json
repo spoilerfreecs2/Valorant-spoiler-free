@@ -311,7 +311,7 @@
         "location": "Shanghai",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-07T00:56:51.357Z",
+      "infoAt": "2026-11-07T01:53:45.236Z",
       "matches": [
         {
           "id": "753455",
@@ -722,7 +722,7 @@
           "youtube": true
         }
       ],
-      "matchesAt": "2026-11-07T00:56:51.357Z",
+      "matchesAt": "2026-11-07T01:53:45.236Z",
       "result": "34 matches, 86 map videos"
     },
     "/event/2776/vct-2026-pacific-stage-2": {
@@ -19973,7 +19973,7 @@
     "uploads": {
       "@valorantesports": "UUA1d3HFGFUmkKr2JIUA5Vlw"
     },
-    "checkedAt": "2026-11-06T22:16:45.536Z",
+    "checkedAt": "2026-11-07T01:53:45.236Z",
     "key": "{\"channels\":[\"@valorantesports\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[],\"aliases\":{},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
       "matchesLookedFor": 2,
@@ -19984,8 +19984,8 @@
         "@valorantesports": {
           "uploads": 200,
           "sayHighlights": 40,
-          "oldest": "2026-10-17T07:07:41Z",
-          "newest": "2026-11-05T20:17:58Z"
+          "oldest": "2026-10-17T07:07:50Z",
+          "newest": "2026-11-07T01:47:27Z"
         }
       },
       "samples": [
