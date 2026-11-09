@@ -309,9 +309,9 @@
       "name": "VCT 2026: China Stage 2",
       "page": "/event/2978/vct-2026-china-stage-2",
       "year": "2026",
-      "sdate": "2026-07-09",
+      "sdate": "2026-07-08",
       "edate": "2026-08-23",
-      "dates": "9 July – 23 August 2026",
+      "dates": "8 July – 23 August 2026",
       "location": "Changsha & Chengdu",
       "teamsText": "14 teams",
       "image": "https://owcdn.net/img/65dd97cea9a25.png",
@@ -13032,6 +13032,6 @@
       ]
     }
   },
-  "updatedAt": "2026-11-07T05:43:47.708Z",
+  "updatedAt": "2026-11-09T16:34:25.181Z",
   "featured": "valorant-champions-2026"
 }
