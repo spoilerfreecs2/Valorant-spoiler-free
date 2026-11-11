@@ -3741,9 +3741,9 @@
         "location": "Seoul",
         "logo": "https://owcdn.net/img/692fc18a04f4a.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z",
+      "matchesAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3162/valorant-masters-valencia-2027": {
@@ -3754,9 +3754,9 @@
         "location": "Valencia",
         "logo": "https://owcdn.net/img/692fc18a04f4a.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z",
+      "matchesAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3163/valorant-champions-2027": {
@@ -3767,9 +3767,9 @@
         "location": "Austin",
         "logo": "https://owcdn.net/img/692fc60a022bb.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z",
+      "matchesAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3176/vct-2027-emea-kickoff": {
@@ -3780,9 +3780,9 @@
         "location": "Riot Games Arena, Berlin",
         "logo": "https://owcdn.net/img/65ab59620a233.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z",
+      "matchesAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet"
     },
     "/event/3178/vct-2027-americas-kickoff": {
@@ -3793,10 +3793,10 @@
         "location": "Riot Games Arena, São Paulo",
         "logo": "https://owcdn.net/img/640f5ab71dfbb.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z"
+      "matchesAt": "2026-11-11T05:54:16.901Z"
     },
     "/event/3181/vct-2027-pacific-kickoff": {
       "info": {
@@ -3806,10 +3806,10 @@
         "location": "Bangkok",
         "logo": "https://owcdn.net/img/640f5ae002674.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z"
+      "matchesAt": "2026-11-11T05:54:16.901Z"
     },
     "/event/3182/vct-2027-china-kickoff": {
       "info": {
@@ -3819,9 +3819,9 @@
         "location": "Hangzhou",
         "logo": "https://owcdn.net/img/65dd97cea9a25.png"
       },
-      "infoAt": "2026-11-10T17:44:14.769Z",
+      "infoAt": "2026-11-11T05:54:16.901Z",
       "matches": [],
-      "matchesAt": "2026-11-10T17:44:14.769Z",
+      "matchesAt": "2026-11-11T05:54:16.901Z",
       "result": "coming up, no matches drawn yet"
     }
   },
@@ -19663,7 +19663,7 @@
       "/event/3181/vct-2027-pacific-kickoff",
       "/event/3182/vct-2027-china-kickoff"
     ],
-    "checkedAt": "2026-11-10T17:44:14.769Z",
+    "checkedAt": "2026-11-11T05:54:16.901Z",
     "key": "{\"lists\":[\"/events/?tier=60\"],\"include\":[\"^vct-\\\\d{4}-(americas|emea|pacific|china)-(kickoff|stage-\\\\d)$\",\"^valorant-masters-\",\"^valorant-champions-\\\\d{4}$\"],\"exclude\":[\"qualifier\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\"}"
   },
   "highlights": {},
