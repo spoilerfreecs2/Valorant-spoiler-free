@@ -116,12 +116,12 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:vct-2027-pacific-kickoff-20270111@valorant-spoiler-free
+UID:vct-2027-pacific-kickoff-20270110@valorant-spoiler-free
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270112
-DTEND;VALUE=DATE:20270113
-SUMMARY:VCT 2027: Pacific Kickoff: Monday’s matches ready to watch
-DESCRIPTION:Videos from Monday’s matches of VCT 2027: Pacific Kickoff sho
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:VCT 2027: Pacific Kickoff: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of VCT 2027: Pacific Kickoff sho
  uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
  orant-spoiler-free/#/t/vct-2027-pacific-kickoff
 URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-pac
@@ -224,14 +224,14 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:vct-2027-china-kickoff-20270101@valorant-spoiler-free
+UID:vct-2027-china-kickoff-20261231@valorant-spoiler-free
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
-SUMMARY:VCT 2027: China Kickoff: Friday’s matches ready to watch
-DESCRIPTION:Videos from Friday’s matches of VCT 2027: China Kickoff shoul
- d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Valor
- ant-spoiler-free/#/t/vct-2027-china-kickoff
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:VCT 2027: China Kickoff: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of VCT 2027: China Kickoff sho
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/Val
+ orant-spoiler-free/#/t/vct-2027-china-kickoff
 URL:https://spoilerfreecs2.github.io/Valorant-spoiler-free/#/t/vct-2027-chi
  na-kickoff
 TRANSP:TRANSPARENT
